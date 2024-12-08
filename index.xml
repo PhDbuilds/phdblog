@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>risotto demo</title>
-    <link>https://risotto.joeroe.io/</link>
-    <description>Recent content on risotto demo</description>
+    <title>PhDbuilds.tech</title>
+    <link>https://phdbuilds.tech/</link>
+    <description>Recent content on PhDbuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© [Logan Norris](https://phdbuilds.com)</copyright>
+    <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
     <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://risotto.joeroe.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://phdbuilds.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>another test post</title>
-      <link>https://risotto.joeroe.io/posts/another-test-post/</link>
+      <link>https://phdbuilds.tech/posts/another-test-post/</link>
       <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://risotto.joeroe.io/posts/another-test-post/</guid>
-      <description>&lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;&#xA;&lt;p&gt;==Look at this photo.==&#xA;&lt;em&gt;some other text here&lt;/em&gt;&#xA;&lt;strong&gt;nice&lt;/strong&gt;&#xA;!&lt;img src=&#34;https://risotto.joeroe.io/images/Pasted%20image%2020241208075521.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://phdbuilds.tech/posts/another-test-post/</guid>
+      <description>&lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;&#xA;&lt;p&gt;==Look at this photo.==&#xA;&lt;em&gt;some other text here&lt;/em&gt;&#xA;&lt;strong&gt;nice&lt;/strong&gt;&#xA;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020241208075521.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>automated test</title>
-      <link>https://risotto.joeroe.io/posts/automated-test/</link>
+      <link>https://phdbuilds.tech/posts/automated-test/</link>
       <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://risotto.joeroe.io/posts/automated-test/</guid>
-      <description>&lt;h2 id=&#34;testing-the-master-script&#34;&gt;testing the master script&lt;/h2&gt;&#xA;&lt;p&gt;hello, world&lt;/p&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://risotto.joeroe.io/images/Screenshot%202024-12-08%20at%208.15.15%20AM.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://phdbuilds.tech/posts/automated-test/</guid>
+      <description>&lt;h2 id=&#34;testing-the-master-script&#34;&gt;testing the master script&lt;/h2&gt;&#xA;&lt;p&gt;hello, world&lt;/p&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Screenshot%202024-12-08%20at%208.15.15%20AM.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>another blog post</title>
-      <link>https://risotto.joeroe.io/posts/another-blog-post/</link>
+      <link>https://phdbuilds.tech/posts/another-blog-post/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://risotto.joeroe.io/posts/another-blog-post/</guid>
-      <description>&lt;h2 id=&#34;today-i&#34;&gt;Today I&lt;/h2&gt;&#xA;&lt;p&gt;am trying to learn this riff:&lt;/p&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://risotto.joeroe.io/images/Pasted%20image%2020241206113545.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;!&lt;img src=&#34;https://risotto.joeroe.io/images/Pasted%20image%2020241206113600.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://phdbuilds.tech/posts/another-blog-post/</guid>
+      <description>&lt;h2 id=&#34;today-i&#34;&gt;Today I&lt;/h2&gt;&#xA;&lt;p&gt;am trying to learn this riff:&lt;/p&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020241206113545.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020241206113600.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automating my dotfiles</title>
-      <link>https://risotto.joeroe.io/posts/automating-my-dotfiles/</link>
+      <link>https://phdbuilds.tech/posts/automating-my-dotfiles/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://risotto.joeroe.io/posts/automating-my-dotfiles/</guid>
+      <guid>https://phdbuilds.tech/posts/automating-my-dotfiles/</guid>
       <description>&lt;h2 id=&#34;today-i&#34;&gt;Today I&lt;/h2&gt;</description>
     </item>
     <item>
       <title>My Blog</title>
-      <link>https://risotto.joeroe.io/posts/my-blog/</link>
+      <link>https://phdbuilds.tech/posts/my-blog/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://risotto.joeroe.io/posts/my-blog/</guid>
+      <guid>https://phdbuilds.tech/posts/my-blog/</guid>
       <description>&lt;h2 id=&#34;setting-up-hugo&#34;&gt;Setting up Hugo&lt;/h2&gt;&#xA;&lt;h3 id=&#34;prereqs&#34;&gt;Prereqs&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Git&lt;/li&gt;&#xA;&lt;li&gt;Go&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;h4 id=&#34;theme&#34;&gt;Theme&lt;/h4&gt;&#xA;&lt;p&gt;There were some stuff here that we had to do for the theme&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pick the theme&lt;/li&gt;&#xA;&lt;li&gt;Do some git submodule things&lt;/li&gt;&#xA;&lt;li&gt;Config the config&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;scripts&#34;&gt;Scripts&lt;/h4&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Do&lt;/li&gt;&#xA;&lt;li&gt;Some&lt;/li&gt;&#xA;&lt;li&gt;Other&lt;/li&gt;&#xA;&lt;li&gt;Stuff&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rsync -av --delete &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;source_path&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dest_path&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
