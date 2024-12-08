@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.com)</copyright>
-    <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://risotto.joeroe.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>another test post</title>
+      <link>https://risotto.joeroe.io/posts/another-test-post/</link>
+      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://risotto.joeroe.io/posts/another-test-post/</guid>
+      <description>&lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;&#xA;&lt;p&gt;==Look at this photo.==&#xA;&lt;em&gt;some other text here&lt;/em&gt;&#xA;&lt;strong&gt;nice&lt;/strong&gt;&#xA;!&lt;img src=&#34;https://risotto.joeroe.io/images/Pasted%20image%2020241208075521.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>another blog post</title>
       <link>https://risotto.joeroe.io/posts/another-blog-post/</link>
