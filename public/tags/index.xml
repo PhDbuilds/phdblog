@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on risotto demo</title>
-    <link>https://risotto.joeroe.io/tags/</link>
-    <description>Recent content in Tags on risotto demo</description>
+    <title>Tags on PhDbuilds.tech</title>
+    <link>https://phdbuilds.tech/tags/</link>
+    <description>Recent content in Tags on PhDbuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© [Logan Norris](https://phdbuilds.com)</copyright>
-    <atom:link href="https://risotto.joeroe.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
+    <atom:link href="https://phdbuilds.tech/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
