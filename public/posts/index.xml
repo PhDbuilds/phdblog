@@ -17,6 +17,13 @@
       <description>&lt;h2 id=&#34;hello-world&#34;&gt;Hello world&lt;/h2&gt;&#xA;&lt;p&gt;==Look at this photo.==&#xA;&lt;em&gt;some other text here&lt;/em&gt;&#xA;&lt;strong&gt;nice&lt;/strong&gt;&#xA;!&lt;img src=&#34;https://risotto.joeroe.io/images/Pasted%20image%2020241208075521.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>automated test</title>
+      <link>https://risotto.joeroe.io/posts/automated-test/</link>
+      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://risotto.joeroe.io/posts/automated-test/</guid>
+      <description>&lt;h2 id=&#34;testing-the-master-script&#34;&gt;testing the master script&lt;/h2&gt;&#xA;&lt;p&gt;hello, world&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>another blog post</title>
       <link>https://risotto.joeroe.io/posts/another-blog-post/</link>
       <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
