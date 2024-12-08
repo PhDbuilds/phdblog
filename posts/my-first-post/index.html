@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>My first post &ndash; PhDbuilds.tech</title>
+<meta name="description" content="A [hugo](https://gohugo.io) theme inspired by terminal ricing.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://phdbuilds.tech/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="https://phdbuilds.tech/css/risotto.css">
+<link rel="stylesheet" href="https://phdbuilds.tech/css/custom.css">
+
+
+
+
+
+
+
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="https://phdbuilds.tech/" class="page__logo-inner">PhDbuilds.tech</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="https://phdbuilds.tech/posts/" title="Posts">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>My first post</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="helloworld-">Hello,world 👋🏻🌎</h2>
+<p>This is going to be the place where I post all my tech projects and the things I learn along the way. When I think about how far I’ve come since November of 2022, it’s surprising to realize just how much has changed. Before then, I knew almost nothing about technology. Coming from a fitness enthusiast (aka gym bro) and undergrad biology student background (premed dropout), the only exposure I had to anything technical was some very basic concepts I learned from my genetics professor, who was a bioinformatics guy. Less than 2 years ago I didn’t know what DNS stood for, VLANs sounded like gibberish, and the idea of writing a basic for-loop might as well have been magic to me.</p>
+<p>Learning tech on my own has been a long, slow process, and I’ll admit there are times when I feel like I haven’t made any progress at all. But looking back, I can see how much I’ve accomplished in just two years. I’ve built a solid foundation in technology entirely on my own, diving into concepts and skills that once felt completely foreign to me. This blog is my way of documenting that journey. Not only will it help me see what I’ve learned over time, but it will also serve as a detailed record of my projects, my struggles, and the lessons I’ve picked up along the way. My hope is that this will not only help &ldquo;future me&rdquo; but also anyone else who stumbles across this site and is walking a similar path.</p>
+<p>Initially, I planned to create a site from scratch, but let’s face it—web development isn’t really my thing. I’ve always had an interest in all things cyber, but I find web development to be the least exciting part of tech. Creating a site from scratch caused just enough friction for me to <em>not</em> want to do it.</p>
+<p>Then, NetworkChuck posted a video about automating a blog with Obsidian. That video was a game-changer. Now, I can continue to take notes in Obsidian (where I already spend a lot of my time), run a simple script, and boom—my blog is updated. It only took about an hour to set up, and along the way, I learned some new technologies that were fun to implement.</p>
+<hr>
+<h3 id="my-workflow">My workflow</h3>
+<p>Here’s how it works:</p>
+<ol>
+<li>Create the blog post as a note in my Obsidian library.</li>
+<li>Add a custom front matter template and move the note to my <code>BLOG</code> directory.</li>
+<li>Run the script:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./updateblog.sh
+</span></span></code></pre></div><p>That&rsquo;s it!</p>
+<hr>
+<h3 id="how-it-works">How it works:</h3>
+<h4 id="what-you-need"><strong>What You Need:</strong></h4>
+<ul>
+<li><strong>Hugo</strong>: A static site generator that builds the site from your markdown files.</li>
+<li><strong>GitHub</strong>: For version control and hosting the site&rsquo;s repository.</li>
+<li><strong>Hostinger</strong>: A hosting platform where the site is deployed.</li>
+<li>A couple of simple scripts to automate the whole process.</li>
+</ul>
+<hr>
+<h4 id="behind-the-scenes">Behind the Scenes:</h4>
+<ol>
+<li><strong>Syncing your Obsidian notes</strong>: The script uses <code>rsync</code> to copy all the files from my Obsidian <code>BLOG</code> directory to the <code>content/posts</code> folder in Hugo. This makes sure that my Hugo content is always in sync with the notes that I create:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av --delete <span style="color:#f92672">{</span>SOURCE_PATH<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>DESTINATION_PATH<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>This command:</p>
+<ul>
+<li><code>-a</code> preserves the file attributes and directory structure</li>
+<li><code>-v</code> provides verbose output</li>
+<li><code>--delete</code> removes any files in the destination that are not is the source. This way it&rsquo;s a perfect mirror.</li>
+</ul>
+<ol start="2">
+<li>
+<p><strong>Handling images</strong>: A Python script (see below) processes any images that are referenced in my markdown files and copies them to where they need to be in the Hugo directory.
+!<img src="/images/Pasted%20image%2020241208085952.png" alt="Image Description"></p>
+</li>
+<li>
+<p><strong>Building the Hugo Site</strong>: Hugo builds the static site by generating HTML files from my markdown files.</p>
+</li>
+<li>
+<p><strong>Deploying to Github</strong>:</p>
+<ol>
+<li>All changes in the Hugo directory are added and pushed to the <code>main</code> branch in my Github repo.</li>
+<li>The <code>git subtree split</code> command creates a lightweight deployment branch (<code>hostiner-deploy</code>) containing only the <code>public/</code> directory. This branch is force pushed to the Hostinger hosting branch
+What is <code>git subtree split</code>? I&rsquo;m pretty new to <code>git</code> and development in general, so I was not familiar with this prior to this project. What this does is extracts a specific folder (in this case <code>public/</code>) into it&rsquo;s own separate branch. This way only the built site is deployed, and this keeps the repo organized.</li>
+</ol>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git subtree split --prefix public -b hostinger-deploy
+</span></span><span style="display:flex;"><span>git push origin hostinger-deploy:hostinger --force
+</span></span></code></pre></div><ol start="5">
+<li><strong>Webhooks for Deployment</strong>: Once the <code>hostinger</code> branch is updated, a webhook configured on Hostinger detects the change and pulls the updated branch from Github. The site it then redeployed automatically.
+What is a webhook? A webhook is a way for one system to send automated messages to another system when something happens. For this case, GitHub sends a signal to Hostinger when new changes are pushed to the <code>hostinger</code> branch, triggering Hostinger to pull the changes and redeploy the site.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>This workflow makes blogging so easy that I actually want to do it. Maintaining a separate website used to feel like too much effort, and there are countless ways to do it. But all of them added just enough friction for me to avoid it entirely.</p>
+<p>Now, I’m excited to share my projects and document my learning process here. I hope you enjoy following along as much as I enjoy creating these projects. 🚀🎸</p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    <img class="about__logo" src="https://phdbuilds.tech/images/rice.svg" alt="Logo">
+<h1 class="about__title">risotto</h1>
+<p class="about__description">A <a href="https://gohugo.io">hugo</a> theme inspired by terminal ricing.</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/phdbuilds" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:blnorris777@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://orcid.org/0000-0001-2345-6789" rel="me" aria-label="ORCID" title="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-12-08
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+    
+    
+      
+      
+          
+            
+            
+                <br/><span class="active">$ echo $LANG<br/><b></b></span><br/>
+
+            
+          
+      
+    
+</p>
+<br /><br />
+<p class="copyright">© <a href="https://phdbuilds.tech">Logan Norris</a></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
