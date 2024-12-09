@@ -68,3 +68,4 @@ git push origin hostinger-deploy:hostinger --force
 This workflow makes blogging so easy that I actually want to do it. Maintaining a separate website used to feel like too much effort, and there are countless ways to do it. But all of them added just enough friction for me to avoid it entirely.
 
 Now, I’m excited to share my projects and document my learning process here. I hope you enjoy following along as much as I enjoy creating these projects. 🚀🎸
+
