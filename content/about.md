@@ -34,7 +34,7 @@ So far this includes:
 My ultimate career goal is to specialize in offensive security and red teaming. I want to be on the front lines, testing and improving security systems by thinking like an attacker. I’m particularly interested in penetration testing, bug bounty hunting, and IoT security research.
 
 ## Outside of Tech
-When I’m not working on tech projects, I’m probably in the gym. With a background as a personal trainer, fitness has always been a big part of my life. I love weightlifting and pushing myself to improve, both physically and mentally. That same drive is what fuels my passion for learning and tackling challenges in the cybersecurity space.
+When I’m not working on tech projects, I’m probably in the gym. With a background as a personal trainer, fitness has always been a big part of my life. I love weightlifting and pushing myself to improve, both physically and mentally. That same drive is what fuels my passion for learning and tackling challenges in the cybersecurity space. If I'm not in the gym I am probably playing guitar or keyboard, as music is another passion of mine.
 
 ---
 
