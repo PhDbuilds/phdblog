@@ -13,11 +13,10 @@ Pwnagotchi is a fun tool for anyone into WiFi hacking. It's like a Tamagotchi, b
 **I chose this project for a few reasons:**
 - I like projects that I can build with my hands
 - I'm interested in Wi-Fi network hacking and have used tools like `Aircrack-ng` in the past. I thought this would be a good way to build on that knowledge
-- I'm pretty new to AI and different AI algorithms and such, and thought this would be a good way to go down this rabbit hole a bit. (Here)[https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752] is a good explanation of the Advantage-Actor-Critic (A2C) model that is being used in this project.
+- I'm pretty new to AI and different AI algorithms and such, and thought this would be a good way to go down this rabbit hole a bit. [Here](https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752) is a good explanation of the Advantage-Actor-Critic A2C) model that is being used in this project.
 
 !![Image Description](/images/Screenshot%202024-12-10%20at%207.07.05%20AM.png)
 
-Check out  https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/ for full details on the project and https://pwnagotchi.ai/installation/ for a tutorial on how to build it too.
 
 ## Planning and Prep
 ### Software and Hardware Requirements
@@ -53,5 +52,6 @@ https://github.com/jayofelony/pwnagotchi
 
 ### Code and Config
 ### References and Resources
+Check out  https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/ for full details on the project and https://pwnagotchi.ai/installation/ for a tutorial on how to build it too.
 
 ---
