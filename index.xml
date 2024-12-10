@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
-    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pwnagotchi part 2</title>
+      <link>https://phdbuilds.tech/posts/pwnagotchi-part-2---hardware-setup/</link>
+      <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/posts/pwnagotchi-part-2---hardware-setup/</guid>
+      <description>&lt;h2 id=&#34;set-up&#34;&gt;Set up&lt;/h2&gt;&#xA;&lt;h3 id=&#34;hardware&#34;&gt;Hardware&lt;/h3&gt;&#xA;&lt;p&gt;Here is the hardware that I used to create this project:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Waveshare 2.13 in E-ink Display&lt;/li&gt;&#xA;&lt;li&gt;Raspberry Pi Zero W&lt;/li&gt;&#xA;&lt;li&gt;PiSugar 3 Portable 1200 mAh Battery&lt;/li&gt;&#xA;&lt;li&gt;SanDisk 64GB Extreme&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-it-works&#34;&gt;How it works&lt;/h2&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020241209195647.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My new project</title>
       <link>https://phdbuilds.tech/posts/my-new-project/</link>
