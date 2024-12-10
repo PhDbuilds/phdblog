@@ -1,5 +1,5 @@
 ---
-title: pwnagotchi part 2
+title: pwnagotchi part 2 - Hardware Setup
 date: 2024-12-10
 time: 07:08
 draft: false
