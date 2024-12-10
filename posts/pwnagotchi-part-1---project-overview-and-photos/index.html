@@ -49,17 +49,49 @@
         <h1>pwnagotchi part 1 - Project Overview and Photos</h1>
     </header>
     <div class="content__body">
-        <h2 id="overview">Overview</h2>
+        <h2 id="what-is-pwnagotchi">What is pwnagotchi?</h2>
 <p><strong>Pwnagotchi: The Tamagotchi for WiFi Hackers</strong><br>
-Pwnagotchi is a fun tool for anyone into WiFi hacking. It&rsquo;s like a Tamagotchi, but instead of needing food and attention, it feeds on WiFi handshakes. Running on affordable hardware like a Raspberry Pi Zero W, Pwnagotchi <em>passively</em> captures WPA/WPA2 handshakes, helping you build wordlists for cracking networks. What makes it cool is that it learns and adapts, getting smarter as it goes. Even better, it interacts with other Pwnagotchis if they cross paths, sharing knowledge and growing together.</p>
+&ldquo;<a href="https://twitter.com/pwnagotchi">Pwnagotchi</a> is an <a href="https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752">A2C</a>-based “AI” powered by <a href="https://www.bettercap.org/">bettercap</a> that learns from its surrounding WiFi environment in order to maximize the <a href="https://pwnagotchi.ai/intro/#wifi-handshakes-101">crackable WPA key material it captures</a> (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by <a href="https://hashcat.net/hashcat/">hashcat</a>, including full and half WPA handshakes as well as <a href="https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/">PMKIDs</a>.&rdquo; (<a href="https://pwnagotchi.ai/intro/">https://pwnagotchi.ai/intro/</a>)</p>
+<p>Pwnagotchi is a fun tool for anyone into WiFi hacking. It&rsquo;s like a Tamagotchi, but instead of needing food and attention, it feeds on WiFi handshakes. Running on affordable hardware like a Raspberry Pi Zero W, Pwnagotchi <em>passively</em> (more on this later) captures WPA/WPA2 handshakes, helping you build wordlists for cracking networks. What makes it cool is that it learns and adapts, getting smarter as it goes. Even better, it interacts with other Pwnagotchis if they cross paths, sharing knowledge and growing together.</p>
+<p><strong>I chose this project for a few reasons:</strong></p>
+<ul>
+<li>I like projects that I can build with my hands</li>
+<li>I&rsquo;m interested in Wi-Fi network hacking and have used tools like <code>Aircrack-ng</code> in the past. I thought this would be a good way to build on that knowledge</li>
+<li>I&rsquo;m pretty new to AI and different AI algorithms and such, and thought this would be a good way to go down this rabbit hole a bit. (Here)[https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752] is a good explanation of the Advantage-Actor-Critic (A2C) model that is being used in this project.</li>
+</ul>
 <p>!<img src="/images/Screenshot%202024-12-10%20at%207.07.05%20AM.png" alt="Image Description"></p>
 <p>Check out  <a href="https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/">https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/</a> for full details on the project and <a href="https://pwnagotchi.ai/installation/">https://pwnagotchi.ai/installation/</a> for a tutorial on how to build it too.</p>
-<hr>
-<h2 id="photo-gallery">Photo Gallery</h2>
+<h2 id="planning-and-prep">Planning and Prep</h2>
+<h3 id="software-and-hardware-requirements">Software and Hardware Requirements</h3>
+<p>Here is the hardware that I used to create this project:</p>
+<ul>
+<li>Waveshare 2.13 in E-ink Display</li>
+<li>Raspberry Pi Zero W</li>
+<li>PiSugar 3 Portable 1200 mAh Battery</li>
+<li>SanDisk 64GB Extreme</li>
+<li>STL found at <a href="https://pwnagotchi.org/3d-printable-cases/index.html">https://pwnagotchi.org/3d-printable-cases/index.html</a>
+The software that I used was from the following:
+<a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a></li>
+</ul>
+<h3 id="initial-research">Initial Research</h3>
+<h2 id="setting-up-pwnagotchi">Setting up Pwnagotchi</h2>
+<h3 id="hardware-assembly">Hardware Assembly</h3>
+<h3 id="installing-the-firmware">Installing the Firmware</h3>
+<h3 id="network-setup">Network Setup</h3>
+<h2 id="pwnagotchi-in-action">Pwnagotchi in Action</h2>
+<h2 id="challenges-and-lessons-learned">Challenges and Lessons Learned</h2>
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+<h2 id="future-enhancements">Future Enhancements</h2>
+<h2 id="conclusion">Conclusion</h2>
+<h2 id="supporting-content">Supporting Content</h2>
+<h3 id="photo-gallery">Photo Gallery</h3>
 <p>!<img src="/images/Screenshot%202024-12-10%20at%207.23.47%20AM.png" alt="Image Description"></p>
 <p>!<img src="/images/Screenshot%202024-12-10%20at%207.07.31%20AM.png" alt="Image Description"></p>
 <p>!<img src="/images/Screenshot%202024-12-10%20at%207.24.14%20AM.png" alt="Image Description"></p>
 <p>!<img src="/images/Screenshot%202024-12-10%20at%207.24.37%20AM.png" alt="Image Description"></p>
+<h3 id="code-and-config">Code and Config</h3>
+<h3 id="references-and-resources">References and Resources</h3>
+<hr>
 
     </div>
     <footer class="content__footer"></footer>
