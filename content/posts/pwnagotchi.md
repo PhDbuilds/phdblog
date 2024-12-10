@@ -20,14 +20,16 @@ Pwnagotchi is a fun tool for anyone into WiFi hacking. It's like a Tamagotchi, b
 
 ## Planning and Prep
 ### Software and Hardware Requirements
-Here is the hardware that I used to create this project:
+
+**Here is the hardware that I used to create this project:**
 - Waveshare 2.13 in E-ink Display
 - Raspberry Pi Zero W
 - PiSugar 3 Portable 1200 mAh Battery
 - SanDisk 64GB Extreme
 - STL found at https://pwnagotchi.org/3d-printable-cases/index.html
-The software that I used was from the following:
-https://github.com/jayofelony/pwnagotchi
+
+**The software that I used was from the following:**
+- https://github.com/jayofelony/pwnagotchi
 ### Initial Research
 ## Setting up Pwnagotchi
 ### Hardware Assembly
