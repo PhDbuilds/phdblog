@@ -1,5 +1,5 @@
 ---
-title: pwnagotchi part 1 - Project Overview and Photos
+title: pwnagotchi
 date: 2024-12-09
 time: 07:26
 draft: false
@@ -34,6 +34,7 @@ https://github.com/jayofelony/pwnagotchi
 ### Hardware Assembly
 ### Installing the Firmware
 ### Network Setup
+!![Image Description](/images/Pasted%20image%2020241209195647.png)
 ## Pwnagotchi in Action
 ## Challenges and Lessons Learned
 ## Ethical Considerations
