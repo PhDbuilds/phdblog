@@ -132,7 +132,7 @@ Example - If a network consistently fails to yield handshakes, the LSTM learns t
 This was very straightforward so I will not go into a ton of detail here. First, the PiSugar 3 Portable 1200 mAh Battery is fixed to the back of the Raspberry Pi using the pogo connectors. This was super cool and the first time that I've used these before. Then, the Waveshare 2.13 in E-ink Display was connected through the GPIO pins on the front of the Raspberry Pi. I used a SanDisk 64GB Extreme microSD card, and I printed the case that I used. I have a FlashForge Adventurer Pro 4 3d printer that I used for this. 
 
 
-**IMPORTANT** -> That ribbon cable on the back of the screen is ultra sensitive and fragile. I accidentally barely nicked it when putting it in the case that I 3d printed, which has caused my display to look wonky. I've ordered a replacement because it's annoying to look at now and a constant reminder that I did not pay enough attention after I literally heard "because of hitting the ribbon cable on the back, it break easily" seconds before shoving it into the case....
+**IMPORTANT** -> That ribbon cable on the back of the screen is ultra sensitive and fragile. I accidentally barely nicked it when putting it in the case that I 3d printed, which has caused my display to look wonky. I've ordered a replacement because it's annoying to look at now and a constant reminder that I did not pay enough attention after I literally heard "beware of hitting the ribbon cable on the back, it break easily" seconds before shoving it into the case....
 
 !![Image Description](/images/Pasted%20image%2020241211144107.png)
 ### Installing the Firmware/OS
