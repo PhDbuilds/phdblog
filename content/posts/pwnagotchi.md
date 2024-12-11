@@ -129,13 +129,67 @@ Example - If a network consistently fails to yield handshakes, the LSTM learns t
 
 ## Setting up Pwnagotchi
 ### Hardware Assembly
-### Installing the Firmware
-### Network Setup
+This was very straightforward so I will not go into a ton of detail here. First, the PiSugar 3 Portable 1200 mAh Battery is fixed to the back of the Raspberry Pi using the pogo connectors. This was super cool and the first time that I've used these before. Then, the Waveshare 2.13 in E-ink Display was connected through the GPIO pins on the front of the Raspberry Pi. I used a SanDisk 64GB Extreme microSD card, and I printed the case that I used. I have a FlashForge Adventurer Pro 4 3d printer that I used for this. 
+
+
+**IMPORTANT** -> That ribbon cable on the back of the screen is ultra sensitive and fragile. I accidentally barely nicked it when putting it in the case that I 3d printed, which has caused my display to look wonky. I've ordered a replacement because it's annoying to look at now and a constant reminder that I did not pay enough attention after I literally heard "because of hitting the ribbon cable on the back, it break easily" seconds before shoving it into the case....
+
+!![Image Description](/images/Pasted%20image%2020241211144107.png)
+### Installing the Firmware/OS
+This was pretty simple and straight forward. I used https://github.com/jayofelony/pwnagotchi `Pwnagotchi 2.9.2` which was the latest release at the time of writing this. *If you are doing this on a Raspberry Pi Zero W, make sure you choose the 32-bit version.* This OS is based on RasPiOS. I used the Raspberry Pi Imager to flash the MicroSD card. Make sure if using the RPi Imager, you hit 'NO, CLEAR SETTINGS' when prompted to use your saved config. 
+### Network  and Other Config Setup 
+For the first time connecting to your pwnagotchi on Windows, you'll need to download and install the RNDIS driver found [here](https://github.com/jayofelony/pwnagotchi/wiki/mod-rndis-driver-windows.zip). After this was installed and my pwnagotchi was connected through it's data port (the middle one) to my PC, I had to go to my adapter settings in the Network and Internet Control Panel pane and choose the device named something like `USB Ethernet/RNDIS Gadget`. From here change the network properties to the following:
+```
+IP: 10.0.0.1
+Subnet: 255.255.255.0
+#LEAVE EVERYTHING ELSE BLANK
+```
+After this is done, you should be able to `ssh pi@10.0.0.2` and you will get the following setup wizard to continue with the configuration:
 !![Image Description](/images/Pasted%20image%2020241209195647.png)
+After this is done, in theory, you should be good to go to use it as a standalone device to get all the packets and everything that you are collecting, then you can plug it back into your PC, connect to it through SSH, and get all the data and whatnot that you collected with the pwnagotchi. This is where I am currently having trouble.
+
+- I have tried downloading the drivers again and finding my device within the Change Adapter Settings pane, but the device never shows up.
+- I have tried connecting to my macbook, with no luck. I am able to see it under network devices, however after changing the network settings to what is mentioned earlier, I am unable to SSH to `pi@10.0.0.2`
+- I have tried going through this in a Kali VM, using the Linux install script and making sure I have USB device set up properly to work with the VM. I used the `linux_connection_share.sh` script to set everything up with no luck. I am unable to ping the pwnagotchi or anything.
+
+Maybe I have the wrong driver or something? That doesn't make sense since it worked before but https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched may get this working
+[Here](https://pwnagotchi.org/getting-started/first-run-mac/index.html) is the guide that I'm following for getting it to work on mac -- will check back in afterwards because I did not set my DNS settings and router settings like this guide describes...
+
+
+
 ## Pwnagotchi in Action
+TBD...
 ## Challenges and Lessons Learned
+Very many...
 ## Ethical Considerations
+Insert 'This is for educational purposes only' disclamer here..
+
+But seriously, deauth attacks are illegal to perform on networks that you do not own/have permission to do this on.
+
+But as GotMyOrangeCrush put so well on a reddit post in reference to this, "Unless you deauth grandma's pacemaker or interfere with the navigation of nearby aircraft, you're unlikely to get a love letter from a three letter agency.
+
+Since I am currently writing a paper on the legal/ethics in cybersecurity for one of my college courses, I feel like it may actually benefit to go into this a little bit here.
+
+The FCC states under Section 333 of the Communications Act that sending these deauthentication or disassociation frames intentionally is considered a form of "Wi-Fi blocking" and therefore illegal. (FCC, 2015)
+
+What this act essentially states in relation to this is that it is illegal to interfere with or disrupt Wi-Fi by any means, which would include sending deauthentication packets. Sending these deauth packets are considered a form of jamming and are strictly prohibited, because they prevent users from accessing lawful communications services. 
+
+That being said, I believe these deauth packets are sent by default, so if you plan on having the pwnagotchi powered on when you are anywhere in reach of other networks, you should turn this feature off.
 ## Future Enhancements
+Things I would like to add:
+ - Encryption in case I lose it 
+ - I'd like to do some hardware upgrades like adding GPS and a high-gain antenna to this for wardriving
+	 - This would benefit from adding some 3rd party modules like `f0xtr0t` or `Wardriver` 
+- There are some cool 3rd party UI plug-ins I've been looking at. Some of interest include:
+	- memtemp-plus
+	- Pwnmenu
+	- Experience and Age Plugins
+	- Pisugar 3 plug to show battery information in the UI
+- Other 3rd party plugins I thought were interesting:
+	- handshakes-dl-hashie
+	- better_quickdic
+
+I've also been looking into `fancigotchi` which looks like it may be a cool rabbit trail to go down.
 ## Conclusion
 ## Supporting Content
 ### Photo Gallery
@@ -151,5 +205,15 @@ Example - If a network consistently fails to yield handshakes, the LSTM learns t
 ### Code and Config
 ### References and Resources
 Check out  https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/ for full details on the project and https://pwnagotchi.ai/installation/ for a tutorial on how to build it too.
+
+Other mentioned:
+https://github.com/V0r-T3x/Fancygotchi
+https://github.com/aluminum-ice/pwnagotchi/releases
+https://pwnagotchi.org/index.html
+https://github.com/jayofelony/pwnagotchi/wiki
+https://hackernoon.imgix.net/hn-images/1*JJ3Dx4O3blc_haCUjv5Y5A.jpeg
+
+Reference for FCC discussion:
+FCC. (2015). _FCC Enforcement Advisory: Communications Act Prohibition Against Jamming, Blocking, or Interfering with Wi-Fi and Other Communications Networks._ Federal Communications Commission. Retrieved from [https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html](https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html)
 
 ---
