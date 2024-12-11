@@ -189,13 +189,63 @@ $$A(s,a) = Q(s,a) - V(s)$$</li>
 <hr>
 <h2 id="setting-up-pwnagotchi">Setting up Pwnagotchi</h2>
 <h3 id="hardware-assembly">Hardware Assembly</h3>
-<h3 id="installing-the-firmware">Installing the Firmware</h3>
-<h3 id="network-setup">Network Setup</h3>
-<p>!<img src="/images/Pasted%20image%2020241209195647.png" alt="Image Description"></p>
+<p>This was very straightforward so I will not go into a ton of detail here. First, the PiSugar 3 Portable 1200 mAh Battery is fixed to the back of the Raspberry Pi using the pogo connectors. This was super cool and the first time that I&rsquo;ve used these before. Then, the Waveshare 2.13 in E-ink Display was connected through the GPIO pins on the front of the Raspberry Pi. I used a SanDisk 64GB Extreme microSD card, and I printed the case that I used. I have a FlashForge Adventurer Pro 4 3d printer that I used for this.</p>
+<p><strong>IMPORTANT</strong> -&gt; That ribbon cable on the back of the screen is ultra sensitive and fragile. I accidentally barely nicked it when putting it in the case that I 3d printed, which has caused my display to look wonky. I&rsquo;ve ordered a replacement because it&rsquo;s annoying to look at now and a constant reminder that I did not pay enough attention after I literally heard &ldquo;because of hitting the ribbon cable on the back, it break easily&rdquo; seconds before shoving it into the case&hellip;.</p>
+<p>!<img src="/images/Pasted%20image%2020241211144107.png" alt="Image Description"></p>
+<h3 id="installing-the-firmwareos">Installing the Firmware/OS</h3>
+<p>This was pretty simple and straight forward. I used <a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a> <code>Pwnagotchi 2.9.2</code> which was the latest release at the time of writing this. <em>If you are doing this on a Raspberry Pi Zero W, make sure you choose the 32-bit version.</em> This OS is based on RasPiOS. I used the Raspberry Pi Imager to flash the MicroSD card. Make sure if using the RPi Imager, you hit &lsquo;NO, CLEAR SETTINGS&rsquo; when prompted to use your saved config.</p>
+<h3 id="network--and-other-config-setup">Network  and Other Config Setup</h3>
+<p>For the first time connecting to your pwnagotchi on Windows, you&rsquo;ll need to download and install the RNDIS driver found <a href="https://github.com/jayofelony/pwnagotchi/wiki/mod-rndis-driver-windows.zip">here</a>. After this was installed and my pwnagotchi was connected through it&rsquo;s data port (the middle one) to my PC, I had to go to my adapter settings in the Network and Internet Control Panel pane and choose the device named something like <code>USB Ethernet/RNDIS Gadget</code>. From here change the network properties to the following:</p>
+<pre tabindex="0"><code>IP: 10.0.0.1
+Subnet: 255.255.255.0
+#LEAVE EVERYTHING ELSE BLANK
+</code></pre><p>After this is done, you should be able to <code>ssh pi@10.0.0.2</code> and you will get the following setup wizard to continue with the configuration:
+!<img src="/images/Pasted%20image%2020241209195647.png" alt="Image Description">
+After this is done, in theory, you should be good to go to use it as a standalone device to get all the packets and everything that you are collecting, then you can plug it back into your PC, connect to it through SSH, and get all the data and whatnot that you collected with the pwnagotchi. This is where I am currently having trouble.</p>
+<ul>
+<li>I have tried downloading the drivers again and finding my device within the Change Adapter Settings pane, but the device never shows up.</li>
+<li>I have tried connecting to my macbook, with no luck. I am able to see it under network devices, however after changing the network settings to what is mentioned earlier, I am unable to SSH to <code>pi@10.0.0.2</code></li>
+<li>I have tried going through this in a Kali VM, using the Linux install script and making sure I have USB device set up properly to work with the VM. I used the <code>linux_connection_share.sh</code> script to set everything up with no luck. I am unable to ping the pwnagotchi or anything.</li>
+</ul>
+<p>Maybe I have the wrong driver or something? That doesn&rsquo;t make sense since it worked before but <a href="https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched">https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched</a> may get this working
+<a href="https://pwnagotchi.org/getting-started/first-run-mac/index.html">Here</a> is the guide that I&rsquo;m following for getting it to work on mac &ndash; will check back in afterwards because I did not set my DNS settings and router settings like this guide describes&hellip;</p>
 <h2 id="pwnagotchi-in-action">Pwnagotchi in Action</h2>
+<p>TBD&hellip;</p>
 <h2 id="challenges-and-lessons-learned">Challenges and Lessons Learned</h2>
+<p>Very many&hellip;</p>
 <h2 id="ethical-considerations">Ethical Considerations</h2>
+<p>Insert &lsquo;This is for educational purposes only&rsquo; disclamer here..</p>
+<p>But seriously, deauth attacks are illegal to perform on networks that you do not own/have permission to do this on.</p>
+<p>But as GotMyOrangeCrush put so well on a reddit post in reference to this, &ldquo;Unless you deauth grandma&rsquo;s pacemaker or interfere with the navigation of nearby aircraft, you&rsquo;re unlikely to get a love letter from a three letter agency.</p>
+<p>Since I am currently writing a paper on the legal/ethics in cybersecurity for one of my college courses, I feel like it may actually benefit to go into this a little bit here.</p>
+<p>The FCC states under Section 333 of the Communications Act that sending these deauthentication or disassociation frames intentionally is considered a form of &ldquo;Wi-Fi blocking&rdquo; and therefore illegal. (FCC, 2015)</p>
+<p>What this act essentially states in relation to this is that it is illegal to interfere with or disrupt Wi-Fi by any means, which would include sending deauthentication packets. Sending these deauth packets are considered a form of jamming and are strictly prohibited, because they prevent users from accessing lawful communications services.</p>
+<p>That being said, I believe these deauth packets are sent by default, so if you plan on having the pwnagotchi powered on when you are anywhere in reach of other networks, you should turn this feature off.</p>
 <h2 id="future-enhancements">Future Enhancements</h2>
+<p>Things I would like to add:</p>
+<ul>
+<li>Encryption in case I lose it</li>
+<li>I&rsquo;d like to do some hardware upgrades like adding GPS and a high-gain antenna to this for wardriving
+<ul>
+<li>This would benefit from adding some 3rd party modules like <code>f0xtr0t</code> or <code>Wardriver</code></li>
+</ul>
+</li>
+<li>There are some cool 3rd party UI plug-ins I&rsquo;ve been looking at. Some of interest include:
+<ul>
+<li>memtemp-plus</li>
+<li>Pwnmenu</li>
+<li>Experience and Age Plugins</li>
+<li>Pisugar 3 plug to show battery information in the UI</li>
+</ul>
+</li>
+<li>Other 3rd party plugins I thought were interesting:
+<ul>
+<li>handshakes-dl-hashie</li>
+<li>better_quickdic</li>
+</ul>
+</li>
+</ul>
+<p>I&rsquo;ve also been looking into <code>fancigotchi</code> which looks like it may be a cool rabbit trail to go down.</p>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="supporting-content">Supporting Content</h2>
 <h3 id="photo-gallery">Photo Gallery</h3>
@@ -206,6 +256,14 @@ $$A(s,a) = Q(s,a) - V(s)$$</li>
 <h3 id="code-and-config">Code and Config</h3>
 <h3 id="references-and-resources">References and Resources</h3>
 <p>Check out  <a href="https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/">https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/</a> for full details on the project and <a href="https://pwnagotchi.ai/installation/">https://pwnagotchi.ai/installation/</a> for a tutorial on how to build it too.</p>
+<p>Other mentioned:
+<a href="https://github.com/V0r-T3x/Fancygotchi">https://github.com/V0r-T3x/Fancygotchi</a>
+<a href="https://github.com/aluminum-ice/pwnagotchi/releases">https://github.com/aluminum-ice/pwnagotchi/releases</a>
+<a href="https://pwnagotchi.org/index.html">https://pwnagotchi.org/index.html</a>
+<a href="https://github.com/jayofelony/pwnagotchi/wiki">https://github.com/jayofelony/pwnagotchi/wiki</a>
+<a href="https://hackernoon.imgix.net/hn-images/1">https://hackernoon.imgix.net/hn-images/1</a>*JJ3Dx4O3blc_haCUjv5Y5A.jpeg</p>
+<p>Reference for FCC discussion:
+FCC. (2015). <em>FCC Enforcement Advisory: Communications Act Prohibition Against Jamming, Blocking, or Interfering with Wi-Fi and Other Communications Networks.</em> Federal Communications Commission. Retrieved from <a href="https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html">https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html</a></p>
 <hr>
 
     </div>
