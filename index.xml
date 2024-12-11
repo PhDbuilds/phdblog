@@ -7,15 +7,8 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
-    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>New project</title>
-      <link>https://phdbuilds.tech/posts/new-project/</link>
-      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/posts/new-project/</guid>
-      <description>&lt;h2 id=&#34;hello&#34;&gt;hello&lt;/h2&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020241211113938.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;anothre post here&lt;/p&gt;</description>
-    </item>
     <item>
       <title>pwnagotchi</title>
       <link>https://phdbuilds.tech/posts/pwnagotchi/</link>
