@@ -76,10 +76,12 @@
 </ul>
 <h3 id="initial-research">Initial Research</h3>
 <p>To be honest, I did not know a whole lot about this device before looking into it. I knew it was a cool little hacking device with a face on it sort of like the Flipper Zero that I have, but I really liked the idea of building something like that for myself. I had a bit of knowledge about WPA/WPA2 protocols from my CompTIA studies and the WiFi Hacking course that I took a while back, but other than that I went into this kind of blind. After digging into the docs and looking into some of the technologies it uses, here are some keys things I learned</p>
+<h4 id="bettercap">Bettercap</h4>
+<p>This is a framework written in Go that is essentially the Swiss-army knife of WiFi, BLE, and other wireless attacks. Key features we are using include - WiFi scanning, deauth, clientless PMKID association attack, and automatic WPA/WPA2 client handshake capture</p>
 <h4 id="a2c-in-the-pwnagotchi">A2C in the pwnagotchi</h4>
 <p>In reinforcement learning, an <em>agent</em> moves through <em>states</em> in an environment by taking <em>actions</em>, all the while trying to maximize <em>rewards</em> throughout the process. The goal is to teach the agent a policy: a strategy to decide the best action in any given situation (state). For the pwnagotchi, these <em>states</em> are things like the signal strength of the AP, the number of visible devices, the frequency channel being monitored, and the WiFi packets. After the <em>agent</em> (pwnagotchi) takes in those states, it will generate <em>2 outputs</em>:</p>
 <ul>
-<li><strong>Critic</strong>: The first output, the <em>state value</em> V(S)V(S), is an estimate of how many rewards it can get from that point onwards. This is an estimate of the expected cumulative reward starting from the current state.</li>
+<li><strong>Critic</strong>: The first output, the <em>state value</em> $V(S)$, is an estimate of how many rewards it can get from that point onwards. This is an estimate of the expected cumulative reward starting from the current state.</li>
 <li><strong>Actor</strong>: The second output, known as <em>the policy</em> is a recommendation of what action it should take. This is the probability distribution over actions. It doesn&rsquo;t directly pick an action but gives a set of probabilities, and the action is sampled based on those probabilities.</li>
 </ul>
 <p><strong>Just remember:</strong></p>
@@ -104,7 +106,7 @@
 <ul>
 <li>The Actor-Critic Framework in Pwnagotchi:
 <ul>
-<li>Actor (Policy): The pwnagotchi&rsquo;s decision-making strategy. &ldquo;If I see network A with signal strength xx, target it with action yy&rdquo;</li>
+<li>Actor (Policy): The pwnagotchi&rsquo;s decision-making strategy. &ldquo;If I see network A with signal strength $x$, target it with action $y$&rdquo;</li>
 <li>The Actor outputs probabilities for different actions given the current state</li>
 <li>Critic (Value Function): This estimates how &ldquo;good&rdquo; the current WiFi environment is.</li>
 <li>The <strong>Advantage Function</strong> helps guide the pwnagotchi by evaluating whether a specific action in the current state led to a <em>better</em> or <em>worse</em> result than expected.</li>
@@ -176,7 +178,7 @@ $$A(s,a) = Q(s,a) - V(s)$$</li>
 <li>The A2C algorithm explored above needs a clear understanding of the current state and how it evolves over time. The MLP and the LSTM provide this understanding.</li>
 </ul>
 <hr>
-<h4 id="tldr">TLDR;</h4>
+<h4 id="tldr">TL;DR</h4>
 <ol>
 <li>The pwnagotchi scans for WiFi networks and collects raw data</li>
 <li>The raw data is processed by the MLP into a compact representation (features)</li>

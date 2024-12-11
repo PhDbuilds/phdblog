@@ -34,11 +34,14 @@ Pwnagotchi is a fun tool for anyone into WiFi hacking. It's like a Tamagotchi, b
 
 To be honest, I did not know a whole lot about this device before looking into it. I knew it was a cool little hacking device with a face on it sort of like the Flipper Zero that I have, but I really liked the idea of building something like that for myself. I had a bit of knowledge about WPA/WPA2 protocols from my CompTIA studies and the WiFi Hacking course that I took a while back, but other than that I went into this kind of blind. After digging into the docs and looking into some of the technologies it uses, here are some keys things I learned
 
+#### Bettercap
+This is a framework written in Go that is essentially the Swiss-army knife of WiFi, BLE, and other wireless attacks. Key features we are using include - WiFi scanning, deauth, clientless PMKID association attack, and automatic WPA/WPA2 client handshake capture
+
 #### A2C in the pwnagotchi
 
 In reinforcement learning, an _agent_ moves through _states_ in an environment by taking _actions_, all the while trying to maximize _rewards_ throughout the process. The goal is to teach the agent a policy: a strategy to decide the best action in any given situation (state). For the pwnagotchi, these _states_ are things like the signal strength of the AP, the number of visible devices, the frequency channel being monitored, and the WiFi packets. After the _agent_ (pwnagotchi) takes in those states, it will generate _2 outputs_:
 
-- **Critic**: The first output, the _state value_ V(S)V(S), is an estimate of how many rewards it can get from that point onwards. This is an estimate of the expected cumulative reward starting from the current state.
+- **Critic**: The first output, the _state value_ $V(S)$, is an estimate of how many rewards it can get from that point onwards. This is an estimate of the expected cumulative reward starting from the current state.
 - **Actor**: The second output, known as _the policy_ is a recommendation of what action it should take. This is the probability distribution over actions. It doesn't directly pick an action but gives a set of probabilities, and the action is sampled based on those probabilities.
 
 **Just remember:**
@@ -59,10 +62,10 @@ The main thing to remember here is the environment is _very_ dynamic. WiFi netwo
 Recap:
 
 - The Actor-Critic Framework in Pwnagotchi:
-    - Actor (Policy): The pwnagotchi's decision-making strategy. "If I see network A with signal strength xx, target it with action yy"
+    - Actor (Policy): The pwnagotchi's decision-making strategy. "If I see network A with signal strength $x$, target it with action $y$"
     - The Actor outputs probabilities for different actions given the current state
     - Critic (Value Function): This estimates how "good" the current WiFi environment is.
-    - The **Advantage Function** helps guide the pwnagotchi by evaluating whether a specific action in the current state led to a _better_ or _worse_ result than expected.
+	- The **Advantage Function** helps guide the pwnagotchi by evaluating whether a specific action in the current state led to a _better_ or _worse_ result than expected.
 - Rewards in pwnagotchi:
     - Positive reward: capturing a handshake
     - Negative reward: spending energy without success, waiting too long, or targeting low-value networks
@@ -115,7 +118,7 @@ Example - If a network consistently fails to yield handshakes, the LSTM learns t
 
 ---
 
-#### TLDR;
+#### TL;DR
 
 1. The pwnagotchi scans for WiFi networks and collects raw data
 2. The raw data is processed by the MLP into a compact representation (features)
