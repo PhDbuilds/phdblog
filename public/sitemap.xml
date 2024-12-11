@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://phdbuilds.tech/posts/new-project/</loc>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://phdbuilds.tech/</loc>
-    <lastmod>2024-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://phdbuilds.tech/posts/</loc>
-    <lastmod>2024-12-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://phdbuilds.tech/posts/pwnagotchi/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
