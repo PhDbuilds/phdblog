@@ -17,14 +17,14 @@
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;I love learning from educational podcasts, but there’s a constant struggle: I don’t have enough time to listen to them as often as I’d like. While driving to the mountains one day with my wife, We were listening to an Andrew Huberman episode—my favorite show and the core inspiration behind this project—and I thought, “I’m gaining so many actionable insights here. It would be great if I could consume more of these, more often.” Since I can’t magically create extra hours in my day, the next best thing is to find a way to absorb the most crucial information more efficiently.. While I do believe that long-form consumption is the best way to do most things, there are times where you just really don&amp;rsquo;t have the time to do so. An example of this would be reading the Spark Notes version of a book or watching a Youtube summarization of the core concepts in a book. While this is very beneficial at times and you can still learn from it, I do not think it is a replacement for reading the actual book. I believe there is something that happens in our brain when we have to go through the whole experience of reading the book that does not take place when we just extract the main concepts from it. However, like I said, we do not always have the time to do this, hence the birth of this project.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>pwnagotchi</title>
-      <link>https://phdbuilds.tech/posts/pwnagotchi/</link>
+      <title>Hacking WiFi with pwnagotchi</title>
+      <link>https://phdbuilds.tech/posts/hacking-wifi-with-pwnagotchi/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/posts/pwnagotchi/</guid>
+      <guid>https://phdbuilds.tech/posts/hacking-wifi-with-pwnagotchi/</guid>
       <description>&lt;h2 id=&#34;what-is-pwnagotchi&#34;&gt;What is pwnagotchi?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Pwnagotchi: The Tamagotchi for WiFi Hackers&lt;/strong&gt;&lt;br&gt;&#xA;&amp;ldquo;&lt;a href=&#34;https://twitter.com/pwnagotchi&#34;&gt;Pwnagotchi&lt;/a&gt; is an &lt;a href=&#34;https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752&#34;&gt;A2C&lt;/a&gt;-based “AI” powered by &lt;a href=&#34;https://www.bettercap.org/&#34;&gt;bettercap&lt;/a&gt; that learns from its surrounding WiFi environment in order to maximize the &lt;a href=&#34;https://pwnagotchi.ai/intro/#wifi-handshakes-101&#34;&gt;crackable WPA key material it captures&lt;/a&gt; (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by &lt;a href=&#34;https://hashcat.net/hashcat/&#34;&gt;hashcat&lt;/a&gt;, including full and half WPA handshakes as well as &lt;a href=&#34;https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/&#34;&gt;PMKIDs&lt;/a&gt;.&amp;rdquo; (&lt;a href=&#34;https://pwnagotchi.ai/intro/&#34;&gt;https://pwnagotchi.ai/intro/&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My first post</title>
+      <title>Hello, World- My first post</title>
       <link>https://phdbuilds.tech/posts/my-first-post/</link>
       <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://phdbuilds.tech/posts/my-first-post/</guid>
