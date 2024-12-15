@@ -8,5 +8,19 @@
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
     <atom:link href="https://phdbuilds.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Habits</title>
+      <link>https://phdbuilds.tech/tags/habits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/tags/habits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NoteTaking</title>
+      <link>https://phdbuilds.tech/tags/notetaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/tags/notetaking/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
