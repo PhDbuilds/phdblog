@@ -17,7 +17,7 @@ Overall, I really enjoyed reading this and am actively trying to apply many of t
 
 ## What, if anything, can I apply to my own life from this book??
 - Every time you take a note ask myself -- "How can I make this as useful as possible for my future self?"
-- Maintain a list of a dozen or so open questions -- This is one of my favorite things and I have been doing this for a while, even before reading this book. Here is what world famous theoretical pysicist said about this:
+- Maintain a list of a dozen or so open questions -- This is one of my favorite things and I have been doing this for a while, even before reading this book. Here is what world famous theoretical pysicist Richard Feynman said about this:
 > “You have to keep a dozen of your favorite problems constantly present in your mind, although by and large they will lay in a dormant state. Every time you hear or read a new trick or a new result, test it against each of your twelve problems to see whether it helps. Every once in a while there will be a hit, and people will say, “How did he do it? He must be a genius!”
 
 Note Capture Criteria:
