@@ -155,10 +155,18 @@ After this is done, in theory, you should be good to go to use it as a standalon
 Maybe I have the wrong driver or something? That doesn't make sense since it worked before but https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched may get this working
 [Here](https://pwnagotchi.org/getting-started/first-run-mac/index.html) is the guide that I'm following for getting it to work on mac -- will check back in afterwards because I did not set my DNS settings and router settings like this guide describes...
 
+UPDATE -> It was the freaking USB cable..
+
+After using the correct cable.. I was able to pass the USB connection through to my Kali Linux machine. After that, to get Internet on the pwnagotchi, I ran the following:
+!![Image Description](/images/Pasted%20image%2020241214121457.png)
+
+This script just allows the pwnagotchi to share my Kali Linux VM's Internet connection. The script can be found [here](https://raw.githubusercontent.com/jayofelony/pwnagotchi/master/scripts/linux_connection_share.sh>).
+
 
 
 ## Pwnagotchi in Action
-TBD...
+
+!![Image Description](/images/Pasted%20image%2020241214092600.png)
 ## Challenges and Lessons Learned
 Very many...
 ## Ethical Considerations

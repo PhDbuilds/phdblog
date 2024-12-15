@@ -37,6 +37,8 @@
     
     <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/about/" title="">About</a></li>
     
+    <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/lib/" title="My Bookshelf">My Bookshelf</a></li>
+    
     <li class="main-nav__item"><a class="nav-main-item active" href="https://phdbuilds.tech/posts/" title="Posts">Posts</a></li>
     
     </ul>
@@ -209,8 +211,12 @@ After this is done, in theory, you should be good to go to use it as a standalon
 </ul>
 <p>Maybe I have the wrong driver or something? That doesn&rsquo;t make sense since it worked before but <a href="https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched">https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched</a> may get this working
 <a href="https://pwnagotchi.org/getting-started/first-run-mac/index.html">Here</a> is the guide that I&rsquo;m following for getting it to work on mac &ndash; will check back in afterwards because I did not set my DNS settings and router settings like this guide describes&hellip;</p>
+<p>UPDATE -&gt; It was the freaking USB cable..</p>
+<p>After using the correct cable.. I was able to pass the USB connection through to my Kali Linux machine. After that, to get Internet on the pwnagotchi, I ran the following:
+!<img src="/images/Pasted%20image%2020241214121457.png" alt="Image Description"></p>
+<p>This script just allows the pwnagotchi to share my Kali Linux VM&rsquo;s Internet connection. The script can be found <a href="https://raw.githubusercontent.com/jayofelony/pwnagotchi/master/scripts/linux_connection_share.sh%3E">here</a>.</p>
 <h2 id="pwnagotchi-in-action">Pwnagotchi in Action</h2>
-<p>TBD&hellip;</p>
+<p>!<img src="/images/Pasted%20image%2020241214092600.png" alt="Image Description"></p>
 <h2 id="challenges-and-lessons-learned">Challenges and Lessons Learned</h2>
 <p>Very many&hellip;</p>
 <h2 id="ethical-considerations">Ethical Considerations</h2>
@@ -317,6 +323,8 @@ FCC. (2015). <em>FCC Enforcement Advisory: Communications Act Prohibition Agains
     
     
     
+    
+      
     
       
     
