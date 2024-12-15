@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>How I Used AI to Summarize Long-Form Podcasts into Daily Takeaways &ndash; PhDbuilds.tech</title>
+<meta name="description" content="A [hugo](https://gohugo.io) theme inspired by terminal ricing.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://phdbuilds.tech/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="https://phdbuilds.tech/css/risotto.css">
+<link rel="stylesheet" href="https://phdbuilds.tech/css/custom.css">
+
+
+
+
+
+
+
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="https://phdbuilds.tech/" class="page__logo-inner">PhDbuilds.tech</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/lib/" title="lib">lib</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="https://phdbuilds.tech/posts/" title="Posts">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>How I Used AI to Summarize Long-Form Podcasts into Daily Takeaways</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="overview">Overview</h2>
+<p>I love learning from educational podcasts, but there’s a constant struggle: I don’t have enough time to listen to them as often as I’d like. While driving to the mountains one day with my wife, We were listening to an Andrew Huberman episode—my favorite show and the core inspiration behind this project—and I thought, “I’m gaining so many actionable insights here. It would be great if I could consume more of these, more often.” Since I can’t magically create extra hours in my day, the next best thing is to find a way to absorb the most crucial information more efficiently.. While I do believe that long-form consumption is the best way to do most things, there are times where you just really don&rsquo;t have the time to do so. An example of this would be reading the Spark Notes version of a book or watching a Youtube summarization of the core concepts in a book. While this is very beneficial at times and you can still learn from it, I do not think it is a replacement for reading the actual book. I believe there is something that happens in our brain when we have to go through the whole experience of reading the book that does not take place when we just extract the main concepts from it. However, like I said, we do not always have the time to do this, hence the birth of this project.</p>
+<h2 id="what-problem-is-it-solving">What problem is it solving?</h2>
+<p>The main issue that this is solving is the issue of not having the time to consume the beneficial and actionable knowledge that educational podcasts give us. For example, Huberman Labs releases one podcast, every Monday, that usually spans the duration of ~3 hours. I <em>may</em> have 15 free minutes a day that I am not doing something that would give me time to listen to this. Breaking a 3 hour long podcast into 15-minute bytes just does not seem like the way that I would want to consume this type of information. What this more so turns into is binge listening to his podcasts when on a trip or something, and then just missing dozens of hours of these podcasts until I have another trip or something like that where I have time to listen to it again.
+TL;DR: I want to listen to education podcasts to learn real-life things that I can apply to my daily life, but I do not have the time to do this.</p>
+<h2 id="what-does-it-do">What does it do?</h2>
+<p>Here is the gist of what this does:</p>
+<ol>
+<li><strong>Check for new content:</strong> The script looks at a specified YouTube channel to see if there’s a new podcast/video.
+<ul>
+<li>If yes, it grabs that new video.</li>
+<li>If no, it picks a previously released one (but still one you haven’t processed before).</li>
+</ul>
+</li>
+<li><strong>Avoid duplicates:</strong> It checks all previously processed videos and skips any you’ve already worked with.</li>
+<li><strong>AI-powered digestion:</strong> Using Fabric—a tool that transcribes and summarizes long-form content—the script processes the entire video. It pulls out the actionable insights, habits, facts, and key recommendations, then compiles them into a structured, easy-to-read page in your notes.</li>
+<li><strong>Daily notes update:</strong> Finally, a “Daily Prophet” page in your Obsidian setup updates automatically to include these new insights right at the top, ensuring the freshest material is always front and center.</li>
+</ol>
+<h2 id="how-it-looks">How it Looks</h2>
+<p>I have a pinned page in my notes titled &ldquo;The Daily Prophet&rdquo; that, in source view, just consists of the following:
+!<img src="/images/Pasted%20image%2020241215152041.png" alt="Image Description">
+When I switch over to Reading mode however, I see the following:</p>
+<p>!<img src="/images/Pasted%20image%2020241215151801.png" alt="Image Description"></p>
+<p>Selecting one of these generated notes shows the embedded YouTube video at the top, allowing me to watch or listen alongside the summarized notes. This way, even if I’m short on time, I can quickly review the main points first and then dive deeper into the full episode if I choose.</p>
+<p>!<img src="/images/Pasted%20image%2020241215151844.png" alt="Image Description"></p>
+<p>Each note includes several thoughtfully organized sections—like Summary, Ideas, Insights, Quotes, Habits, and more—making it easy to skim for what matters most. It’s not meant to replace the original content entirely, but rather to serve as a helpful guide or refresher that saves me time and helps me stay on top of valuable information I’d otherwise miss.</p>
+<p>!<img src="/images/Pasted%20image%2020241215151929.png" alt="Image Description"></p>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>Here is the flow the program works in.</p>
+<h3 id="scripts-overview">Scripts Overview</h3>
+<ul>
+<li><strong>main.py</strong>: This script coordinates the entire workflow. It picks a new video, runs Fabric, and then writes the processed insights into a Markdown file.</li>
+<li><strong>youtube_url.py</strong>: This module handles retrieving recent videos from a specified YouTube channel using the YouTube Data API. It also ensures you don’t process the same video twice.</li>
+</ul>
+<p>Note - before you run these scripts, note that you’ll need:</p>
+<ul>
+<li>A valid YouTube Data API key.</li>
+<li>The channel ID of the YouTube channel you’re targeting.</li>
+<li>A configured path to your Obsidian notes.</li>
+</ul>
+<h3 id="breakdown">Breakdown</h3>
+<h4 id="1-get-the-url">1. Get the URL</h4>
+<p>The process starts by looking up a YouTube channel for either a brand-new podcast or one you haven’t processed before. Once it finds a suitable video, it pulls its URL and checks against a file of previously used links to avoid duplicates. If it’s already been summarized, the code moves on until it finds something fresh.</p>
+<p>From <code>main.py</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Step 1: Get a new or unused YouTube video URL</span>
+</span></span><span style="display:flex;"><span>    latest_video, video_title <span style="color:#f92672">=</span> get_random_video()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    video_id <span style="color:#f92672">=</span> latest_video<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;=&#39;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    sanitized_title <span style="color:#f92672">=</span> sanitize_filename(video_title)
+</span></span><span style="display:flex;"><span>    today_date <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>today()<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>NOTES_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">{</span>sanitized_title<span style="color:#e6db74">}</span><span style="color:#e6db74">.md&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    iframe_code <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/</span><span style="color:#e6db74">{</span>video_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span>
+</span></span></code></pre></div><p>From <code>youtube_url.py</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_random_video</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Find a random video that hasn&#39;t been used, with minimized API calls.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    used_urls <span style="color:#f92672">=</span> get_used_urls()
+</span></span><span style="display:flex;"><span>    all_videos <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Fetch and store videos from multiple pages, if needed</span>
+</span></span><span style="display:flex;"><span>    page_token <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> len(all_videos) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">50</span>:  <span style="color:#75715e"># Limit to prevent too many requests</span>
+</span></span><span style="display:flex;"><span>        video_info <span style="color:#f92672">=</span> fetch_videos(page_token)
+</span></span><span style="display:flex;"><span>        videos <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            (
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;https://www.youtube.com/watch?v=</span><span style="color:#e6db74">{</span>item[<span style="color:#e6db74">&#39;id&#39;</span>][<span style="color:#e6db74">&#39;videoId&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>                item[<span style="color:#e6db74">&#39;snippet&#39;</span>][<span style="color:#e6db74">&#39;title&#39;</span>]
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> video_info<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;items&#34;</span>, [])
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;videoId&#34;</span> <span style="color:#f92672">in</span> item[<span style="color:#e6db74">&#34;id&#34;</span>]
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>        all_videos<span style="color:#f92672">.</span>extend(videos)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Check if there’s another page available</span>
+</span></span><span style="display:flex;"><span>        page_token <span style="color:#f92672">=</span> video_info<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;nextPageToken&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> page_token:  <span style="color:#75715e"># Stop if no more pages</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Shuffle videos to pick a random one</span>
+</span></span><span style="display:flex;"><span>    random<span style="color:#f92672">.</span>shuffle(all_videos)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Look for a new video in the cache</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> video_url, video_title <span style="color:#f92672">in</span> all_videos:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> video_url <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> used_urls:
+</span></span><span style="display:flex;"><span>            add_url_to_used(video_url)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> video_url, video_title
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If no new videos found after checking all, return None or a message</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>, <span style="color:#e6db74">&#34;No new videos available.&#34;</span>
+</span></span></code></pre></div><h4 id="2-run-the-extractiondigest">2. Run the extraction/digest</h4>
+<p>The heart of the script is this following line. This is what is doing all of the work and all of the thinking. This open-source tool, Fabric, was created by Daniel Miessler, and is amazing and I use it for so many of my projects. <a href="https://github.com/danielmiessler/fabric">Here</a> is a link to it if you are interested, and I would highly recommend you checking it out.
+The quick and dirty summary of this tool, as quoted from the  the README.md of this repo, is that:</p>
+<ul>
+<li><code>fabric</code> is an open-source framework for augmenting humans using AI.</li>
+<li>Since the start of 2023 and GenAI we&rsquo;ve seen a massive number of AI applications for accomplishing tasks. It&rsquo;s powerful, but <em>it&rsquo;s not easy to integrate this functionality into our lives.</em></li>
+<li>In other words, AI doesn&rsquo;t have a capabilities problem—it has an <em>integration</em> problem.</li>
+<li>Fabric was created to address this by enabling everyone to granularly apply AI to everyday challenges.</li>
+</ul>
+<p>Here is what the command that this script is using looks like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    command <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;fabric -y </span><span style="color:#e6db74">{</span>latest_video<span style="color:#e6db74">}</span><span style="color:#e6db74"> -p extract_wisdom&#34;</span>
+</span></span></code></pre></div><p>Here is what this is doing in a nutshell:</p>
+<ol>
+<li>Fabric grabs the URL from the video we found earlier</li>
+<li>It transcribes it</li>
+<li>An AI model of your choosing, ChatGPT-4o in my case, is primed with a pattern that you specify. This pattern shown above it called <code>extract_wisdon</code>. What this does is primes the AI model with a set of instructions on how to handle the input that is coming, in this case, the youtube transcription. Check out what that pattern actually looks like <a href="https://github.com/danielmiessler/fabric/tree/main/patterns/extract_wisdom">here</a>. I created a few custom ones when building this project, but none of them came out as good as this one, so I just went ahead and used this default pattern included with Fabric.</li>
+<li>The transcription is sent through the primed AI model and Fabric outputs the response.</li>
+</ol>
+<h4 id="3-save-the-output-to-my-obsidian-notes">3. Save the output to my Obsidian notes</h4>
+<p>A new file is created and formatted. To summarize this here, there are 3 things being written to this newly created file:</p>
+<ol>
+<li>The YAML front matter that has the date included. This is so that my Dataview table will always show the most recent at the top.</li>
+<li>The Youtube video is embedded at the top as seen earlier</li>
+<li>The output that was just created by Fabric is saved after that</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(file_name, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;---</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">date: </span><span style="color:#e6db74">{</span>today_date<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">---</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>iframe_code<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(result<span style="color:#f92672">.</span>stdout<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>))
+</span></span></code></pre></div><p>And that&rsquo;s it! Now I have all of the most useful information and actionable insights from the podcasts that I enjoy to listen to, and it is condensed into a 5-10 minute read, which is much more doable in my current schedule than listening to the upwards of 3-hour long podcast.</p>
+<h2 id="future-improvements">Future Improvements</h2>
+<ul>
+<li><strong>Refactoring and Code Cleanup:</strong>   This project was actually built a several months ago, and while it works, there are plenty of opportunities for cleaner, more efficient code. Revisiting the logic and structure could make it more elegant and easier for others to understand or build upon.
+<ul>
+<li>Note -&gt; while a few months ago doesn&rsquo;t seem that long ago, I didn&rsquo;t pick up Python programming until June of this year (2024), so a few months ago is a world of difference here</li>
+</ul>
+</li>
+<li><strong>Automated Scheduling:</strong>   Instead of manually running <code>python3 main.py</code>, this entire process could be automated. Setting up a daily cron job, <code>systemd</code> timer, or <code>launchd</code> job would allow the script to run at regular intervals without any manual intervention. I&rsquo;ve tested this a bit with a few of these methods and just haven&rsquo;t found a good way to do this yet. The main issue here was that I used to store these notes in my iCloud library, which made running a Linux job to do this difficult with it&rsquo;s lack of integration with iCloud (in terms of mounting the directory at least). Now I use Obsidian SYNC, so I may revisit this soon for a good solution.</li>
+<li><strong>Scalable Data Storage:</strong>   Currently, used URLs are tracked in a text file. Migrating this data to a SQLite database (or similar) would be a more scalable and maintainable approach as the project grows.</li>
+</ul>
+<h2 id="supporting-documentation">Supporting Documentation</h2>
+<h3 id="references">References:</h3>
+<ul>
+<li><a href="https://github.com/danielmiessler/fabric">https://github.com/danielmiessler/fabric</a></li>
+<li><a href="https://www.youtube.com/@hubermanlab">https://www.youtube.com/@hubermanlab</a></li>
+</ul>
+<h3 id="scripts">Scripts</h3>
+<h4 id="mainpy">main.py</h4>
+<p>Key points:</p>
+<ul>
+<li>Fetches a fresh video and title.</li>
+<li>Sanitizes the title for safe file naming.</li>
+<li>Uses Fabric to transcribe and summarize the video according to the <code>extract_wisdom</code> pattern.</li>
+<li>Creates a Markdown file with the current date, the embedded video, and the AI-generated insights.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> youtube_url <span style="color:#f92672">import</span> get_random_video
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> subprocess
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NOTES_PATH <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{PATH/TO/YOUR/NOTES}&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sanitize_filename</span>(filename):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Replace any invalid filename characters with underscores to ensure the file name is safe.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;[</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">/*?:&#34;&lt;&gt;|]&#39;</span>, <span style="color:#e6db74">&#34;_&#34;</span>, filename)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Step 1: Retrieve a random or unused YouTube video URL and its title</span>
+</span></span><span style="display:flex;"><span>    latest_video, video_title <span style="color:#f92672">=</span> get_random_video()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Extract the video ID by splitting the URL at &#39;=&#39; and taking the last part</span>
+</span></span><span style="display:flex;"><span>    video_id <span style="color:#f92672">=</span> latest_video<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;=&#39;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sanitize the video title so it can be used as a safe filename</span>
+</span></span><span style="display:flex;"><span>    sanitized_title <span style="color:#f92672">=</span> sanitize_filename(video_title)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Get today&#39;s date in the format YYYY-MM-DD</span>
+</span></span><span style="display:flex;"><span>    today_date <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>today()<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Set the output markdown file path using the sanitized title</span>
+</span></span><span style="display:flex;"><span>    file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>NOTES_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">{</span>sanitized_title<span style="color:#e6db74">}</span><span style="color:#e6db74">.md&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create an iframe embed code for the YouTube video using the extracted video ID</span>
+</span></span><span style="display:flex;"><span>    iframe_code <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/</span><span style="color:#e6db74">{</span>video_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Command to run an external process (fabric) to extract &#34;wisdom&#34; from the video</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># `-y` it used to transcribe the Youtube video and `-p` specifies which Fabric pattern you are wanting to use</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># `extract_wisdom` is the pattern specified. This is a default pattern included in Fabric</span>
+</span></span><span style="display:flex;"><span>    command <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;fabric -y </span><span style="color:#e6db74">{</span>latest_video<span style="color:#e6db74">}</span><span style="color:#e6db74"> -p extract_wisdom&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Execute the external command with `subprocess.run()`</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># `check=True` will raise CalledProcessError if the command fails</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># `stdout` and `stderr` are captured for further processing</span>
+</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> subprocess<span style="color:#f92672">.</span>run(
+</span></span><span style="display:flex;"><span>            command,
+</span></span><span style="display:flex;"><span>            shell<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>            check<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>            stdout<span style="color:#f92672">=</span>subprocess<span style="color:#f92672">.</span>PIPE,
+</span></span><span style="display:flex;"><span>            stderr<span style="color:#f92672">=</span>subprocess<span style="color:#f92672">.</span>PIPE,
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Open the markdown file and write the date, iframe, and the extracted wisdom</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(file_name, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Write metadata (date) as front matter in YAML format</span>
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;---</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">date: </span><span style="color:#e6db74">{</span>today_date<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">---</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Write the iframe code for the video</span>
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>iframe_code<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Write the output from the subprocess (decoded from bytes to UTF-8 string)</span>
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(result<span style="color:#f92672">.</span>stdout<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Print a success message if everything went fine</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Output successfully written to </span><span style="color:#e6db74">{</span>file_name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> subprocess<span style="color:#f92672">.</span>CalledProcessError <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># If there&#39;s an error running the external command, print the error message</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error executing command: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Also print the standard error output for debugging</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Standard error: </span><span style="color:#e6db74">{</span>e<span style="color:#f92672">.</span>stderr<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#39;utf-8&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div><h4 id="youtube_urlpy">youtube_url.py</h4>
+<p>Key points:</p>
+<ul>
+<li>Uses the YouTube Data API to fetch videos from a channel.</li>
+<li>Checks against a <code>used_urls.txt</code> file to avoid repeats.</li>
+<li>Returns a fresh, unused video URL and title.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> random
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># API key for accessing the YouTube Data API.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note: This is just an example key, it might need to be replaced with a valid one.</span>
+</span></span><span style="display:flex;"><span>API_KEY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{INSERT API KEY}&#34;</span>
+</span></span><span style="display:flex;"><span>HMAN_CHANNEL_ID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{CHANNEL ID}&#34;</span>  <span style="color:#75715e"># Channel ID for the target YouTube channel, which is Huberman Labs in this case</span>
+</span></span><span style="display:flex;"><span>USED_URLS_FILE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;used_urls.txt&#34;</span>  <span style="color:#75715e"># File to keep track of which videos have been used</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_used_urls</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Read the file containing previously used video URLs and return them as a set for quick lookups.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(USED_URLS_FILE):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># If the file doesn&#39;t exist yet, return an empty set.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> set()
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Open and read each line, stripping whitespace. Store these URLs in a set.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(USED_URLS_FILE, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> set(line<span style="color:#f92672">.</span>strip() <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> file <span style="color:#66d9ef">if</span> line<span style="color:#f92672">.</span>strip())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_url_to_used</span>(video_url):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Append a newly used video URL to the used_urls.txt file so it won&#39;t be selected again.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(USED_URLS_FILE, <span style="color:#e6db74">&#34;a&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>        file<span style="color:#f92672">.</span>write(video_url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_videos</span>(page_token<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Fetch a batch of videos from the YouTube channel using the YouTube Data API.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - page_token (optional): A token that allows pagination through multiple pages of results.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Construct the URL for the YouTube API request.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - key: our API_KEY</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - channelId: The target channel we want videos from</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - part=snippet,id: We want snippet and id information about the videos</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - order=date: Sort videos by their upload date</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - maxResults=5: Get 5 results per request</span>
+</span></span><span style="display:flex;"><span>    url <span style="color:#f92672">=</span> (
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;https://www.googleapis.com/youtube/v3/search?key=</span><span style="color:#e6db74">{</span>API_KEY<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&amp;channelId=</span><span style="color:#e6db74">{</span>HMAN_CHANNEL_ID<span style="color:#e6db74">}</span><span style="color:#e6db74">&amp;part=snippet,id&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&amp;order=date&amp;maxResults=5&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If a page_token is provided, append it to fetch the next page of results.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> page_token:
+</span></span><span style="display:flex;"><span>        url <span style="color:#f92672">+=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&amp;pageToken=</span><span style="color:#e6db74">{</span>page_token<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Raise an HTTPError if the request was unsuccessful.</span>
+</span></span><span style="display:flex;"><span>    response<span style="color:#f92672">.</span>raise_for_status()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> response<span style="color:#f92672">.</span>json()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_random_video</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Return a random unused video from the channel.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Minimizes API calls by caching multiple results and only making more requests if needed.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    used_urls <span style="color:#f92672">=</span> get_used_urls()  <span style="color:#75715e"># Get all previously used URLs</span>
+</span></span><span style="display:flex;"><span>    all_videos <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    page_token <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Loop until we have fetched a good number of videos (50 as a limit here)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># or run out of pages.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> len(all_videos) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">50</span>:
+</span></span><span style="display:flex;"><span>        video_info <span style="color:#f92672">=</span> fetch_videos(page_token)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Extract video URL and title for items that are actual videos</span>
+</span></span><span style="display:flex;"><span>        videos <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            (
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;https://www.youtube.com/watch?v=</span><span style="color:#e6db74">{</span>item[<span style="color:#e6db74">&#39;id&#39;</span>][<span style="color:#e6db74">&#39;videoId&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>                item[<span style="color:#e6db74">&#39;snippet&#39;</span>][<span style="color:#e6db74">&#39;title&#39;</span>]
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> video_info<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;items&#34;</span>, [])
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;videoId&#34;</span> <span style="color:#f92672">in</span> item[<span style="color:#e6db74">&#34;id&#34;</span>]  <span style="color:#75715e"># Ensure the item is indeed a video.</span>
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>        all_videos<span style="color:#f92672">.</span>extend(videos)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Check if there is another page of results.</span>
+</span></span><span style="display:flex;"><span>        page_token <span style="color:#f92672">=</span> video_info<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;nextPageToken&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> page_token:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># If no more pages, stop fetching further.</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Shuffle the videos so we randomly select one each time.</span>
+</span></span><span style="display:flex;"><span>    random<span style="color:#f92672">.</span>shuffle(all_videos)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Select the first video that isn&#39;t already in the used list.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> video_url, video_title <span style="color:#f92672">in</span> all_videos:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> video_url <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> used_urls:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Mark this video as used so it&#39;s not chosen again.</span>
+</span></span><span style="display:flex;"><span>            add_url_to_used(video_url)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> video_url, video_title
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If no new video is found, return None and a message.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>, <span style="color:#e6db74">&#34;No new videos available.&#34;</span>
+</span></span></code></pre></div>
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    <img class="about__logo" src="https://phdbuilds.tech/images/rice.svg" alt="Logo">
+<h1 class="about__title">risotto</h1>
+<p class="about__description">A <a href="https://gohugo.io">hugo</a> theme inspired by terminal ricing.</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/phdbuilds" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:blnorris777@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://orcid.org/0000-0001-2345-6789" rel="me" aria-label="ORCID" title="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-12-15
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      
+          
+            
+            
+                <br/><span class="active">$ echo $LANG<br/><b></b></span><br/>
+
+            
+          
+      
+    
+</p>
+<br /><br />
+<p class="copyright">© <a href="https://phdbuilds.tech">Logan Norris</a></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
