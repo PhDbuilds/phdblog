@@ -1,7 +1,7 @@
 ---
-title: "The Art of Invisibility
+title: "The Art of Invisibility"
 date: "2024-11-25"
-author: Kevin Mitnick
+author: "Kevin Mitnick"
 ---
 ## What are the main takeaways of the book?
 In a world of everything being digitized, everything is becoming less and less private. Companies give us the illusion of privacy, but if they have our data, we can almost certainly expect they will either sell it or lose it. Apps like Gmail and other mainstream email/media sell your data and will release it if asked. There are more security-centered solutions out there but they are likely paid services. 
@@ -72,6 +72,3 @@ There were quite a few guides on what to do to actually become somewhat digitall
     - **How to Apply**: Audit your social media privacy settings, restrict profile visibility to friends only, and avoid tagging locations in real time.
 - **Use a Burner Phone or Secondary Email for Registrations**: Sign up for services using temporary emails (e.g., **Guerrilla Mail**) or virtual phone numbers (e.g., **Google Voice**).
     - **How to Apply**: Use the burner services whenever signing up for websites or apps that don't require long-term use.
-## Chapter Breakdown
-[[The Art of Invisibility Sparknotes]]
-
