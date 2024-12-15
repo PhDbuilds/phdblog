@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>Hacking WiFi with pwnagotchi &ndash; PhDbuilds.tech</title>
+<meta name="description" content="A [hugo](https://gohugo.io) theme inspired by terminal ricing.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://phdbuilds.tech/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="https://phdbuilds.tech/css/risotto.css">
+<link rel="stylesheet" href="https://phdbuilds.tech/css/custom.css">
+
+
+
+
+
+
+
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="https://phdbuilds.tech/" class="page__logo-inner">PhDbuilds.tech</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/lib/" title="lib">lib</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="https://phdbuilds.tech/posts/" title="Posts">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Hacking WiFi with pwnagotchi</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="what-is-pwnagotchi">What is pwnagotchi?</h2>
+<p><strong>Pwnagotchi: The Tamagotchi for WiFi Hackers</strong><br>
+&ldquo;<a href="https://twitter.com/pwnagotchi">Pwnagotchi</a> is an <a href="https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752">A2C</a>-based “AI” powered by <a href="https://www.bettercap.org/">bettercap</a> that learns from its surrounding WiFi environment in order to maximize the <a href="https://pwnagotchi.ai/intro/#wifi-handshakes-101">crackable WPA key material it captures</a> (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by <a href="https://hashcat.net/hashcat/">hashcat</a>, including full and half WPA handshakes as well as <a href="https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/">PMKIDs</a>.&rdquo; (<a href="https://pwnagotchi.ai/intro/">https://pwnagotchi.ai/intro/</a>)</p>
+<p>Pwnagotchi is a fun tool for anyone into WiFi hacking. It&rsquo;s like a Tamagotchi, but instead of needing food and attention, it feeds on WiFi handshakes. Running on affordable hardware like a Raspberry Pi Zero W, Pwnagotchi <em>passively</em> (more on this later) captures WPA/WPA2 handshakes, helping you build wordlists for cracking networks. What makes it cool is that it learns and adapts, getting smarter as it goes. Even better, it interacts with other Pwnagotchis if they cross paths, sharing knowledge and growing together.</p>
+<p><strong>I chose this project for a few reasons:</strong></p>
+<ul>
+<li>I like projects that I can build with my hands</li>
+<li>I&rsquo;m interested in Wi-Fi network hacking and have used tools like <code>Aircrack-ng</code> in the past. I thought this would be a good way to build on that knowledge</li>
+<li>I&rsquo;m pretty new to AI and different AI algorithms and such, and thought this would be a good way to go down this rabbit hole a bit. <a href="https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752">Here</a> is a good explanation of the Advantage-Actor-Critic A2C) model that is being used in this project.</li>
+</ul>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.07.05%20AM.png" alt="Image Description"></p>
+<h2 id="planning-and-prep">Planning and Prep</h2>
+<h3 id="software-and-hardware-requirements">Software and Hardware Requirements</h3>
+<p><strong>Here is the hardware that I used to create this project:</strong></p>
+<ul>
+<li>Waveshare 2.13 in E-ink Display</li>
+<li>Raspberry Pi Zero W</li>
+<li>PiSugar 3 Portable 1200 mAh Battery</li>
+<li>SanDisk 64GB Extreme</li>
+<li>STL found at <a href="https://pwnagotchi.org/3d-printable-cases/index.html">https://pwnagotchi.org/3d-printable-cases/index.html</a></li>
+</ul>
+<p><strong>The software that I used was from the following:</strong></p>
+<ul>
+<li><a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a></li>
+</ul>
+<h3 id="initial-research">Initial Research</h3>
+<p>To be honest, I did not know a whole lot about this device before looking into it. I knew it was a cool little hacking device with a face on it sort of like the Flipper Zero that I have, but I really liked the idea of building something like that for myself. I had a bit of knowledge about WPA/WPA2 protocols from my CompTIA studies and the WiFi Hacking course that I took a while back, but other than that I went into this kind of blind. After digging into the docs and looking into some of the technologies it uses, here are some keys things I learned</p>
+<h4 id="bettercap">Bettercap</h4>
+<p>This is a framework written in Go that is essentially the Swiss-army knife of WiFi, BLE, and other wireless attacks. Key features we are using include - WiFi scanning, deauth, clientless PMKID association attack, and automatic WPA/WPA2 client handshake capture</p>
+<h4 id="a2c-in-the-pwnagotchi">A2C in the pwnagotchi</h4>
+<p>In reinforcement learning, an <em>agent</em> moves through <em>states</em> in an environment by taking <em>actions</em>, all the while trying to maximize <em>rewards</em> throughout the process. The goal is to teach the agent a policy: a strategy to decide the best action in any given situation (state). For the pwnagotchi, these <em>states</em> are things like the signal strength of the AP, the number of visible devices, the frequency channel being monitored, and the WiFi packets. After the <em>agent</em> (pwnagotchi) takes in those states, it will generate <em>2 outputs</em>:</p>
+<ul>
+<li><strong>Critic</strong>: The first output, the <em>state value</em> $V(S)$, is an estimate of how many rewards it can get from that point onwards. This is an estimate of the expected cumulative reward starting from the current state.</li>
+<li><strong>Actor</strong>: The second output, known as <em>the policy</em> is a recommendation of what action it should take. This is the probability distribution over actions. It doesn&rsquo;t directly pick an action but gives a set of probabilities, and the action is sampled based on those probabilities.</li>
+</ul>
+<p><strong>Just remember:</strong></p>
+<ul>
+<li>The actor tries to maximize rewards by improving its policy</li>
+<li>The critic helps guide the actor by telling it how good or bad its actions were</li>
+<li>To train the actor, we need to know how much better or worse an action was compared to what we expected.</li>
+</ul>
+<p>The pwnagotchi interacts with the WiFi environment by scanning for nearby WiFi environments, deciding whether to target a specific network or wait, and trying to capture WPA/WPA2 handshakes by listening to or actively de-authenticating clients from networks. <em>It&rsquo;s main goal is to maximize the number of successful handshakes it collects over time while minimizing wasted energy or detection risk</em></p>
+<ul>
+<li>State ($s$): The current Wi-Fi environment</li>
+<li>Action ($a$): What the pwnagotchi chooses to do (target a network, wait, etc.)</li>
+<li>Reward ($r$): Feedback based on the success of its action
+<ul>
+<li>Postitive - captured a handshake</li>
+<li>Negative - Failed to capture a handshake or wasted time</li>
+</ul>
+</li>
+</ul>
+<p>The main thing to remember here is the environment is <em>very</em> dynamic. WiFi networks come and go, signal strength fluctuates, and human activity affects availability. The pwnagotchi must be able to adapt to this.</p>
+<p>Recap:</p>
+<ul>
+<li>The Actor-Critic Framework in Pwnagotchi:
+<ul>
+<li>Actor (Policy): The pwnagotchi&rsquo;s decision-making strategy. &ldquo;If I see network A with signal strength $x$, target it with action $y$&rdquo;</li>
+<li>The Actor outputs probabilities for different actions given the current state</li>
+<li>Critic (Value Function): This estimates how &ldquo;good&rdquo; the current WiFi environment is.</li>
+<li>The <strong>Advantage Function</strong> helps guide the pwnagotchi by evaluating whether a specific action in the current state led to a <em>better</em> or <em>worse</em> result than expected.</li>
+</ul>
+</li>
+<li>Rewards in pwnagotchi:
+<ul>
+<li>Positive reward: capturing a handshake</li>
+<li>Negative reward: spending energy without success, waiting too long, or targeting low-value networks</li>
+</ul>
+</li>
+<li>Parallelism in pwnagotchi:
+<ul>
+<li>It can operate in different locations or scenarios over time. Each new environment contributes data that helps refine this policy. This is even more so if you are connected to the pwnagotchi community network, where even more data can be shared amongst each other.</li>
+</ul>
+</li>
+<li>Learning over time:
+<ul>
+<li>At first, the pwnagotchi is going to do some random stuff and explore different strategies for targeting networks</li>
+<li>Over time it learns what works and what doesn&rsquo;t, and even more so refines on what really works as a high-reward action</li>
+<li>It adapts its behavior if the environment changes (fewer networks, encryption types, etc.). It adjusts this behavior based on past experiences.</li>
+</ul>
+</li>
+</ul>
+<h4 id="how-does-it-work">How does it work?</h4>
+<p>Pwnagotchi is using an <code>LSTM with MLP feature extractor</code> as its policy network for the <code>A2C agent</code> that it is using. Let&rsquo;s break that down.</p>
+<h5 id="a2c">A2C</h5>
+<ul>
+<li><strong>Policy gradient</strong> - These are a way of teaching an agent to learn directly how to choose actions. They mathematically compute how to adjust the policy based on feedback. The main idea is this &ndash; If an action gives a high reward, make it more likely in the future</li>
+<li><strong>Value Functions</strong> - These help evaluate how good states and actions are, improving decision-making. Here is an analogy that helped me understand this:
+<ul>
+<li>Let&rsquo;s say you are trying to decide whether to attend a party:
+<ul>
+<li>State Value $V(S)$  - Your estimate of how much fun the party will be overall, like &ldquo;I think this party will be a 7/10 overall&rdquo;</li>
+<li>Action Value $Q(s,a)$ - Your estimate of how much fun the party will be depending on specific actions you take. For example, if I talk to new people it will be a 9/10, if I sit in the corner on my phone it will be a 5/10.</li>
+</ul>
+</li>
+<li>The Advantage Function compares the action value to the state value:
+$$A(s,a) = Q(s,a) - V(s)$$</li>
+<li>It answers: &ldquo;How much better or worse is this action compared to just being in this state&rdquo;</li>
+</ul>
+</li>
+<li><strong>Gradient-based Optimization</strong> - This is how we adjust the policy and value estimates using <em>gradients</em>. Here is the analogy that helped me understand this:
+<ul>
+<li>Imagine you are walking around blind on the side of a mountain trying to find the peak:
+<ul>
+<li>You feel around to estimate if the ground is sloping up or down</li>
+<li>If it&rsquo;s up, you walk that way (this is the gradient)</li>
+<li>Repeat until you are at the top</li>
+</ul>
+</li>
+<li>A &ldquo;loss function&rdquo; tells us how far we are from the goal (the peak here)</li>
+<li>Gradients tell us the direction to step to reduce the loss.</li>
+</ul>
+</li>
+</ul>
+<h5 id="lstm-with-mlp-feature-extractor">LSTM with MLP feature extractor</h5>
+<h6 id="lstm">LSTM</h6>
+<p>Regular neural networks process inputs independently, and they are not very good at understanding sequences or context. For the pwnagotchi, WiFi networks appear, disappear, or change over time, and capturing handshakes depend not only on the current environment, but also on previous actions and observations. A standard neural network would not handle this very well. Long Short-Term Memory (LSTM) is a type of Recurrent Neural Network that is made to handle this type of stuff. It keeps track of this type of information over time by maintaining a memory. Imagine you are trying to follow a treasure map. It may depend on previous steps, such as &ldquo;Turn left at the second tree&rdquo;. This type of instruction would only make sense if you remember where the first tree was. This is where LSTMs help out. This relates to the pwnagotchi because it needs to remember patterns like &ldquo;how often is a network active&rdquo; or &ldquo;how does the client activity fluctuate&rdquo; or &ldquo;what were the results of the previous actions&rdquo;</p>
+<h6 id="mlp-feature-extractor">MLP Feature Extractor</h6>
+<p>Multi-Layer Perception can be thought of like a filter that processes messy junk input data into information that is useful. Remember, data and information are not the same thing. The input data may be something like raw Wifi data like signals and encryption types, and the output may be a decision or feature like &ldquo;This network is likely to have an active client&rdquo;</p>
+<h6 id="using-them-together">Using them together</h6>
+<p>The MLP processes the junk data into something meaningful, and then that useful information is used by the LSTM to maintain a memory of past actions, observations, and rewards to make better decisions.</p>
+<p>Example - If a network consistently fails to yield handshakes, the LSTM learns to deprioritize it. If a pattern emerges (11am has more active clients), the LSTM remembers and exploits it.</p>
+<p><strong>Why combine them?</strong></p>
+<ul>
+<li>WiFi networks are <em>sequential</em></li>
+<li>Raw WiFi data is <em>complex</em></li>
+<li>The A2C algorithm explored above needs a clear understanding of the current state and how it evolves over time. The MLP and the LSTM provide this understanding.</li>
+</ul>
+<hr>
+<h4 id="tldr">TL;DR</h4>
+<ol>
+<li>The pwnagotchi scans for WiFi networks and collects raw data</li>
+<li>The raw data is processed by the MLP into a compact representation (features)</li>
+<li>The LSTM takes these features over time, maintains a memory of past observations and actions, and outputs a state representation</li>
+<li>Reinforcement Learning (A2C) uses the processed data to decide which network to target and whether to wait, move, de-auth, etc.</li>
+<li>The rewards from those actions help refine both the LSTM and MLP over time</li>
+</ol>
+<hr>
+<h2 id="setting-up-pwnagotchi">Setting up Pwnagotchi</h2>
+<h3 id="hardware-assembly">Hardware Assembly</h3>
+<p>This was very straightforward so I will not go into a ton of detail here. First, the PiSugar 3 Portable 1200 mAh Battery is fixed to the back of the Raspberry Pi using the pogo connectors. This was super cool and the first time that I&rsquo;ve used these before. Then, the Waveshare 2.13 in E-ink Display was connected through the GPIO pins on the front of the Raspberry Pi. I used a SanDisk 64GB Extreme microSD card, and I printed the case that I used. I have a FlashForge Adventurer Pro 4 3d printer that I used for this.</p>
+<p><strong>IMPORTANT</strong> -&gt; That ribbon cable on the back of the screen is ultra sensitive and fragile. I accidentally barely nicked it when putting it in the case that I 3d printed, which has caused my display to look wonky. I&rsquo;ve ordered a replacement because it&rsquo;s annoying to look at now and a constant reminder that I did not pay enough attention after I literally heard &ldquo;beware of hitting the ribbon cable on the back, it break easily&rdquo; seconds before shoving it into the case&hellip;.</p>
+<p>!<img src="/images/Pasted%20image%2020241211144107.png" alt="Image Description"></p>
+<h3 id="installing-the-firmwareos">Installing the Firmware/OS</h3>
+<p>This was pretty simple and straight forward. I used <a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a> <code>Pwnagotchi 2.9.2</code> which was the latest release at the time of writing this. <em>If you are doing this on a Raspberry Pi Zero W, make sure you choose the 32-bit version.</em> This OS is based on RasPiOS. I used the Raspberry Pi Imager to flash the MicroSD card. Make sure if using the RPi Imager, you hit &lsquo;NO, CLEAR SETTINGS&rsquo; when prompted to use your saved config.</p>
+<h3 id="network--and-other-config-setup">Network  and Other Config Setup</h3>
+<p>For the first time connecting to your pwnagotchi on Windows, you&rsquo;ll need to download and install the RNDIS driver found <a href="https://github.com/jayofelony/pwnagotchi/wiki/mod-rndis-driver-windows.zip">here</a>. After this was installed and my pwnagotchi was connected through it&rsquo;s data port (the middle one) to my PC, I had to go to my adapter settings in the Network and Internet Control Panel pane and choose the device named something like <code>USB Ethernet/RNDIS Gadget</code>. From here change the network properties to the following:</p>
+<pre tabindex="0"><code>IP: 10.0.0.1
+Subnet: 255.255.255.0
+#LEAVE EVERYTHING ELSE BLANK
+</code></pre><p>After this is done, you should be able to <code>ssh pi@10.0.0.2</code> and you will get the following setup wizard to continue with the configuration:
+!<img src="/images/Pasted%20image%2020241209195647.png" alt="Image Description">
+After this is done, in theory, you should be good to go to use it as a standalone device to get all the packets and everything that you are collecting, then you can plug it back into your PC, connect to it through SSH, and get all the data and whatnot that you collected with the pwnagotchi. This is where I am currently having trouble.</p>
+<ul>
+<li>I have tried downloading the drivers again and finding my device within the Change Adapter Settings pane, but the device never shows up.</li>
+<li>I have tried connecting to my macbook, with no luck. I am able to see it under network devices, however after changing the network settings to what is mentioned earlier, I am unable to SSH to <code>pi@10.0.0.2</code></li>
+<li>I have tried going through this in a Kali VM, using the Linux install script and making sure I have USB device set up properly to work with the VM. I used the <code>linux_connection_share.sh</code> script to set everything up with no luck. I am unable to ping the pwnagotchi or anything.</li>
+</ul>
+<p>Maybe I have the wrong driver or something? That doesn&rsquo;t make sense since it worked before but <a href="https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched">https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched</a> may get this working
+<a href="https://pwnagotchi.org/getting-started/first-run-mac/index.html">Here</a> is the guide that I&rsquo;m following for getting it to work on mac &ndash; will check back in afterwards because I did not set my DNS settings and router settings like this guide describes&hellip;</p>
+<p>UPDATE -&gt; It was the freaking USB cable..</p>
+<p>After using the correct cable.. I was able to pass the USB connection through to my Kali Linux machine. After that, to get Internet on the pwnagotchi, I ran the following:
+!<img src="/images/Pasted%20image%2020241214121457.png" alt="Image Description"></p>
+<p>This script just allows the pwnagotchi to share my Kali Linux VM&rsquo;s Internet connection. The script can be found <a href="https://raw.githubusercontent.com/jayofelony/pwnagotchi/master/scripts/linux_connection_share.sh%3E">here</a>.</p>
+<h2 id="pwnagotchi-in-action">Pwnagotchi in Action</h2>
+<p>==COMING SOON==</p>
+<p>!<img src="/images/Pasted%20image%2020241214092600.png" alt="Image Description"></p>
+<h2 id="challenges-and-lessons-learned">Challenges and Lessons Learned</h2>
+<p>==COMING SOON==
+Very many&hellip;</p>
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+<p>Insert &lsquo;This is for educational purposes only&rsquo; disclamer here..</p>
+<p>But seriously, deauth attacks are illegal to perform on networks that you do not own/have permission to do this on.</p>
+<p>But as GotMyOrangeCrush put so well on a reddit post in reference to this, &ldquo;Unless you deauth grandma&rsquo;s pacemaker or interfere with the navigation of nearby aircraft, you&rsquo;re unlikely to get a love letter from a three letter agency.</p>
+<p>Since I am currently writing a paper on the legal/ethics in cybersecurity for one of my college courses, I feel like it may actually benefit to go into this a little bit here.</p>
+<p>The FCC states under Section 333 of the Communications Act that sending these deauthentication or disassociation frames intentionally is considered a form of &ldquo;Wi-Fi blocking&rdquo; and therefore illegal. (FCC, 2015)</p>
+<p>What this act essentially states in relation to this is that it is illegal to interfere with or disrupt Wi-Fi by any means, which would include sending deauthentication packets. Sending these deauth packets are considered a form of jamming and are strictly prohibited, because they prevent users from accessing lawful communications services.</p>
+<p>That being said, I believe these deauth packets are sent by default, so if you plan on having the pwnagotchi powered on when you are anywhere in reach of other networks, you should turn this feature off.</p>
+<h2 id="future-enhancements">Future Enhancements</h2>
+<p>Things I would like to add:</p>
+<ul>
+<li>Encryption in case I lose it</li>
+<li>I&rsquo;d like to do some hardware upgrades like adding GPS and a high-gain antenna to this for wardriving
+<ul>
+<li>This would benefit from adding some 3rd party modules like <code>f0xtr0t</code> or <code>Wardriver</code></li>
+</ul>
+</li>
+<li>There are some cool 3rd party UI plug-ins I&rsquo;ve been looking at. Some of interest include:
+<ul>
+<li>memtemp-plus</li>
+<li>Pwnmenu</li>
+<li>Experience and Age Plugins</li>
+<li>Pisugar 3 plug to show battery information in the UI</li>
+</ul>
+</li>
+<li>Other 3rd party plugins I thought were interesting:
+<ul>
+<li>handshakes-dl-hashie</li>
+<li>better_quickdic</li>
+</ul>
+</li>
+</ul>
+<p>I&rsquo;ve also been looking into <code>fancigotchi</code> which looks like it may be a cool rabbit trail to go down.</p>
+<h2 id="conclusion">Conclusion</h2>
+<h2 id="supporting-content">Supporting Content</h2>
+<h3 id="photo-gallery">Photo Gallery</h3>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.23.47%20AM.png" alt="Image Description"></p>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.07.31%20AM.png" alt="Image Description"></p>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.24.14%20AM.png" alt="Image Description"></p>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.24.37%20AM.png" alt="Image Description"></p>
+<h3 id="code-and-config">Code and Config</h3>
+<h3 id="references-and-resources">References and Resources</h3>
+<p>Check out  <a href="https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/">https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/</a> for full details on the project and <a href="https://pwnagotchi.ai/installation/">https://pwnagotchi.ai/installation/</a> for a tutorial on how to build it too.</p>
+<p>Other mentioned:
+<a href="https://github.com/V0r-T3x/Fancygotchi">https://github.com/V0r-T3x/Fancygotchi</a>
+<a href="https://github.com/aluminum-ice/pwnagotchi/releases">https://github.com/aluminum-ice/pwnagotchi/releases</a>
+<a href="https://pwnagotchi.org/index.html">https://pwnagotchi.org/index.html</a>
+<a href="https://github.com/jayofelony/pwnagotchi/wiki">https://github.com/jayofelony/pwnagotchi/wiki</a>
+<a href="https://hackernoon.imgix.net/hn-images/1">https://hackernoon.imgix.net/hn-images/1</a>*JJ3Dx4O3blc_haCUjv5Y5A.jpeg</p>
+<p>Reference for FCC discussion:
+FCC. (2015). <em>FCC Enforcement Advisory: Communications Act Prohibition Against Jamming, Blocking, or Interfering with Wi-Fi and Other Communications Networks.</em> Federal Communications Commission. Retrieved from <a href="https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html">https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html</a></p>
+<hr>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    <img class="about__logo" src="https://phdbuilds.tech/images/rice.svg" alt="Logo">
+<h1 class="about__title">risotto</h1>
+<p class="about__description">A <a href="https://gohugo.io">hugo</a> theme inspired by terminal ricing.</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/phdbuilds" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:blnorris777@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://orcid.org/0000-0001-2345-6789" rel="me" aria-label="ORCID" title="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2024-12-09
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      
+          
+            
+            
+                <br/><span class="active">$ echo $LANG<br/><b></b></span><br/>
+
+            
+          
+      
+    
+</p>
+<br /><br />
+<p class="copyright">© <a href="https://phdbuilds.tech">Logan Norris</a></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

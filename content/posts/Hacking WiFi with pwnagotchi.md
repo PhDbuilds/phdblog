@@ -1,5 +1,5 @@
 ---
-title: pwnagotchi
+title: Hacking WiFi with pwnagotchi
 date: 2024-12-09
 time: 07:26
 draft: false
@@ -162,13 +162,13 @@ After using the correct cable.. I was able to pass the USB connection through to
 
 This script just allows the pwnagotchi to share my Kali Linux VM's Internet connection. The script can be found [here](https://raw.githubusercontent.com/jayofelony/pwnagotchi/master/scripts/linux_connection_share.sh>).
 
-
-
 ## Pwnagotchi in Action
+==COMING SOON==
 
 !![Image Description](/images/Pasted%20image%2020241214092600.png)
 ## Challenges and Lessons Learned
-Very many...
+==COMING SOON==
+Very many... 
 ## Ethical Considerations
 Insert 'This is for educational purposes only' disclamer here..
 
