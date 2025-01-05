@@ -13,7 +13,7 @@ title: "PhdBuilds"
           ░  ░  ░   ░     ░         ░      ░      ░  ░   ░          ░  
                   ░            ░                       ░
 ```
-Hi there! Welcome to my tech blog where I document my technical projects and learning journey.  
+Welcome to my tech blog where I document my technical projects and learning journey.  
 
 If you’re curious about who I am and why I created this blog, check out my [./about](/about/) page for the full story. [My first post](/posts/my-first-post/) also goes into a lot more detail.
 
