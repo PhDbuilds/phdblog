@@ -163,12 +163,12 @@ After using the correct cable.. I was able to pass the USB connection through to
 This script just allows the pwnagotchi to share my Kali Linux VM's Internet connection. The script can be found [here](https://raw.githubusercontent.com/jayofelony/pwnagotchi/master/scripts/linux_connection_share.sh>).
 
 ## Pwnagotchi in Action
-==COMING SOON==
-
+After many failed attempts and research, we are finally good to go! I've played around with both the Jayofelony and the Aluminum-ice version. The screenshot below is from the latter. 
+!![Image Description](/images/Pasted%20image%2020250110183557.png)
+!![Image Description](/images/Pasted%20image%2020250110183949.png)
 !![Image Description](/images/Pasted%20image%2020241214092600.png)
 ## Challenges and Lessons Learned
-==COMING SOON==
-Very many... 
+Very many... My first piece of advise to hopefully save yourself from hours of frustration like I myself encountered is to make sure your data cable is working properly. While I was positive I was using a data cable, it must have been faulty or something which is what caused the majority of my issues. After that was figured out, most other things were solved pretty easily.
 ## Ethical Considerations
 Insert 'This is for educational purposes only' disclamer here..
 
@@ -199,6 +199,11 @@ Things I would like to add:
 
 I've also been looking into `fancigotchi` which looks like it may be a cool rabbit trail to go down.
 ## Conclusion
+This was a very fun project that certainly tested my patience at times. During the learning journey, I got to explore AC2 AI models, dive deeper into networking, and sharpen my general Linux troubleshooting skills. I also gained hands-on experience with configuring and optimizing the Raspberry Pi and some of the hardware components used. Along the way, I had to troubleshoot firmware issues, tweak numerous settings and configs, and even dig into some Python scripts to customize my Pwnagotchi’s behavior.
+
+Beyond the technical skills, this project reinforced an important lesson: ==experimentation, trial and error, and problem-solving are just part of the process==. Sometimes, things won’t work the first (or 50th) time, but persistence pays off. In the end, having a fully operational Pwnagotchi that passively sniffs handshakes while rocking it's little AI-driven personality makes all the effort worth it.
+
+Would I recommend this project? Absolutely! if you have the patience and curiosity to push through the inevitable hurdles. Now, time to take my Pwnagotchi out for a little field testing.
 ## Supporting Content
 ### Photo Gallery
 
