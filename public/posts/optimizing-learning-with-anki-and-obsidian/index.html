@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><title>Optimizing Learning with Anki and Obsidian &ndash; PhDbuilds.tech</title>
+<meta name="description" content="A [hugo](https://gohugo.io) theme inspired by terminal ricing.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://phdbuilds.tech/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="https://phdbuilds.tech/css/risotto.css">
+<link rel="stylesheet" href="https://phdbuilds.tech/css/custom.css">
+
+
+
+
+
+
+
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+    <h1 class="page__logo"><a href="https://phdbuilds.tech/" class="page__logo-inner">PhDbuilds.tech</a></h1>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/about/" title="">About</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="https://phdbuilds.tech/lib/" title="lib">lib</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="https://phdbuilds.tech/posts/" title="Posts">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Optimizing Learning with Anki and Obsidian</h1>
+    </header>
+    <div class="content__body">
+        <h2 id="overview">Overview</h2>
+<p>Time is definitely in short supply when you’re working full-time, a full-time cybersecurity classes, driving 45 minutes each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.</p>
+<p>By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about the learning science behind all of this, I highly recommend reading <em>Ultralearning</em> by Scott Young. It’s full of insights on how to optimize the way you learn—definitely keep an eye out for my upcoming review in the <code>./lib</code> section.</p>
+<p>Even though using Anki is great, I found myself burning way too much time on the step where I take my notes and manually turn them into flashcards:</p>
+<pre tabindex="0"><code>Read material -&gt; Take notes -&gt; Create flashcards from notes
+</code></pre><p>For some things (like conceptual understanding) that process is actually helpful. But when you need to brute memorize loads of facts (like random tidbits for certain CompTIA exams), turning each set of notes into flashcards by hand felt tedious. That’s where this Anki-maker script comes in. It was born to solve the “time sink” problem and let me generate flashcards super quickly from my existing notes.</p>
+<hr>
+<h2 id="how-it-works">How it works</h2>
+<p>The key to this project is <a href="https://github.com/danielmiessler/fabric">Daniel Miessler’s Fabric</a>. Fabric basically sets up a “pattern” that instructs an AI model how to transform a chunk of text into something else—like, in our case, a set of Q&amp;A cards.</p>
+<h3 id="using-prefixes">Using Prefixes</h3>
+<p>I keep my notes organized in Obsidian. Each set of notes for a class or module starts with a specific prefix—like <code>LM1</code> for “Linux+ Module 1.” This is really helpful because:</p>
+<ol>
+<li>It makes it easy to find relevant notes among the thousands of files I have.</li>
+<li>It groups notes into smaller “chunks” so I don’t exceed any token limits when sending them to the AI.</li>
+<li>It’s just a clean, modular way to keep all my stuff organized.</li>
+</ol>
+<p><strong>For example</strong>, I have a “Map of Content” (MoC) page for each exam or course, with all submodules and lessons linked. Then each individual note page for Module 1 is prefixed with <code>LM1</code>. That way, when I’m ready to generate flashcards, I just punch in the prefix, and voilà—only those notes get processed.</p>
+<p>Here’s an example of how I handle modules in my Obsidian vault:</p>
+<h4 id="map-of-content-moc">Map of Content (MoC)</h4>
+<pre tabindex="0"><code>---
+Title: CompTIA Linux+
+Tags:
+- MoC
+---
+## Overview
+This is my MoC for the Linux certification exam. Additional material and other useful learning material can be found at (additional links and material)
+
+## Modules
+[[Linux+ Module 1 Essential Linux Management]]
+[[Linux+ Module 2 Storage Management]]
+[[Linux+ Module 3 Common Administration Tools]]
+etc...
+</code></pre><p>From here, I would have addition sub-module pages, I&rsquo;ll use Module 1 for example. This would essentially be a master page for all of the lessons that are within this module. This helps greatly with organization and finding my notes.</p>
+<pre tabindex="0"><code>---
+Title: Linux+ Module 1 Essential Linux Management
+Tags:
+- MoC
+---
+## Overview
+Module 1 covers topics such as managing user related security, network management, and managing service.
+## Submodules
+### Lesson 1: Managing User Related Security
+[[LM1 - Managing ACLs]]
+[[LM1 - Managing File System Attributes]]
+[[LM1 - Using Policykit and pkexec]]
+### Lesson 2: Network Management
+[[LM1 - Configuring Interfaces]]
+[[LM1 - Analyzing Network Traffic]]
+etc...
+</code></pre><p>The key here is as you can see, all the notes that are linked within this page have the prefix of &ldquo;LM1&rdquo;, for Linux+ Module 1. What this does is essentially let&rsquo;s me <code>find</code>or filter this handful of notes very easily throughout my thousands of other notes. This is also essential for this script to find the relevant notes. This method of note taking is very modular and I can&rsquo;t recommend it more.</p>
+<hr>
+<h2 id="the-script">The Script</h2>
+<p>Now to introduce the script.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if a prefix is provided as an argument</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> &lt;prefix&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>    exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>notes_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/notes/&#34;</span>
+</span></span><span style="display:flex;"><span>anki_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/ankicsvs/&#34;</span>
+</span></span><span style="display:flex;"><span>final_file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>anki_dir<span style="color:#e6db74">}${</span>prefix<span style="color:#e6db74">}</span><span style="color:#e6db74">_final.txt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove the final file if it exists</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span> -f <span style="color:#e6db74">&#34;</span>$final_file<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> rm <span style="color:#e6db74">&#34;</span>$final_file<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Find all files matching the prefix, recursively in the directory</span>
+</span></span><span style="display:flex;"><span>find <span style="color:#e6db74">&#34;</span>$notes_dir<span style="color:#e6db74">&#34;</span> -type f -name <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>prefix<span style="color:#e6db74">}</span><span style="color:#e6db74">*.md&#34;</span> | <span style="color:#66d9ef">while</span> read -r note_file; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Working on </span>$note_file<span style="color:#e6db74"> ...&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Process the note file with fabric and append directly to the final file</span>
+</span></span><span style="display:flex;"><span>    fabric -sp to_anki &lt; <span style="color:#e6db74">&#34;</span>$note_file<span style="color:#e6db74">&#34;</span> &gt;&gt; <span style="color:#e6db74">&#34;</span>$final_file<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Processing complete. Final output is in </span>$final_file<span style="color:#e6db74">.&#34;</span>
+</span></span></code></pre></div><h3 id="what-it-does">What It Does</h3>
+<ol>
+<li><strong>Scans for Files</strong>: Uses <code>find</code> to grab every markdown file starting with the given prefix (e.g., <code>LM1</code>).</li>
+<li><strong>Sends Each File to Fabric</strong>: Passes the contents through a custom “to_anki” pattern that tells the AI how to generate flashcards.</li>
+<li><strong>Writes Output to a Single File</strong>: Every flashcard line gets appended to <code>${prefix}_final.txt</code> in a pipe-delimited (<code>|</code>) format.</li>
+</ol>
+<h1 id="the-fabric-pattern">The Fabric Pattern</h1>
+<p>Below is the custom pattern I created, which tells Fabric how to generate flashcard Q&amp;A pairs from the text. As I mentioned, this is based off of one of the default patterns included with Fabric, I just made a few tweaks for it to fit my needs. It follows three core principles (Minimum Information, Optimized Wording, and No External Context) and outputs raw CSV data with a pipe separator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># IDENTITY and PURPOSE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>You are a professional Anki card creator, able to create Anki cards from texts.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># INSTRUCTIONS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>When creating Anki cards, stick to three principles: 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Minimum information principle. The material you learn must be formulated in as simple way as it is only possible. Simplicity does not have to imply losing information and skipping the difficult part.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Optimize wording: The wording of your items must be optimized to make sure that in minimum time the right bulb in your brain lights 
+</span></span><span style="display:flex;"><span>up. This will reduce error rates, increase specificity, reduce response time, and help your concentration. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> No external context: The wording of your items must not include words such as &#34;according to the text&#34;. This will make the cards 
+</span></span><span style="display:flex;"><span>usable even to those who haven&#39;t read the original text.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># EXAMPLE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The following is a model card-create template for you to study.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Text: The characteristics of the Dead Sea: Salt lake located on the border between Israel and Jordan. Its shoreline is the lowest point on the Earth&#39;s surface, averaging 396 m below sea level. It is 74 km long. It is seven times as salty (30% by volume) as the ocean. Its density keeps swimmers afloat. Only simple organisms can live in its saline waters
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Create cards based on the above text as follows:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Q: Where is the Dead Sea located? A: on the border between Israel and Jordan 
+</span></span><span style="display:flex;"><span>Q: What is the lowest point on the Earth&#39;s surface? A: The Dead Sea shoreline 
+</span></span><span style="display:flex;"><span>Q: What is the average level on which the Dead Sea is located? A: 400 meters (below sea level) 
+</span></span><span style="display:flex;"><span>Q: How long is the Dead Sea? A: 70 km 
+</span></span><span style="display:flex;"><span>Q: How much saltier is the Dead Sea as compared with the oceans? A: 7 times 
+</span></span><span style="display:flex;"><span>Q: What is the volume content of salt in the Dead Sea? A: 30% 
+</span></span><span style="display:flex;"><span>Q: Why can the Dead Sea keep swimmers afloat? A: due to high salt content 
+</span></span><span style="display:flex;"><span>Q: Why is the Dead Sea called Dead? A: because only simple organisms can live in it 
+</span></span><span style="display:flex;"><span>Q: Why only simple organisms can live in the Dead Sea? A: because of high salt content
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># STEPS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Extract main points from the text
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Formulate questions according to the above rules and examples
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Present questions and answers in the form of a pipe delimited (|) file, with the question in the first column and the answer in the second
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># OUTPUT INSTRUCTIONS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Output the cards you create as a CSV table. Put the question in the first column, and the answer in the second. Don&#39;t include the CSV 
+</span></span><span style="display:flex;"><span>header. Don&#39;t put any quotes in the questions. Just have the question, and the answer, separated by a pipe. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Do not output warnings or notes—just the requested sections.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Do not output backticks: just raw CSV data.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Keep the questions and answer in the same format, no quotes, no A: before the answer or Q: before the question, just the simple format of: This is the question, This is the answer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># INPUT:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>INPUT: 
+</span></span></code></pre></div><p>Now after a few seconds, depending on the amount of notes you have, you will have a pipe delimited (I found this better than comma since commas within the questions and answers kept breaking my CSVs) in which you can then import into your Anki Deck. Note, there may be some rows that are not formatted correctly, so I also do one pass through the file to correct anything obvious that I see before I do my final import.</p>
+<p>Here is an example of the Anki CSV that was generated for the LPI Linux Essentials exam I recently passed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csv" data-lang="csv"><span style="display:flex;"><span><span style="color:#e6db74">Which command is used to create a system group| groupadd -r  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Which command is used to rename a user account| usermod -l newname oldname  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What command can show all group memberships for a user| groups username  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">How can you display a user&#39;s primary group| id -gn username  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What is the purpose of the --force (-f) option in userdel| It forces account deletion even if the user is logged in  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What command can locate all files with a specific UID| sudo find / -uid UID  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What does the --append (-a) option do in usermod| It adds specified groups to the user&#39;s existing groups  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What does the --home (-d) option do in usermod| It specifies or changes the user&#39;s home directory  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What does the --shell (-s) option do in usermod| It sets the user&#39;s default shell  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What does the lastb command display| Failed login attempts from /var/log/btmp  </span>
+</span></span></code></pre></div><p>From here, I go into Anki and click <code>Create Deck</code> to get a new deck for that module</p>
+<p>!<img src="/images/Screenshot%202025-01-26%20at%207.22.42%20AM.png" alt="Image Description"></p>
+<p>From there, I hit <code>Import File</code> and choose <code>Pipe</code> as the Field separator. You can usually see if there is any CSV-breaking records here as there should only be 2 columns here. If there are 3, it means there is a row somewhere with more than one pipe. This will probably be a common issue if you are importing notes on Linux as pipes are used frequently. Finally, hit import and voila! You have a whole deck of Anki cards to help you study straight from your notes.</p>
+<h2 id="future-enhancements">Future enhancements</h2>
+<p>One of my upcoming goals is to automate the process by scraping content directly from course sites (like CompTIA CertMaster), rather than pulling it from my existing notes. Using a Selenium WebDriver, I can have the code log in, navigate each lesson, and pass the raw text straight into Fabric—effectively skipping the manual note-taking step and generating flashcards in a single go. Of course, I’d only do this for material that’s purely brute memorization; normally, I still believe the best learning strategy is to digest, process, and summarize concepts in my own words. But in some cases—especially where you just need to memorize a big list of facts—skipping detailed notes can be a huge time-saver.</p>
+<h2 id="summary">Summary</h2>
+<p>In a nutshell, this workflow ties together <strong>Obsidian</strong>, <strong>Fabric</strong>, and <strong>Anki</strong> to make the learning cycle a whole lot easier:</p>
+<ol>
+<li><strong>Tag or prefix</strong> your notes so they’re easy to gather.</li>
+<li><strong>Run the script</strong> to transform those notes into a set of flashcards via Fabric.</li>
+<li><strong>Import into Anki</strong> and let spaced repetition take your memory retention to the next level.</li>
+</ol>
+<p>I’ve found this approach especially useful when I’m short on time but need to memorize a bunch of facts fast. I hope it helps you, too! If you have any suggestions or questions about the setup, please reach out and let me know!</p>
+<p>If you would like to try this yourself, check out <a href="https://github.com/PhDbuilds/anki-maker">https://github.com/PhDbuilds/anki-maker</a> for everything you need!</p>
+
+    </div>
+    <footer class="content__footer"></footer>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+<div class="aside__about">
+    <img class="about__logo" src="https://phdbuilds.tech/images/rice.svg" alt="Logo">
+<h1 class="about__title">risotto</h1>
+<p class="about__description">A <a href="https://gohugo.io">hugo</a> theme inspired by terminal ricing.</p>
+</div>
+
+
+<ul class="aside__social-links">
+    
+    <li>
+        <a href="https://github.com/phdbuilds" rel="me" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="mailto:blnorris777@gmail.com" rel="me" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+    <li>
+        <a href="https://orcid.org/0000-0001-2345-6789" rel="me" aria-label="ORCID" title="ORCID"><i class="ai ai-orcid" aria-hidden="true"></i></a>&nbsp;
+    </li>
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+    
+    
+        <p>
+            
+            2025-01-26
+        </p>
+    
+
+    
+
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      
+          
+            
+            
+                <br/><span class="active">$ echo $LANG<br/><b></b></span><br/>
+
+            
+          
+      
+    
+</p>
+<br /><br />
+<p class="copyright">© <a href="https://phdbuilds.tech">Logan Norris</a></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>
