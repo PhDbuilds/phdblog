@@ -5,9 +5,9 @@ time: 06:29
 draft: false
 ---
 ## Overview
-Time is definitely in short supply when you’re working full-time, a full-time cybersecurity classes, driving 45 minutes each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.
+Time is definitely in short supply when you’re working full-time, going to college full-time, driving 45 minutes to work each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.
 
-By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about the learning science behind all of this, I highly recommend reading _Ultralearning_ by Scott Young. It’s full of insights on how to optimize the way you learn—definitely keep an eye out for my upcoming review in the `./lib` section.
+ By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading _Ultralearning_ by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the`./lib` section, so stay tuned for that.
 
 Even though using Anki is great, I found myself burning way too much time on the step where I take my notes and manually turn them into flashcards:
 ```
@@ -70,7 +70,8 @@ Module 1 covers topics such as managing user related security, network managemen
 [[LM1 - Analyzing Network Traffic]]
 etc...
 ```
-
+!![Image Description](/images/Pasted%20image%2020250126122544.png)
+!![Image Description](/images/Pasted%20image%2020250126122801.png)
 The key here is as you can see, all the notes that are linked within this page have the prefix of "LM1", for Linux+ Module 1. What this does is essentially let's me `find`or filter this handful of notes very easily throughout my thousands of other notes. This is also essential for this script to find the relevant notes. This method of note taking is very modular and I can't recommend it more. 
 
 ---
