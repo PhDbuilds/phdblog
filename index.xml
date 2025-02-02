@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dopamine Nation</title>
+      <link>https://phdbuilds.tech/lib/dopaminenation/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/lib/dopaminenation/</guid>
+      <description>&lt;h2 id=&#34;what-are-the-main-takeaways-of-the-book&#34;&gt;What are the main takeaways of the book?&lt;/h2&gt;&#xA;&lt;p&gt;One of the most striking themes of &lt;em&gt;Dopamine Nation&lt;/em&gt; by Anna Lembke, MD is the way it illustrates the rise of opioid addiction and our tendency to overmedicate. It’s terrifying to learn that opioid prescriptions in the United States quadrupled between 1999 and 2012, and by 2012, there were enough pills prescribed for each American adult to have their own bottle. Even more jarring to read, in Arkansas, 116 opioid prescriptions were written for every 100 people in 2009. These kinds of numbers clarify that this isn’t just a rare or isolated problem; it’s woven into the fabric of our healthcare system. The book also explains how heroin was ironically created as a “safer” substitute for morphine, only to become 2–5 times more potent, leading to early 1900s narcomania. Adding to that, we also see how patients on Medicaid die from opioid overdose at three to six times the rate of those not on Medicaid, shedding light on how overprescribing and economic vulnerability collide in tragic ways.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Optimizing Learning with Anki and Obsidian</title>
       <link>https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/</link>
