@@ -25,6 +25,7 @@ Here are a few recent projects I’ve worked on:
 ## Certifications
 Along the way, I’ve picked up certifications that lay a foundation for my cybersecurity knowledge and demonstrate my commitment to the field. 
 So far, this includes:
+- ITIL 4 Foundations
 - LPI Linux Essentials
 - CompTIA A+
 - CompTIA Network+
