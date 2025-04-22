@@ -3,7 +3,7 @@ theme = "risotto"
 title = "PhDbuilds.tech"
 author = "Logan Norris"
 copyright = "© [Logan Norris](https://phdbuilds.tech)"
-# paginate = 3
+
 [pagination]
   pagerSize = 3
 languageCode = "en"
