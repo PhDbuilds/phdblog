@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
-    <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
+      <link>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
+      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Optimizing Learning with Anki and Obsidian</title>
       <link>https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/</link>
