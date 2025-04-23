@@ -27,10 +27,6 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
   disableReadOtherPosts = false
   enableGlobalLanguageMenu = true
 
-  [params.logo]
-    #path = "/images/rice.svg"
-    alt = "PhDbuilds.tech Logo"
-
 [[params.social]]
   name = "GitHub"
   url = "https://github.com/phdbuilds"
@@ -60,11 +56,6 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
     url = "/lib/"
     weight = 20
 
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/posts/"
-    weight = 30
 
 [taxonomies]
   category = "categories"
