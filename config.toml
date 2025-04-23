@@ -17,7 +17,7 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
   dateformShort = "Jan 2"
   dateformNum = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
-  homeSubtitle = "Red Team Projects, Cybersecurity Experiments, and Tech Learning Logs"
+  homeSubtitle = "Welcome to my site!"
   description = "Notes, builds, and hacking thoughts from Logan Norris."
   keywords = "cybersecurity, red team, hacking, linux, books, blog"
   images = [""]
@@ -28,7 +28,7 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
   enableGlobalLanguageMenu = true
 
   [params.logo]
-    path = "/images/rice.svg"
+    #path = "/images/rice.svg"
     alt = "PhDbuilds.tech Logo"
 
 [[params.social]]
