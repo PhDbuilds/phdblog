@@ -1,13 +1,3 @@
-```
-        _    .  ,   .           .
-    *  / \_ *  / \_      _  *        *   /\'__        *
-      /    \  /    \,   ((        .    _/  /  \  *'.
- .   /\/\  /\/ :' __ \_  `          _^/  ^/    `--.
-    /    \/  \  _/  \-'\      *    /.' ^_   \_   .'\  *
-  /\  .-   `. \/     \ /==~=-=~=-=-;.  _/ \ -. `_/   \
- /  `-.__ ^   / .-'.--\ =-=~_=-=~=^/  _ `--./ .-'  `-
-/jgs     `.  / /       `.~-^=-=~=^=.-'      '-._ `._
-```
 # About Me
 
 I’m Logan, a Tier-2 Tech Support Analyst with a passion for cybersecurity, Linux, and solving problems—whether they’re digital or physical. I’m currently pursuing a degree in cybersecurity at WGU, and I spend most of my free time diving into hands-on projects, learning new skills, and sharpening my technical abilities. My ultimate goal is to break into offensive security and specialize in red teaming.
