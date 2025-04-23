@@ -1,52 +1,50 @@
 baseURL = "https://phdbuilds.tech"
-theme = "hello-friend-ng"
 title = "PhDbuilds.tech"
 author = "Logan Norris"
+theme = "hello-friend-ng"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableInlineShortcodes = true
+sectionPagesMenu = "main"
+ignoreErrors = ["error-remote-getjson"]
 copyright = "© [Logan Norris](https://phdbuilds.tech)"
 
 [pagination]
-  pagerSize = 3
-languageCode = "en"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
-# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
-ignoreErrors = ["error-remote-getjson"]
-
-# Automatically add content sections to main menu
-sectionPagesMenu = "main"
+  pagerSize = 10
 
 [params]
-noindex = false
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+  homeSubtitle = "Red Team Projects, Cybersecurity Experiments, and Tech Learning Logs"
+  description = "Notes, builds, and hacking thoughts from Logan Norris."
+  keywords = "cybersecurity, red team, hacking, linux, books, blog"
+  images = [""]
+  noindex = false
+  defaultTheme = "dark"
+  enableSharingButtons = true
+  disableReadOtherPosts = false
+  enableGlobalLanguageMenu = true
 
-[params.theme]
-palette = "base16-dark"
+  [params.logo]
+    path = "/images/rice.svg"
+    alt = "PhDbuilds.tech Logo"
 
-# Sidebar: about/bio
-[params.about]
-title = "risotto"
-description = "A [hugo](https://gohugo.io) theme inspired by terminal ricing."
-logo = "images/rice.svg"
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/phdbuilds"
+  icon = "fa-brands fa-github"
 
-# Sidebar: social links
-# Available icon sets:
-# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
-# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+[[params.social]]
+  name = "Email"
+  url = "mailto:blnorris777@gmail.com"
+  icon = "fa-solid fa-envelope"
 
-[[params.socialLinks]]
-icon = "fa-brands fa-github"
-title = "GitHub"
-url = "https://github.com/phdbuilds"
-
-[[params.socialLinks]]
-icon = "fa-solid fa-envelope"
-title = "Email"
-url = "mailto:blnorris777@gmail.com"
-
-[[params.socialLinks]]
-icon = "ai ai-orcid"
-title = "ORCID"
-url = "https://orcid.org/0000-0001-2345-6789"
+[[params.social]]
+  name = "ORCID"
+  url = "https://orcid.org/0000-0001-2345-6789"
+  icon = "ai ai-orcid"
 
 [menu]
 
@@ -56,23 +54,30 @@ url = "https://orcid.org/0000-0001-2345-6789"
     url = "/about/"
     weight = 10
 
+  [[menu.main]]
+    identifier = "lib"
+    name = "Lib"
+    url = "/lib/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 30
+
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+  category = "categories"
+  tag = "tags"
+  series = "series"
 
-# For hugo >= 0.60.0, enable inline HTML
 [markup.goldmark.renderer]
-unsafe = true
+  unsafe = true
 
-[markup]
-
-  # Table of contents
-  # Add toc = true to content front matter to enable
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel   = 3
-    ordered    = true
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+  ordered = true
 
 [privacy]
 
@@ -100,3 +105,4 @@ unsafe = true
 
   [services.twitter]
     disableInlineCSS = true
+
