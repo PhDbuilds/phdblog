@@ -1,48 +1,839 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on PhDbuilds.tech</title>
-    <link>https://phdbuilds.tech/posts/</link>
-    <description>Recent content in Posts on PhDbuilds.tech</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
-    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://phdbuilds.tech/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
-      <link>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
-      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Coming soon&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Optimizing Learning with Anki and Obsidian</title>
-      <link>https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/</link>
-      <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Time is definitely in short supply when you’re working full-time, going to college full-time, driving 45 minutes to work each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.&lt;/p&gt;&#xA;&lt;p&gt;By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading &lt;em&gt;Ultralearning&lt;/em&gt; by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the&lt;code&gt;./lib&lt;/code&gt; section, so stay tuned for that.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How I Used AI to Summarize Long-Form Podcasts into Daily Takeaways</title>
-      <link>https://phdbuilds.tech/posts/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</link>
-      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/posts/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;I love learning from educational podcasts, but there’s a constant struggle: I don’t have enough time to listen to them as often as I’d like. While driving to the mountains one day with my wife, We were listening to an Andrew Huberman episode—my favorite show and the core inspiration behind this project—and I thought, “I’m gaining so many actionable insights here. It would be great if I could consume more of these, more often.” Since I can’t magically create extra hours in my day, the next best thing is to find a way to absorb the most crucial information more efficiently.. While I do believe that long-form consumption is the best way to do most things, there are times where you just really don&amp;rsquo;t have the time to do so. An example of this would be reading the Spark Notes version of a book or watching a Youtube summarization of the core concepts in a book. While this is very beneficial at times and you can still learn from it, I do not think it is a replacement for reading the actual book. I believe there is something that happens in our brain when we have to go through the whole experience of reading the book that does not take place when we just extract the main concepts from it. However, like I said, we do not always have the time to do this, hence the birth of this project.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hacking WiFi with pwnagotchi</title>
-      <link>https://phdbuilds.tech/posts/hacking-wifi-with-pwnagotchi/</link>
-      <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/posts/hacking-wifi-with-pwnagotchi/</guid>
-      <description>&lt;h2 id=&#34;what-is-pwnagotchi&#34;&gt;What is pwnagotchi?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Pwnagotchi: The Tamagotchi for WiFi Hackers&lt;/strong&gt;&lt;br&gt;&#xA;&amp;ldquo;&lt;a href=&#34;https://twitter.com/pwnagotchi&#34;&gt;Pwnagotchi&lt;/a&gt; is an &lt;a href=&#34;https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752&#34;&gt;A2C&lt;/a&gt;-based “AI” powered by &lt;a href=&#34;https://www.bettercap.org/&#34;&gt;bettercap&lt;/a&gt; that learns from its surrounding WiFi environment in order to maximize the &lt;a href=&#34;https://pwnagotchi.ai/intro/#wifi-handshakes-101&#34;&gt;crackable WPA key material it captures&lt;/a&gt; (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by &lt;a href=&#34;https://hashcat.net/hashcat/&#34;&gt;hashcat&lt;/a&gt;, including full and half WPA handshakes as well as &lt;a href=&#34;https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/&#34;&gt;PMKIDs&lt;/a&gt;.&amp;rdquo; (&lt;a href=&#34;https://pwnagotchi.ai/intro/&#34;&gt;https://pwnagotchi.ai/intro/&lt;/a&gt;)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello, World- My first post</title>
-      <link>https://phdbuilds.tech/posts/my-first-post/</link>
-      <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;helloworld-&#34;&gt;Hello,world 👋🏻🌎&lt;/h2&gt;&#xA;&lt;p&gt;This is going to be the place where I post all my tech projects and the things I learn along the way. When I think about how far I’ve come since November of 2022, it’s surprising to realize just how much has changed. Before then, I knew almost nothing about technology. Coming from a fitness enthusiast (aka gym bro) and undergrad biology student background (premed dropout), the only exposure I had to anything technical was some very basic concepts I learned from my genetics professor, who was a bioinformatics guy. Less than 2 years ago I didn’t know what DNS stood for, I&amp;rsquo;d never heard of a VLAN or a subnet, and the idea of writing a basic for-loop might as well have been magic to me.&lt;/p&gt;</description>
-    </item>
-  </channel>
+    <channel>
+        <title>Posts on PhDbuilds.tech</title>
+        <link>https://phdbuilds.tech/posts/</link>
+        <description>Recent content in Posts on PhDbuilds.tech</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
+        <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://phdbuilds.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
+            <link>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
+            <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+            
+            <guid>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
+            <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Coming soon&amp;hellip;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="intro">Intro</h2>
+<p>Coming soon&hellip;</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Optimizing Learning with Anki and Obsidian</title>
+            <link>https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/</link>
+            <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+            
+            <guid>https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/</guid>
+            <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Time is definitely in short supply when you’re working full-time, going to college full-time, driving 45 minutes to work each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.&lt;/p&gt;
+&lt;p&gt;By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading &lt;em&gt;Ultralearning&lt;/em&gt; by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the&lt;code&gt;./lib&lt;/code&gt; section, so stay tuned for that.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="overview">Overview</h2>
+<p>Time is definitely in short supply when you’re working full-time, going to college full-time, driving 45 minutes to work each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.</p>
+<p>By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading <em>Ultralearning</em> by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the<code>./lib</code> section, so stay tuned for that.</p>
+<p>Even though using Anki is great, I found myself burning way too much time on the step where I take my notes and manually turn them into flashcards:</p>
+<pre tabindex="0"><code>Read material -&gt; Take notes -&gt; Create flashcards from notes
+</code></pre><p>For some things (like conceptual understanding) that process is actually helpful. But when you need to brute memorize loads of facts (like random tidbits for certain CompTIA exams), turning each set of notes into flashcards by hand felt tedious. That’s where this Anki-maker script comes in. It was born to solve the “time sink” problem and let me generate flashcards super quickly from my existing notes.</p>
+<hr>
+<h2 id="how-it-works">How it works</h2>
+<p>The key to this project is <a href="https://github.com/danielmiessler/fabric">Daniel Miessler’s Fabric</a>. Fabric basically sets up a “pattern” that instructs an AI model how to transform a chunk of text into something else—like, in our case, a set of Q&amp;A cards.</p>
+<h3 id="using-prefixes">Using Prefixes</h3>
+<p>I keep my notes organized in Obsidian. Each set of notes for a class or module starts with a specific prefix—like <code>LM1</code> for “Linux+ Module 1.” This is really helpful because:</p>
+<ol>
+<li>It makes it easy to find relevant notes among the thousands of files I have.</li>
+<li>It groups notes into smaller “chunks” so I don’t exceed any token limits when sending them to the AI.</li>
+<li>It’s just a clean, modular way to keep all my stuff organized.</li>
+</ol>
+<p><strong>For example</strong>, I have a “Map of Content” (MoC) page for each exam or course, with all submodules and lessons linked. Then each individual note page for Module 1 is prefixed with <code>LM1</code>. That way, when I’m ready to generate flashcards, I just punch in the prefix, and voilà—only those notes get processed.</p>
+<p>Here’s an example of how I handle modules in my Obsidian vault:</p>
+<h4 id="map-of-content-moc">Map of Content (MoC)</h4>
+<pre tabindex="0"><code>---
+Title: CompTIA Linux+
+Tags:
+- MoC
+---
+## Overview
+This is my MoC for the Linux certification exam. Additional material and other useful learning material can be found at (additional links and material)
+
+## Modules
+[[Linux+ Module 1 Essential Linux Management]]
+[[Linux+ Module 2 Storage Management]]
+[[Linux+ Module 3 Common Administration Tools]]
+etc...
+</code></pre><p>From here, I would have addition sub-module pages, I&rsquo;ll use Module 1 for example. This would essentially be a master page for all of the lessons that are within this module. This helps greatly with organization and finding my notes.</p>
+<pre tabindex="0"><code>---
+Title: Linux+ Module 1 Essential Linux Management
+Tags:
+- MoC
+---
+## Overview
+Module 1 covers topics such as managing user related security, network management, and managing service.
+## Submodules
+### Lesson 1: Managing User Related Security
+[[LM1 - Managing ACLs]]
+[[LM1 - Managing File System Attributes]]
+[[LM1 - Using Policykit and pkexec]]
+### Lesson 2: Network Management
+[[LM1 - Configuring Interfaces]]
+[[LM1 - Analyzing Network Traffic]]
+etc...
+</code></pre><p>!<img src="/images/Pasted%20image%2020250126122544.png" alt="Image Description">
+!<img src="/images/Pasted%20image%2020250126122801.png" alt="Image Description">
+The key here is as you can see, all the notes that are linked within this page have the prefix of &ldquo;LM1&rdquo;, for Linux+ Module 1. What this does is essentially let&rsquo;s me <code>find</code>or filter this handful of notes very easily throughout my thousands of other notes. This is also essential for this script to find the relevant notes. This method of note taking is very modular and I can&rsquo;t recommend it more.</p>
+<hr>
+<h2 id="the-script">The Script</h2>
+<p>Now to introduce the script.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if a prefix is provided as an argument</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> &lt;prefix&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>    exit <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>prefix<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>notes_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/notes/&#34;</span>
+</span></span><span style="display:flex;"><span>anki_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/path/to/ankicsvs/&#34;</span>
+</span></span><span style="display:flex;"><span>final_file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>anki_dir<span style="color:#e6db74">}${</span>prefix<span style="color:#e6db74">}</span><span style="color:#e6db74">_final.txt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remove the final file if it exists</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span> -f <span style="color:#e6db74">&#34;</span>$final_file<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span> <span style="color:#f92672">&amp;&amp;</span> rm <span style="color:#e6db74">&#34;</span>$final_file<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Find all files matching the prefix, recursively in the directory</span>
+</span></span><span style="display:flex;"><span>find <span style="color:#e6db74">&#34;</span>$notes_dir<span style="color:#e6db74">&#34;</span> -type f -name <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>prefix<span style="color:#e6db74">}</span><span style="color:#e6db74">*.md&#34;</span> | <span style="color:#66d9ef">while</span> read -r note_file; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Working on </span>$note_file<span style="color:#e6db74"> ...&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Process the note file with fabric and append directly to the final file</span>
+</span></span><span style="display:flex;"><span>    fabric -sp to_anki &lt; <span style="color:#e6db74">&#34;</span>$note_file<span style="color:#e6db74">&#34;</span> &gt;&gt; <span style="color:#e6db74">&#34;</span>$final_file<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Processing complete. Final output is in </span>$final_file<span style="color:#e6db74">.&#34;</span>
+</span></span></code></pre></div><h3 id="what-it-does">What It Does</h3>
+<ol>
+<li><strong>Scans for Files</strong>: Uses <code>find</code> to grab every markdown file starting with the given prefix (e.g., <code>LM1</code>).</li>
+<li><strong>Sends Each File to Fabric</strong>: Passes the contents through a custom “to_anki” pattern that tells the AI how to generate flashcards.</li>
+<li><strong>Writes Output to a Single File</strong>: Every flashcard line gets appended to <code>${prefix}_final.txt</code> in a pipe-delimited (<code>|</code>) format.</li>
+</ol>
+<h1 id="the-fabric-pattern">The Fabric Pattern</h1>
+<p>Below is the custom pattern I created, which tells Fabric how to generate flashcard Q&amp;A pairs from the text. As I mentioned, this is based off of one of the default patterns included with Fabric, I just made a few tweaks for it to fit my needs. It follows three core principles (Minimum Information, Optimized Wording, and No External Context) and outputs raw CSV data with a pipe separator:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># IDENTITY and PURPOSE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>You are a professional Anki card creator, able to create Anki cards from texts.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># INSTRUCTIONS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>When creating Anki cards, stick to three principles: 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Minimum information principle. The material you learn must be formulated in as simple way as it is only possible. Simplicity does not have to imply losing information and skipping the difficult part.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Optimize wording: The wording of your items must be optimized to make sure that in minimum time the right bulb in your brain lights 
+</span></span><span style="display:flex;"><span>up. This will reduce error rates, increase specificity, reduce response time, and help your concentration. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> No external context: The wording of your items must not include words such as &#34;according to the text&#34;. This will make the cards 
+</span></span><span style="display:flex;"><span>usable even to those who haven&#39;t read the original text.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># EXAMPLE
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>The following is a model card-create template for you to study.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Text: The characteristics of the Dead Sea: Salt lake located on the border between Israel and Jordan. Its shoreline is the lowest point on the Earth&#39;s surface, averaging 396 m below sea level. It is 74 km long. It is seven times as salty (30% by volume) as the ocean. Its density keeps swimmers afloat. Only simple organisms can live in its saline waters
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Create cards based on the above text as follows:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Q: Where is the Dead Sea located? A: on the border between Israel and Jordan 
+</span></span><span style="display:flex;"><span>Q: What is the lowest point on the Earth&#39;s surface? A: The Dead Sea shoreline 
+</span></span><span style="display:flex;"><span>Q: What is the average level on which the Dead Sea is located? A: 400 meters (below sea level) 
+</span></span><span style="display:flex;"><span>Q: How long is the Dead Sea? A: 70 km 
+</span></span><span style="display:flex;"><span>Q: How much saltier is the Dead Sea as compared with the oceans? A: 7 times 
+</span></span><span style="display:flex;"><span>Q: What is the volume content of salt in the Dead Sea? A: 30% 
+</span></span><span style="display:flex;"><span>Q: Why can the Dead Sea keep swimmers afloat? A: due to high salt content 
+</span></span><span style="display:flex;"><span>Q: Why is the Dead Sea called Dead? A: because only simple organisms can live in it 
+</span></span><span style="display:flex;"><span>Q: Why only simple organisms can live in the Dead Sea? A: because of high salt content
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># STEPS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Extract main points from the text
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Formulate questions according to the above rules and examples
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Present questions and answers in the form of a pipe delimited (|) file, with the question in the first column and the answer in the second
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># OUTPUT INSTRUCTIONS
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Output the cards you create as a CSV table. Put the question in the first column, and the answer in the second. Don&#39;t include the CSV 
+</span></span><span style="display:flex;"><span>header. Don&#39;t put any quotes in the questions. Just have the question, and the answer, separated by a pipe. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Do not output warnings or notes—just the requested sections.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Do not output backticks: just raw CSV data.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> Keep the questions and answer in the same format, no quotes, no A: before the answer or Q: before the question, just the simple format of: This is the question, This is the answer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># INPUT:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>INPUT: 
+</span></span></code></pre></div><p>Now after a few seconds, depending on the amount of notes you have, you will have a pipe delimited (I found this better than comma since commas within the questions and answers kept breaking my CSVs) in which you can then import into your Anki Deck. Note, there may be some rows that are not formatted correctly, so I also do one pass through the file to correct anything obvious that I see before I do my final import.</p>
+<p>Here is an example of the Anki CSV that was generated for the LPI Linux Essentials exam I recently passed:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csv" data-lang="csv"><span style="display:flex;"><span><span style="color:#e6db74">Which command is used to create a system group| groupadd -r  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">Which command is used to rename a user account| usermod -l newname oldname  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What command can show all group memberships for a user| groups username  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">How can you display a user&#39;s primary group| id -gn username  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What is the purpose of the --force (-f) option in userdel| It forces account deletion even if the user is logged in  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What command can locate all files with a specific UID| sudo find / -uid UID  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What does the --append (-a) option do in usermod| It adds specified groups to the user&#39;s existing groups  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What does the --home (-d) option do in usermod| It specifies or changes the user&#39;s home directory  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What does the --shell (-s) option do in usermod| It sets the user&#39;s default shell  </span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">What does the lastb command display| Failed login attempts from /var/log/btmp  </span>
+</span></span></code></pre></div><p>From here, I go into Anki and click <code>Create Deck</code> to get a new deck for that module</p>
+<p>!<img src="/images/Screenshot%202025-01-26%20at%207.22.42%20AM.png" alt="Image Description"></p>
+<p>From there, I hit <code>Import File</code> and choose <code>Pipe</code> as the Field separator. You can usually see if there is any CSV-breaking records here as there should only be 2 columns here. If there are 3, it means there is a row somewhere with more than one pipe. This will probably be a common issue if you are importing notes on Linux as pipes are used frequently. Finally, hit import and voila! You have a whole deck of Anki cards to help you study straight from your notes.</p>
+<h2 id="future-enhancements">Future enhancements</h2>
+<p>One of my upcoming goals is to automate the process by scraping content directly from course sites (like CompTIA CertMaster), rather than pulling it from my existing notes. Using a Selenium WebDriver, I can have the code log in, navigate each lesson, and pass the raw text straight into Fabric—effectively skipping the manual note-taking step and generating flashcards in a single go. Of course, I’d only do this for material that’s purely brute memorization; normally, I still believe the best learning strategy is to digest, process, and summarize concepts in my own words. But in some cases—especially where you just need to memorize a big list of facts—skipping detailed notes can be a huge time-saver.</p>
+<h2 id="summary">Summary</h2>
+<p>In a nutshell, this workflow ties together <strong>Obsidian</strong>, <strong>Fabric</strong>, and <strong>Anki</strong> to make the learning cycle a whole lot easier:</p>
+<ol>
+<li><strong>Tag or prefix</strong> your notes so they’re easy to gather.</li>
+<li><strong>Run the script</strong> to transform those notes into a set of flashcards via Fabric.</li>
+<li><strong>Import into Anki</strong> and let spaced repetition take your memory retention to the next level.</li>
+</ol>
+<p>I’ve found this approach especially useful when I’m short on time but need to memorize a bunch of facts fast. I hope it helps you, too! If you have any suggestions or questions about the setup, please reach out and let me know!</p>
+<p>If you would like to try this yourself, check out <a href="https://github.com/PhDbuilds/anki-maker">https://github.com/PhDbuilds/anki-maker</a> for everything you need!</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>How I Used AI to Summarize Long-Form Podcasts into Daily Takeaways</title>
+            <link>https://phdbuilds.tech/posts/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</link>
+            <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://phdbuilds.tech/posts/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</guid>
+            <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;I love learning from educational podcasts, but there’s a constant struggle: I don’t have enough time to listen to them as often as I’d like. While driving to the mountains one day with my wife, We were listening to an Andrew Huberman episode—my favorite show and the core inspiration behind this project—and I thought, “I’m gaining so many actionable insights here. It would be great if I could consume more of these, more often.” Since I can’t magically create extra hours in my day, the next best thing is to find a way to absorb the most crucial information more efficiently.. While I do believe that long-form consumption is the best way to do most things, there are times where you just really don&amp;rsquo;t have the time to do so. An example of this would be reading the Spark Notes version of a book or watching a Youtube summarization of the core concepts in a book. While this is very beneficial at times and you can still learn from it, I do not think it is a replacement for reading the actual book. I believe there is something that happens in our brain when we have to go through the whole experience of reading the book that does not take place when we just extract the main concepts from it. However, like I said, we do not always have the time to do this, hence the birth of this project.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="overview">Overview</h2>
+<p>I love learning from educational podcasts, but there’s a constant struggle: I don’t have enough time to listen to them as often as I’d like. While driving to the mountains one day with my wife, We were listening to an Andrew Huberman episode—my favorite show and the core inspiration behind this project—and I thought, “I’m gaining so many actionable insights here. It would be great if I could consume more of these, more often.” Since I can’t magically create extra hours in my day, the next best thing is to find a way to absorb the most crucial information more efficiently.. While I do believe that long-form consumption is the best way to do most things, there are times where you just really don&rsquo;t have the time to do so. An example of this would be reading the Spark Notes version of a book or watching a Youtube summarization of the core concepts in a book. While this is very beneficial at times and you can still learn from it, I do not think it is a replacement for reading the actual book. I believe there is something that happens in our brain when we have to go through the whole experience of reading the book that does not take place when we just extract the main concepts from it. However, like I said, we do not always have the time to do this, hence the birth of this project.</p>
+<h2 id="what-problem-is-it-solving">What problem is it solving?</h2>
+<p>The main issue that this is solving is the issue of not having the time to consume the beneficial and actionable knowledge that educational podcasts give us. For example, Huberman Labs releases one podcast, every Monday, that usually spans the duration of ~3 hours. I <em>may</em> have 15 free minutes a day that I am not doing something that would give me time to listen to this. Breaking a 3 hour long podcast into 15-minute bytes just does not seem like the way that I would want to consume this type of information. What this more so turns into is binge listening to his podcasts when on a trip or something, and then just missing dozens of hours of these podcasts until I have another trip or something like that where I have time to listen to it again.
+TL;DR: I want to listen to education podcasts to learn real-life things that I can apply to my daily life, but I do not have the time to do this.</p>
+<h2 id="what-does-it-do">What does it do?</h2>
+<p>Here is the gist of what this does:</p>
+<ol>
+<li><strong>Check for new content:</strong> The script looks at a specified YouTube channel to see if there’s a new podcast/video.
+<ul>
+<li>If yes, it grabs that new video.</li>
+<li>If no, it picks a previously released one (but still one you haven’t processed before).</li>
+</ul>
+</li>
+<li><strong>Avoid duplicates:</strong> It checks all previously processed videos and skips any you’ve already worked with.</li>
+<li><strong>AI-powered digestion:</strong> Using Fabric—a tool that transcribes and summarizes long-form content—the script processes the entire video. It pulls out the actionable insights, habits, facts, and key recommendations, then compiles them into a structured, easy-to-read page in your notes.</li>
+<li><strong>Daily notes update:</strong> Finally, a “Daily Prophet” page in your Obsidian setup updates automatically to include these new insights right at the top, ensuring the freshest material is always front and center.</li>
+</ol>
+<h2 id="how-it-looks">How it Looks</h2>
+<p>I have a pinned page in my notes titled &ldquo;The Daily Prophet&rdquo; that, in source view, just consists of the following:
+!<img src="/images/Pasted%20image%2020241215152041.png" alt="Image Description">
+When I switch over to Reading mode however, I see the following:</p>
+<p>!<img src="/images/Pasted%20image%2020241215151801.png" alt="Image Description"></p>
+<p>Selecting one of these generated notes shows the embedded YouTube video at the top, allowing me to watch or listen alongside the summarized notes. This way, even if I’m short on time, I can quickly review the main points first and then dive deeper into the full episode if I choose.</p>
+<p>!<img src="/images/Pasted%20image%2020241215151844.png" alt="Image Description"></p>
+<p>Each note includes several thoughtfully organized sections—like Summary, Ideas, Insights, Quotes, Habits, and more—making it easy to skim for what matters most. It’s not meant to replace the original content entirely, but rather to serve as a helpful guide or refresher that saves me time and helps me stay on top of valuable information I’d otherwise miss.</p>
+<p>!<img src="/images/Pasted%20image%2020241215151929.png" alt="Image Description"></p>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>Here is the flow the program works in.</p>
+<h3 id="scripts-overview">Scripts Overview</h3>
+<ul>
+<li><strong>main.py</strong>: This script coordinates the entire workflow. It picks a new video, runs Fabric, and then writes the processed insights into a Markdown file.</li>
+<li><strong>youtube_url.py</strong>: This module handles retrieving recent videos from a specified YouTube channel using the YouTube Data API. It also ensures you don’t process the same video twice.</li>
+</ul>
+<p>Note - before you run these scripts, note that you’ll need:</p>
+<ul>
+<li>A valid YouTube Data API key.</li>
+<li>The channel ID of the YouTube channel you’re targeting.</li>
+<li>A configured path to your Obsidian notes.</li>
+</ul>
+<h3 id="breakdown">Breakdown</h3>
+<h4 id="1-get-the-url">1. Get the URL</h4>
+<p>The process starts by looking up a YouTube channel for either a brand-new podcast or one you haven’t processed before. Once it finds a suitable video, it pulls its URL and checks against a file of previously used links to avoid duplicates. If it’s already been summarized, the code moves on until it finds something fresh.</p>
+<p>From <code>main.py</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Step 1: Get a new or unused YouTube video URL</span>
+</span></span><span style="display:flex;"><span>    latest_video, video_title <span style="color:#f92672">=</span> get_random_video()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    video_id <span style="color:#f92672">=</span> latest_video<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;=&#39;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    sanitized_title <span style="color:#f92672">=</span> sanitize_filename(video_title)
+</span></span><span style="display:flex;"><span>    today_date <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>today()<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>NOTES_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">{</span>sanitized_title<span style="color:#e6db74">}</span><span style="color:#e6db74">.md&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    iframe_code <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/</span><span style="color:#e6db74">{</span>video_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span>
+</span></span></code></pre></div><p>From <code>youtube_url.py</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_random_video</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Find a random video that hasn&#39;t been used, with minimized API calls.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    used_urls <span style="color:#f92672">=</span> get_used_urls()
+</span></span><span style="display:flex;"><span>    all_videos <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Fetch and store videos from multiple pages, if needed</span>
+</span></span><span style="display:flex;"><span>    page_token <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> len(all_videos) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">50</span>:  <span style="color:#75715e"># Limit to prevent too many requests</span>
+</span></span><span style="display:flex;"><span>        video_info <span style="color:#f92672">=</span> fetch_videos(page_token)
+</span></span><span style="display:flex;"><span>        videos <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            (
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;https://www.youtube.com/watch?v=</span><span style="color:#e6db74">{</span>item[<span style="color:#e6db74">&#39;id&#39;</span>][<span style="color:#e6db74">&#39;videoId&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>                item[<span style="color:#e6db74">&#39;snippet&#39;</span>][<span style="color:#e6db74">&#39;title&#39;</span>]
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> video_info<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;items&#34;</span>, [])
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;videoId&#34;</span> <span style="color:#f92672">in</span> item[<span style="color:#e6db74">&#34;id&#34;</span>]
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>        all_videos<span style="color:#f92672">.</span>extend(videos)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Check if there’s another page available</span>
+</span></span><span style="display:flex;"><span>        page_token <span style="color:#f92672">=</span> video_info<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;nextPageToken&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> page_token:  <span style="color:#75715e"># Stop if no more pages</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Shuffle videos to pick a random one</span>
+</span></span><span style="display:flex;"><span>    random<span style="color:#f92672">.</span>shuffle(all_videos)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Look for a new video in the cache</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> video_url, video_title <span style="color:#f92672">in</span> all_videos:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> video_url <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> used_urls:
+</span></span><span style="display:flex;"><span>            add_url_to_used(video_url)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> video_url, video_title
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If no new videos found after checking all, return None or a message</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>, <span style="color:#e6db74">&#34;No new videos available.&#34;</span>
+</span></span></code></pre></div><h4 id="2-run-the-extractiondigest">2. Run the extraction/digest</h4>
+<p>The heart of the script is this following line. This is what is doing all of the work and all of the thinking. This open-source tool, Fabric, was created by Daniel Miessler, and is amazing and I use it for so many of my projects. <a href="https://github.com/danielmiessler/fabric">Here</a> is a link to it if you are interested, and I would highly recommend you checking it out.
+The quick and dirty summary of this tool, as quoted from the  the README.md of this repo, is that:</p>
+<ul>
+<li><code>fabric</code> is an open-source framework for augmenting humans using AI.</li>
+<li>Since the start of 2023 and GenAI we&rsquo;ve seen a massive number of AI applications for accomplishing tasks. It&rsquo;s powerful, but <em>it&rsquo;s not easy to integrate this functionality into our lives.</em></li>
+<li>In other words, AI doesn&rsquo;t have a capabilities problem—it has an <em>integration</em> problem.</li>
+<li>Fabric was created to address this by enabling everyone to granularly apply AI to everyday challenges.</li>
+</ul>
+<p>Here is what the command that this script is using looks like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    command <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;fabric -y </span><span style="color:#e6db74">{</span>latest_video<span style="color:#e6db74">}</span><span style="color:#e6db74"> -p extract_wisdom&#34;</span>
+</span></span></code></pre></div><p>Here is what this is doing in a nutshell:</p>
+<ol>
+<li>Fabric grabs the URL from the video we found earlier</li>
+<li>It transcribes it</li>
+<li>An AI model of your choosing, ChatGPT-4o in my case, is primed with a pattern that you specify. This pattern shown above it called <code>extract_wisdon</code>. What this does is primes the AI model with a set of instructions on how to handle the input that is coming, in this case, the youtube transcription. Check out what that pattern actually looks like <a href="https://github.com/danielmiessler/fabric/tree/main/patterns/extract_wisdom">here</a>. I created a few custom ones when building this project, but none of them came out as good as this one, so I just went ahead and used this default pattern included with Fabric.</li>
+<li>The transcription is sent through the primed AI model and Fabric outputs the response.</li>
+</ol>
+<h4 id="3-save-the-output-to-my-obsidian-notes">3. Save the output to my Obsidian notes</h4>
+<p>A new file is created and formatted. To summarize this here, there are 3 things being written to this newly created file:</p>
+<ol>
+<li>The YAML front matter that has the date included. This is so that my Dataview table will always show the most recent at the top.</li>
+<li>The Youtube video is embedded at the top as seen earlier</li>
+<li>The output that was just created by Fabric is saved after that</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(file_name, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;---</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">date: </span><span style="color:#e6db74">{</span>today_date<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">---</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>iframe_code<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(result<span style="color:#f92672">.</span>stdout<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>))
+</span></span></code></pre></div><p>And that&rsquo;s it! Now I have all of the most useful information and actionable insights from the podcasts that I enjoy to listen to, and it is condensed into a 5-10 minute read, which is much more doable in my current schedule than listening to the upwards of 3-hour long podcast.</p>
+<h2 id="future-improvements">Future Improvements</h2>
+<ul>
+<li><strong>Refactoring and Code Cleanup:</strong>   This project was actually built a several months ago, and while it works, there are plenty of opportunities for cleaner, more efficient code. Revisiting the logic and structure could make it more elegant and easier for others to understand or build upon.
+<ul>
+<li>Note -&gt; while a few months ago doesn&rsquo;t seem that long ago, I didn&rsquo;t pick up Python programming until June of this year (2024), so a few months ago is a world of difference here</li>
+</ul>
+</li>
+<li><strong>Automated Scheduling:</strong>   Instead of manually running <code>python3 main.py</code>, this entire process could be automated. Setting up a daily cron job, <code>systemd</code> timer, or <code>launchd</code> job would allow the script to run at regular intervals without any manual intervention. I&rsquo;ve tested this a bit with a few of these methods and just haven&rsquo;t found a good way to do this yet. The main issue here was that I used to store these notes in my iCloud library, which made running a Linux job to do this difficult with it&rsquo;s lack of integration with iCloud (in terms of mounting the directory at least). Now I use Obsidian SYNC, so I may revisit this soon for a good solution.</li>
+<li><strong>Scalable Data Storage:</strong>   Currently, used URLs are tracked in a text file. Migrating this data to a SQLite database (or similar) would be a more scalable and maintainable approach as the project grows.</li>
+</ul>
+<h2 id="supporting-documentation">Supporting Documentation</h2>
+<h3 id="references">References:</h3>
+<ul>
+<li><a href="https://github.com/danielmiessler/fabric">https://github.com/danielmiessler/fabric</a></li>
+<li><a href="https://www.youtube.com/@hubermanlab">https://www.youtube.com/@hubermanlab</a></li>
+</ul>
+<h3 id="scripts">Scripts</h3>
+<h4 id="mainpy">main.py</h4>
+<p>Key points:</p>
+<ul>
+<li>Fetches a fresh video and title.</li>
+<li>Sanitizes the title for safe file naming.</li>
+<li>Uses Fabric to transcribe and summarize the video according to the <code>extract_wisdom</code> pattern.</li>
+<li>Creates a Markdown file with the current date, the embedded video, and the AI-generated insights.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> youtube_url <span style="color:#f92672">import</span> get_random_video
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> subprocess
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NOTES_PATH <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{PATH/TO/YOUR/NOTES}&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sanitize_filename</span>(filename):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Replace any invalid filename characters with underscores to ensure the file name is safe.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> re<span style="color:#f92672">.</span>sub(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;[</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">/*?:&#34;&lt;&gt;|]&#39;</span>, <span style="color:#e6db74">&#34;_&#34;</span>, filename)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Step 1: Retrieve a random or unused YouTube video URL and its title</span>
+</span></span><span style="display:flex;"><span>    latest_video, video_title <span style="color:#f92672">=</span> get_random_video()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Extract the video ID by splitting the URL at &#39;=&#39; and taking the last part</span>
+</span></span><span style="display:flex;"><span>    video_id <span style="color:#f92672">=</span> latest_video<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;=&#39;</span>)[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Sanitize the video title so it can be used as a safe filename</span>
+</span></span><span style="display:flex;"><span>    sanitized_title <span style="color:#f92672">=</span> sanitize_filename(video_title)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Get today&#39;s date in the format YYYY-MM-DD</span>
+</span></span><span style="display:flex;"><span>    today_date <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>today()<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Set the output markdown file path using the sanitized title</span>
+</span></span><span style="display:flex;"><span>    file_name <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>NOTES_PATH<span style="color:#e6db74">}</span><span style="color:#e6db74">/</span><span style="color:#e6db74">{</span>sanitized_title<span style="color:#e6db74">}</span><span style="color:#e6db74">.md&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Create an iframe embed code for the YouTube video using the extracted video ID</span>
+</span></span><span style="display:flex;"><span>    iframe_code <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/</span><span style="color:#e6db74">{</span>video_id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Command to run an external process (fabric) to extract &#34;wisdom&#34; from the video</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># `-y` it used to transcribe the Youtube video and `-p` specifies which Fabric pattern you are wanting to use</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># `extract_wisdom` is the pattern specified. This is a default pattern included in Fabric</span>
+</span></span><span style="display:flex;"><span>    command <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;fabric -y </span><span style="color:#e6db74">{</span>latest_video<span style="color:#e6db74">}</span><span style="color:#e6db74"> -p extract_wisdom&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Execute the external command with `subprocess.run()`</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># `check=True` will raise CalledProcessError if the command fails</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># `stdout` and `stderr` are captured for further processing</span>
+</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> subprocess<span style="color:#f92672">.</span>run(
+</span></span><span style="display:flex;"><span>            command,
+</span></span><span style="display:flex;"><span>            shell<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>            check<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>            stdout<span style="color:#f92672">=</span>subprocess<span style="color:#f92672">.</span>PIPE,
+</span></span><span style="display:flex;"><span>            stderr<span style="color:#f92672">=</span>subprocess<span style="color:#f92672">.</span>PIPE,
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Open the markdown file and write the date, iframe, and the extracted wisdom</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(file_name, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Write metadata (date) as front matter in YAML format</span>
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;---</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">date: </span><span style="color:#e6db74">{</span>today_date<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">---</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Write the iframe code for the video</span>
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>iframe_code<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Write the output from the subprocess (decoded from bytes to UTF-8 string)</span>
+</span></span><span style="display:flex;"><span>            f<span style="color:#f92672">.</span>write(result<span style="color:#f92672">.</span>stdout<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Print a success message if everything went fine</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Output successfully written to </span><span style="color:#e6db74">{</span>file_name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> subprocess<span style="color:#f92672">.</span>CalledProcessError <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># If there&#39;s an error running the external command, print the error message</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error executing command: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Also print the standard error output for debugging</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Standard error: </span><span style="color:#e6db74">{</span>e<span style="color:#f92672">.</span>stderr<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#39;utf-8&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div><h4 id="youtube_urlpy">youtube_url.py</h4>
+<p>Key points:</p>
+<ul>
+<li>Uses the YouTube Data API to fetch videos from a channel.</li>
+<li>Checks against a <code>used_urls.txt</code> file to avoid repeats.</li>
+<li>Returns a fresh, unused video URL and title.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> random
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># API key for accessing the YouTube Data API.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note: This is just an example key, it might need to be replaced with a valid one.</span>
+</span></span><span style="display:flex;"><span>API_KEY <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{INSERT API KEY}&#34;</span>
+</span></span><span style="display:flex;"><span>HMAN_CHANNEL_ID <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{CHANNEL ID}&#34;</span>  <span style="color:#75715e"># Channel ID for the target YouTube channel, which is Huberman Labs in this case</span>
+</span></span><span style="display:flex;"><span>USED_URLS_FILE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;used_urls.txt&#34;</span>  <span style="color:#75715e"># File to keep track of which videos have been used</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_used_urls</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Read the file containing previously used video URLs and return them as a set for quick lookups.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(USED_URLS_FILE):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># If the file doesn&#39;t exist yet, return an empty set.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> set()
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Open and read each line, stripping whitespace. Store these URLs in a set.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(USED_URLS_FILE, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> set(line<span style="color:#f92672">.</span>strip() <span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> file <span style="color:#66d9ef">if</span> line<span style="color:#f92672">.</span>strip())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_url_to_used</span>(video_url):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Append a newly used video URL to the used_urls.txt file so it won&#39;t be selected again.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(USED_URLS_FILE, <span style="color:#e6db74">&#34;a&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>        file<span style="color:#f92672">.</span>write(video_url <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_videos</span>(page_token<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Fetch a batch of videos from the YouTube channel using the YouTube Data API.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - page_token (optional): A token that allows pagination through multiple pages of results.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Construct the URL for the YouTube API request.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - key: our API_KEY</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - channelId: The target channel we want videos from</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - part=snippet,id: We want snippet and id information about the videos</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - order=date: Sort videos by their upload date</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># - maxResults=5: Get 5 results per request</span>
+</span></span><span style="display:flex;"><span>    url <span style="color:#f92672">=</span> (
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;https://www.googleapis.com/youtube/v3/search?key=</span><span style="color:#e6db74">{</span>API_KEY<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&amp;channelId=</span><span style="color:#e6db74">{</span>HMAN_CHANNEL_ID<span style="color:#e6db74">}</span><span style="color:#e6db74">&amp;part=snippet,id&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&amp;order=date&amp;maxResults=5&#34;</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If a page_token is provided, append it to fetch the next page of results.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> page_token:
+</span></span><span style="display:flex;"><span>        url <span style="color:#f92672">+=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;&amp;pageToken=</span><span style="color:#e6db74">{</span>page_token<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Raise an HTTPError if the request was unsuccessful.</span>
+</span></span><span style="display:flex;"><span>    response<span style="color:#f92672">.</span>raise_for_status()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> response<span style="color:#f92672">.</span>json()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_random_video</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Return a random unused video from the channel.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Minimizes API calls by caching multiple results and only making more requests if needed.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    used_urls <span style="color:#f92672">=</span> get_used_urls()  <span style="color:#75715e"># Get all previously used URLs</span>
+</span></span><span style="display:flex;"><span>    all_videos <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    page_token <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Loop until we have fetched a good number of videos (50 as a limit here)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># or run out of pages.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> len(all_videos) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">50</span>:
+</span></span><span style="display:flex;"><span>        video_info <span style="color:#f92672">=</span> fetch_videos(page_token)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Extract video URL and title for items that are actual videos</span>
+</span></span><span style="display:flex;"><span>        videos <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            (
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;https://www.youtube.com/watch?v=</span><span style="color:#e6db74">{</span>item[<span style="color:#e6db74">&#39;id&#39;</span>][<span style="color:#e6db74">&#39;videoId&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>                item[<span style="color:#e6db74">&#39;snippet&#39;</span>][<span style="color:#e6db74">&#39;title&#39;</span>]
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> video_info<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;items&#34;</span>, [])
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;videoId&#34;</span> <span style="color:#f92672">in</span> item[<span style="color:#e6db74">&#34;id&#34;</span>]  <span style="color:#75715e"># Ensure the item is indeed a video.</span>
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>        all_videos<span style="color:#f92672">.</span>extend(videos)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Check if there is another page of results.</span>
+</span></span><span style="display:flex;"><span>        page_token <span style="color:#f92672">=</span> video_info<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;nextPageToken&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> page_token:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># If no more pages, stop fetching further.</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Shuffle the videos so we randomly select one each time.</span>
+</span></span><span style="display:flex;"><span>    random<span style="color:#f92672">.</span>shuffle(all_videos)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Select the first video that isn&#39;t already in the used list.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> video_url, video_title <span style="color:#f92672">in</span> all_videos:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> video_url <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> used_urls:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Mark this video as used so it&#39;s not chosen again.</span>
+</span></span><span style="display:flex;"><span>            add_url_to_used(video_url)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> video_url, video_title
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If no new video is found, return None and a message.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>, <span style="color:#e6db74">&#34;No new videos available.&#34;</span>
+</span></span></code></pre></div>]]></content>
+        </item>
+        
+        <item>
+            <title>Hacking WiFi with pwnagotchi</title>
+            <link>https://phdbuilds.tech/posts/hacking-wifi-with-pwnagotchi/</link>
+            <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://phdbuilds.tech/posts/hacking-wifi-with-pwnagotchi/</guid>
+            <description>&lt;h2 id=&#34;what-is-pwnagotchi&#34;&gt;What is pwnagotchi?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Pwnagotchi: The Tamagotchi for WiFi Hackers&lt;/strong&gt;&lt;br&gt;
+&amp;ldquo;&lt;a href=&#34;https://twitter.com/pwnagotchi&#34;&gt;Pwnagotchi&lt;/a&gt; is an &lt;a href=&#34;https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752&#34;&gt;A2C&lt;/a&gt;-based “AI” powered by &lt;a href=&#34;https://www.bettercap.org/&#34;&gt;bettercap&lt;/a&gt; that learns from its surrounding WiFi environment in order to maximize the &lt;a href=&#34;https://pwnagotchi.ai/intro/#wifi-handshakes-101&#34;&gt;crackable WPA key material it captures&lt;/a&gt; (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by &lt;a href=&#34;https://hashcat.net/hashcat/&#34;&gt;hashcat&lt;/a&gt;, including full and half WPA handshakes as well as &lt;a href=&#34;https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/&#34;&gt;PMKIDs&lt;/a&gt;.&amp;rdquo; (&lt;a href=&#34;https://pwnagotchi.ai/intro/&#34;&gt;https://pwnagotchi.ai/intro/&lt;/a&gt;)&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="what-is-pwnagotchi">What is pwnagotchi?</h2>
+<p><strong>Pwnagotchi: The Tamagotchi for WiFi Hackers</strong><br>
+&ldquo;<a href="https://twitter.com/pwnagotchi">Pwnagotchi</a> is an <a href="https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752">A2C</a>-based “AI” powered by <a href="https://www.bettercap.org/">bettercap</a> that learns from its surrounding WiFi environment in order to maximize the <a href="https://pwnagotchi.ai/intro/#wifi-handshakes-101">crackable WPA key material it captures</a> (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by <a href="https://hashcat.net/hashcat/">hashcat</a>, including full and half WPA handshakes as well as <a href="https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/">PMKIDs</a>.&rdquo; (<a href="https://pwnagotchi.ai/intro/">https://pwnagotchi.ai/intro/</a>)</p>
+<p>Pwnagotchi is a fun tool for anyone into WiFi hacking. It&rsquo;s like a Tamagotchi, but instead of needing food and attention, it feeds on WiFi handshakes. Running on affordable hardware like a Raspberry Pi Zero W, Pwnagotchi <em>passively</em> (more on this later) captures WPA/WPA2 handshakes, helping you build wordlists for cracking networks. What makes it cool is that it learns and adapts, getting smarter as it goes. Even better, it interacts with other Pwnagotchis if they cross paths, sharing knowledge and growing together.</p>
+<p><strong>I chose this project for a few reasons:</strong></p>
+<ul>
+<li>I like projects that I can build with my hands</li>
+<li>I&rsquo;m interested in Wi-Fi network hacking and have used tools like <code>Aircrack-ng</code> in the past. I thought this would be a good way to build on that knowledge</li>
+<li>I&rsquo;m pretty new to AI and different AI algorithms and such, and thought this would be a good way to go down this rabbit hole a bit. <a href="https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752">Here</a> is a good explanation of the Advantage-Actor-Critic A2C) model that is being used in this project.</li>
+</ul>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.07.05%20AM.png" alt="Image Description"></p>
+<h2 id="planning-and-prep">Planning and Prep</h2>
+<h3 id="software-and-hardware-requirements">Software and Hardware Requirements</h3>
+<p><strong>Here is the hardware that I used to create this project:</strong></p>
+<ul>
+<li>Waveshare 2.13 in E-ink Display</li>
+<li>Raspberry Pi Zero W</li>
+<li>PiSugar 3 Portable 1200 mAh Battery</li>
+<li>SanDisk 64GB Extreme</li>
+<li>STL found at <a href="https://pwnagotchi.org/3d-printable-cases/index.html">https://pwnagotchi.org/3d-printable-cases/index.html</a></li>
+</ul>
+<p><strong>The software that I used was from the following:</strong></p>
+<ul>
+<li><a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a></li>
+</ul>
+<h3 id="initial-research">Initial Research</h3>
+<p>To be honest, I did not know a whole lot about this device before looking into it. I knew it was a cool little hacking device with a face on it sort of like the Flipper Zero that I have, but I really liked the idea of building something like that for myself. I had a bit of knowledge about WPA/WPA2 protocols from my CompTIA studies and the WiFi Hacking course that I took a while back, but other than that I went into this kind of blind. After digging into the docs and looking into some of the technologies it uses, here are some keys things I learned</p>
+<h4 id="bettercap">Bettercap</h4>
+<p>This is a framework written in Go that is essentially the Swiss-army knife of WiFi, BLE, and other wireless attacks. Key features we are using include - WiFi scanning, deauth, clientless PMKID association attack, and automatic WPA/WPA2 client handshake capture</p>
+<h4 id="a2c-in-the-pwnagotchi">A2C in the pwnagotchi</h4>
+<p>In reinforcement learning, an <em>agent</em> moves through <em>states</em> in an environment by taking <em>actions</em>, all the while trying to maximize <em>rewards</em> throughout the process. The goal is to teach the agent a policy: a strategy to decide the best action in any given situation (state). For the pwnagotchi, these <em>states</em> are things like the signal strength of the AP, the number of visible devices, the frequency channel being monitored, and the WiFi packets. After the <em>agent</em> (pwnagotchi) takes in those states, it will generate <em>2 outputs</em>:</p>
+<ul>
+<li><strong>Critic</strong>: The first output, the <em>state value</em> $V(S)$, is an estimate of how many rewards it can get from that point onwards. This is an estimate of the expected cumulative reward starting from the current state.</li>
+<li><strong>Actor</strong>: The second output, known as <em>the policy</em> is a recommendation of what action it should take. This is the probability distribution over actions. It doesn&rsquo;t directly pick an action but gives a set of probabilities, and the action is sampled based on those probabilities.</li>
+</ul>
+<p><strong>Just remember:</strong></p>
+<ul>
+<li>The actor tries to maximize rewards by improving its policy</li>
+<li>The critic helps guide the actor by telling it how good or bad its actions were</li>
+<li>To train the actor, we need to know how much better or worse an action was compared to what we expected.</li>
+</ul>
+<p>The pwnagotchi interacts with the WiFi environment by scanning for nearby WiFi environments, deciding whether to target a specific network or wait, and trying to capture WPA/WPA2 handshakes by listening to or actively de-authenticating clients from networks. <em>It&rsquo;s main goal is to maximize the number of successful handshakes it collects over time while minimizing wasted energy or detection risk</em></p>
+<ul>
+<li>State ($s$): The current Wi-Fi environment</li>
+<li>Action ($a$): What the pwnagotchi chooses to do (target a network, wait, etc.)</li>
+<li>Reward ($r$): Feedback based on the success of its action
+<ul>
+<li>Postitive - captured a handshake</li>
+<li>Negative - Failed to capture a handshake or wasted time</li>
+</ul>
+</li>
+</ul>
+<p>The main thing to remember here is the environment is <em>very</em> dynamic. WiFi networks come and go, signal strength fluctuates, and human activity affects availability. The pwnagotchi must be able to adapt to this.</p>
+<p>Recap:</p>
+<ul>
+<li>The Actor-Critic Framework in Pwnagotchi:
+<ul>
+<li>Actor (Policy): The pwnagotchi&rsquo;s decision-making strategy. &ldquo;If I see network A with signal strength $x$, target it with action $y$&rdquo;</li>
+<li>The Actor outputs probabilities for different actions given the current state</li>
+<li>Critic (Value Function): This estimates how &ldquo;good&rdquo; the current WiFi environment is.</li>
+<li>The <strong>Advantage Function</strong> helps guide the pwnagotchi by evaluating whether a specific action in the current state led to a <em>better</em> or <em>worse</em> result than expected.</li>
+</ul>
+</li>
+<li>Rewards in pwnagotchi:
+<ul>
+<li>Positive reward: capturing a handshake</li>
+<li>Negative reward: spending energy without success, waiting too long, or targeting low-value networks</li>
+</ul>
+</li>
+<li>Parallelism in pwnagotchi:
+<ul>
+<li>It can operate in different locations or scenarios over time. Each new environment contributes data that helps refine this policy. This is even more so if you are connected to the pwnagotchi community network, where even more data can be shared amongst each other.</li>
+</ul>
+</li>
+<li>Learning over time:
+<ul>
+<li>At first, the pwnagotchi is going to do some random stuff and explore different strategies for targeting networks</li>
+<li>Over time it learns what works and what doesn&rsquo;t, and even more so refines on what really works as a high-reward action</li>
+<li>It adapts its behavior if the environment changes (fewer networks, encryption types, etc.). It adjusts this behavior based on past experiences.</li>
+</ul>
+</li>
+</ul>
+<h4 id="how-does-it-work">How does it work?</h4>
+<p>Pwnagotchi is using an <code>LSTM with MLP feature extractor</code> as its policy network for the <code>A2C agent</code> that it is using. Let&rsquo;s break that down.</p>
+<h5 id="a2c">A2C</h5>
+<ul>
+<li><strong>Policy gradient</strong> - These are a way of teaching an agent to learn directly how to choose actions. They mathematically compute how to adjust the policy based on feedback. The main idea is this &ndash; If an action gives a high reward, make it more likely in the future</li>
+<li><strong>Value Functions</strong> - These help evaluate how good states and actions are, improving decision-making. Here is an analogy that helped me understand this:
+<ul>
+<li>Let&rsquo;s say you are trying to decide whether to attend a party:
+<ul>
+<li>State Value $V(S)$  - Your estimate of how much fun the party will be overall, like &ldquo;I think this party will be a 7/10 overall&rdquo;</li>
+<li>Action Value $Q(s,a)$ - Your estimate of how much fun the party will be depending on specific actions you take. For example, if I talk to new people it will be a 9/10, if I sit in the corner on my phone it will be a 5/10.</li>
+</ul>
+</li>
+<li>The Advantage Function compares the action value to the state value:
+$$A(s,a) = Q(s,a) - V(s)$$</li>
+<li>It answers: &ldquo;How much better or worse is this action compared to just being in this state&rdquo;</li>
+</ul>
+</li>
+<li><strong>Gradient-based Optimization</strong> - This is how we adjust the policy and value estimates using <em>gradients</em>. Here is the analogy that helped me understand this:
+<ul>
+<li>Imagine you are walking around blind on the side of a mountain trying to find the peak:
+<ul>
+<li>You feel around to estimate if the ground is sloping up or down</li>
+<li>If it&rsquo;s up, you walk that way (this is the gradient)</li>
+<li>Repeat until you are at the top</li>
+</ul>
+</li>
+<li>A &ldquo;loss function&rdquo; tells us how far we are from the goal (the peak here)</li>
+<li>Gradients tell us the direction to step to reduce the loss.</li>
+</ul>
+</li>
+</ul>
+<h5 id="lstm-with-mlp-feature-extractor">LSTM with MLP feature extractor</h5>
+<h6 id="lstm">LSTM</h6>
+<p>Regular neural networks process inputs independently, and they are not very good at understanding sequences or context. For the pwnagotchi, WiFi networks appear, disappear, or change over time, and capturing handshakes depend not only on the current environment, but also on previous actions and observations. A standard neural network would not handle this very well. Long Short-Term Memory (LSTM) is a type of Recurrent Neural Network that is made to handle this type of stuff. It keeps track of this type of information over time by maintaining a memory. Imagine you are trying to follow a treasure map. It may depend on previous steps, such as &ldquo;Turn left at the second tree&rdquo;. This type of instruction would only make sense if you remember where the first tree was. This is where LSTMs help out. This relates to the pwnagotchi because it needs to remember patterns like &ldquo;how often is a network active&rdquo; or &ldquo;how does the client activity fluctuate&rdquo; or &ldquo;what were the results of the previous actions&rdquo;</p>
+<h6 id="mlp-feature-extractor">MLP Feature Extractor</h6>
+<p>Multi-Layer Perception can be thought of like a filter that processes messy junk input data into information that is useful. Remember, data and information are not the same thing. The input data may be something like raw Wifi data like signals and encryption types, and the output may be a decision or feature like &ldquo;This network is likely to have an active client&rdquo;</p>
+<h6 id="using-them-together">Using them together</h6>
+<p>The MLP processes the junk data into something meaningful, and then that useful information is used by the LSTM to maintain a memory of past actions, observations, and rewards to make better decisions.</p>
+<p>Example - If a network consistently fails to yield handshakes, the LSTM learns to deprioritize it. If a pattern emerges (11am has more active clients), the LSTM remembers and exploits it.</p>
+<p><strong>Why combine them?</strong></p>
+<ul>
+<li>WiFi networks are <em>sequential</em></li>
+<li>Raw WiFi data is <em>complex</em></li>
+<li>The A2C algorithm explored above needs a clear understanding of the current state and how it evolves over time. The MLP and the LSTM provide this understanding.</li>
+</ul>
+<hr>
+<h4 id="tldr">TL;DR</h4>
+<ol>
+<li>The pwnagotchi scans for WiFi networks and collects raw data</li>
+<li>The raw data is processed by the MLP into a compact representation (features)</li>
+<li>The LSTM takes these features over time, maintains a memory of past observations and actions, and outputs a state representation</li>
+<li>Reinforcement Learning (A2C) uses the processed data to decide which network to target and whether to wait, move, de-auth, etc.</li>
+<li>The rewards from those actions help refine both the LSTM and MLP over time</li>
+</ol>
+<hr>
+<h2 id="setting-up-pwnagotchi">Setting up Pwnagotchi</h2>
+<h3 id="hardware-assembly">Hardware Assembly</h3>
+<p>This was very straightforward so I will not go into a ton of detail here. First, the PiSugar 3 Portable 1200 mAh Battery is fixed to the back of the Raspberry Pi using the pogo connectors. This was super cool and the first time that I&rsquo;ve used these before. Then, the Waveshare 2.13 in E-ink Display was connected through the GPIO pins on the front of the Raspberry Pi. I used a SanDisk 64GB Extreme microSD card, and I printed the case that I used. I have a FlashForge Adventurer Pro 4 3d printer that I used for this.</p>
+<p><strong>IMPORTANT</strong> -&gt; That ribbon cable on the back of the screen is ultra sensitive and fragile. I accidentally barely nicked it when putting it in the case that I 3d printed, which has caused my display to look wonky. I&rsquo;ve ordered a replacement because it&rsquo;s annoying to look at now and a constant reminder that I did not pay enough attention after I literally heard &ldquo;beware of hitting the ribbon cable on the back, it break easily&rdquo; seconds before shoving it into the case&hellip;.</p>
+<p>!<img src="/images/Pasted%20image%2020241211144107.png" alt="Image Description"></p>
+<h3 id="installing-the-firmwareos">Installing the Firmware/OS</h3>
+<p>This was pretty simple and straight forward. I used <a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a> <code>Pwnagotchi 2.9.2</code> which was the latest release at the time of writing this. <em>If you are doing this on a Raspberry Pi Zero W, make sure you choose the 32-bit version.</em> This OS is based on RasPiOS. I used the Raspberry Pi Imager to flash the MicroSD card. Make sure if using the RPi Imager, you hit &lsquo;NO, CLEAR SETTINGS&rsquo; when prompted to use your saved config.</p>
+<h3 id="network--and-other-config-setup">Network  and Other Config Setup</h3>
+<p>For the first time connecting to your pwnagotchi on Windows, you&rsquo;ll need to download and install the RNDIS driver found <a href="https://github.com/jayofelony/pwnagotchi/wiki/mod-rndis-driver-windows.zip">here</a>. After this was installed and my pwnagotchi was connected through it&rsquo;s data port (the middle one) to my PC, I had to go to my adapter settings in the Network and Internet Control Panel pane and choose the device named something like <code>USB Ethernet/RNDIS Gadget</code>. From here change the network properties to the following:</p>
+<pre tabindex="0"><code>IP: 10.0.0.1
+Subnet: 255.255.255.0
+#LEAVE EVERYTHING ELSE BLANK
+</code></pre><p>After this is done, you should be able to <code>ssh pi@10.0.0.2</code> and you will get the following setup wizard to continue with the configuration:
+!<img src="/images/Pasted%20image%2020241209195647.png" alt="Image Description">
+After this is done, in theory, you should be good to go to use it as a standalone device to get all the packets and everything that you are collecting, then you can plug it back into your PC, connect to it through SSH, and get all the data and whatnot that you collected with the pwnagotchi. This is where I am currently having trouble.</p>
+<ul>
+<li>I have tried downloading the drivers again and finding my device within the Change Adapter Settings pane, but the device never shows up.</li>
+<li>I have tried connecting to my macbook, with no luck. I am able to see it under network devices, however after changing the network settings to what is mentioned earlier, I am unable to SSH to <code>pi@10.0.0.2</code></li>
+<li>I have tried going through this in a Kali VM, using the Linux install script and making sure I have USB device set up properly to work with the VM. I used the <code>linux_connection_share.sh</code> script to set everything up with no luck. I am unable to ping the pwnagotchi or anything.</li>
+</ul>
+<p>Maybe I have the wrong driver or something? That doesn&rsquo;t make sense since it worked before but <a href="https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched">https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched</a> may get this working
+<a href="https://pwnagotchi.org/getting-started/first-run-mac/index.html">Here</a> is the guide that I&rsquo;m following for getting it to work on mac &ndash; will check back in afterwards because I did not set my DNS settings and router settings like this guide describes&hellip;</p>
+<p>UPDATE -&gt; It was the freaking USB cable..</p>
+<p>After using the correct cable.. I was able to pass the USB connection through to my Kali Linux machine. After that, to get Internet on the pwnagotchi, I ran the following:
+!<img src="/images/Pasted%20image%2020241214121457.png" alt="Image Description"></p>
+<p>This script just allows the pwnagotchi to share my Kali Linux VM&rsquo;s Internet connection. The script can be found <a href="https://raw.githubusercontent.com/jayofelony/pwnagotchi/master/scripts/linux_connection_share.sh%3E">here</a>.</p>
+<h2 id="pwnagotchi-in-action">Pwnagotchi in Action</h2>
+<p>After many failed attempts and research, we are finally good to go! I&rsquo;ve played around with both the Jayofelony and the Aluminum-ice version. The screenshot below is from the latter.
+!<img src="/images/Pasted%20image%2020250110183557.png" alt="Image Description">
+!<img src="/images/Pasted%20image%2020250110183949.png" alt="Image Description">
+!<img src="/images/Pasted%20image%2020241214092600.png" alt="Image Description"></p>
+<h2 id="challenges-and-lessons-learned">Challenges and Lessons Learned</h2>
+<p>Very many&hellip; My first piece of advise to hopefully save yourself from hours of frustration like I myself encountered is to make sure your data cable is working properly. While I was positive I was using a data cable, it must have been faulty or something which is what caused the majority of my issues. After that was figured out, most other things were solved pretty easily.</p>
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+<p>Insert &lsquo;This is for educational purposes only&rsquo; disclamer here..</p>
+<p>But seriously, deauth attacks are illegal to perform on networks that you do not own/have permission to do this on.</p>
+<p>But as GotMyOrangeCrush put so well on a reddit post in reference to this, &ldquo;Unless you deauth grandma&rsquo;s pacemaker or interfere with the navigation of nearby aircraft, you&rsquo;re unlikely to get a love letter from a three letter agency.</p>
+<p>Since I am currently writing a paper on the legal/ethics in cybersecurity for one of my college courses, I feel like it may actually benefit to go into this a little bit here.</p>
+<p>The FCC states under Section 333 of the Communications Act that sending these deauthentication or disassociation frames intentionally is considered a form of &ldquo;Wi-Fi blocking&rdquo; and therefore illegal. (FCC, 2015)</p>
+<p>What this act essentially states in relation to this is that it is illegal to interfere with or disrupt Wi-Fi by any means, which would include sending deauthentication packets. Sending these deauth packets are considered a form of jamming and are strictly prohibited, because they prevent users from accessing lawful communications services.</p>
+<p>That being said, I believe these deauth packets are sent by default, so if you plan on having the pwnagotchi powered on when you are anywhere in reach of other networks, you should turn this feature off.</p>
+<h2 id="future-enhancements">Future Enhancements</h2>
+<p>Things I would like to add:</p>
+<ul>
+<li>Encryption in case I lose it</li>
+<li>I&rsquo;d like to do some hardware upgrades like adding GPS and a high-gain antenna to this for wardriving
+<ul>
+<li>This would benefit from adding some 3rd party modules like <code>f0xtr0t</code> or <code>Wardriver</code></li>
+</ul>
+</li>
+<li>There are some cool 3rd party UI plug-ins I&rsquo;ve been looking at. Some of interest include:
+<ul>
+<li>memtemp-plus</li>
+<li>Pwnmenu</li>
+<li>Experience and Age Plugins</li>
+<li>Pisugar 3 plug to show battery information in the UI</li>
+</ul>
+</li>
+<li>Other 3rd party plugins I thought were interesting:
+<ul>
+<li>handshakes-dl-hashie</li>
+<li>better_quickdic</li>
+</ul>
+</li>
+</ul>
+<p>I&rsquo;ve also been looking into <code>fancigotchi</code> which looks like it may be a cool rabbit trail to go down.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This was a very fun project that certainly tested my patience at times. During the learning journey, I got to explore AC2 AI models, dive deeper into networking, and sharpen my general Linux troubleshooting skills. I also gained hands-on experience with configuring and optimizing the Raspberry Pi and some of the hardware components used. Along the way, I had to troubleshoot firmware issues, tweak numerous settings and configs, and even dig into some Python scripts to customize my Pwnagotchi’s behavior.</p>
+<p>Beyond the technical skills, this project reinforced an important lesson: ==experimentation, trial and error, and problem-solving are just part of the process==. Sometimes, things won’t work the first (or 50th) time, but persistence pays off. In the end, having a fully operational Pwnagotchi that passively sniffs handshakes while rocking it&rsquo;s little AI-driven personality makes all the effort worth it.</p>
+<p>Would I recommend this project? Absolutely! if you have the patience and curiosity to push through the inevitable hurdles. Now, time to take my Pwnagotchi out for a little field testing.</p>
+<h2 id="supporting-content">Supporting Content</h2>
+<h3 id="photo-gallery">Photo Gallery</h3>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.23.47%20AM.png" alt="Image Description"></p>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.07.31%20AM.png" alt="Image Description"></p>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.24.14%20AM.png" alt="Image Description"></p>
+<p>!<img src="/images/Screenshot%202024-12-10%20at%207.24.37%20AM.png" alt="Image Description"></p>
+<h3 id="code-and-config">Code and Config</h3>
+<h3 id="references-and-resources">References and Resources</h3>
+<p>Check out  <a href="https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/">https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/</a> for full details on the project and <a href="https://pwnagotchi.ai/installation/">https://pwnagotchi.ai/installation/</a> for a tutorial on how to build it too.</p>
+<p>Other mentioned:
+<a href="https://github.com/V0r-T3x/Fancygotchi">https://github.com/V0r-T3x/Fancygotchi</a>
+<a href="https://github.com/aluminum-ice/pwnagotchi/releases">https://github.com/aluminum-ice/pwnagotchi/releases</a>
+<a href="https://pwnagotchi.org/index.html">https://pwnagotchi.org/index.html</a>
+<a href="https://github.com/jayofelony/pwnagotchi/wiki">https://github.com/jayofelony/pwnagotchi/wiki</a>
+<a href="https://hackernoon.imgix.net/hn-images/1">https://hackernoon.imgix.net/hn-images/1</a>*JJ3Dx4O3blc_haCUjv5Y5A.jpeg</p>
+<p>Reference for FCC discussion:
+FCC. (2015). <em>FCC Enforcement Advisory: Communications Act Prohibition Against Jamming, Blocking, or Interfering with Wi-Fi and Other Communications Networks.</em> Federal Communications Commission. Retrieved from <a href="https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html">https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html</a></p>
+<hr>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Hello, World- My first post</title>
+            <link>https://phdbuilds.tech/posts/my-first-post/</link>
+            <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
+            
+            <guid>https://phdbuilds.tech/posts/my-first-post/</guid>
+            <description>&lt;h2 id=&#34;helloworld-&#34;&gt;Hello,world 👋🏻🌎&lt;/h2&gt;
+&lt;p&gt;This is going to be the place where I post all my tech projects and the things I learn along the way. When I think about how far I’ve come since November of 2022, it’s surprising to realize just how much has changed. Before then, I knew almost nothing about technology. Coming from a fitness enthusiast (aka gym bro) and undergrad biology student background (premed dropout), the only exposure I had to anything technical was some very basic concepts I learned from my genetics professor, who was a bioinformatics guy. Less than 2 years ago I didn’t know what DNS stood for, I&amp;rsquo;d never heard of a VLAN or a subnet, and the idea of writing a basic for-loop might as well have been magic to me.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="helloworld-">Hello,world 👋🏻🌎</h2>
+<p>This is going to be the place where I post all my tech projects and the things I learn along the way. When I think about how far I’ve come since November of 2022, it’s surprising to realize just how much has changed. Before then, I knew almost nothing about technology. Coming from a fitness enthusiast (aka gym bro) and undergrad biology student background (premed dropout), the only exposure I had to anything technical was some very basic concepts I learned from my genetics professor, who was a bioinformatics guy. Less than 2 years ago I didn’t know what DNS stood for, I&rsquo;d never heard of a VLAN or a subnet, and the idea of writing a basic for-loop might as well have been magic to me.</p>
+<p>Learning tech on my own has been a long, slow process, and I’ll admit there are times when I feel like I haven’t made any progress at all. But looking back, I can see how much I’ve accomplished in just two years. I’ve built a solid foundation in technology entirely on my own, diving into concepts and skills that once felt completely foreign to me. This blog is my way of documenting that journey. Not only will it help me see what I’ve learned over time, but it will also serve as a detailed record of my projects, my struggles, and the lessons I’ve picked up along the way. My hope is that this will not only help &ldquo;future me&rdquo; but also anyone else who stumbles across this site and is walking a similar path.</p>
+<p>Initially, I planned to create a site from scratch, but let’s face it—web development isn’t really my thing. I’ve always had an interest in all things cyber, but I find web development to be the least exciting part of tech. Creating a site from scratch caused just enough friction for me to <em>not</em> want to do it.</p>
+<p>Then, NetworkChuck posted a video about automating a blog with Obsidian. That video was a game-changer. Now, I can continue to take notes in Obsidian (where I already spend a lot of my time), run a simple script, and boom—my blog is updated. It only took about an hour to set up, and along the way, I learned some new technologies that were fun to implement.</p>
+<hr>
+<h3 id="my-workflow">My workflow</h3>
+<p>Here’s how it works:</p>
+<ol>
+<li>Create the blog post as a note in my Obsidian library.</li>
+<li>Add a custom front matter template and move the note to my <code>BLOG</code> directory.</li>
+<li>Run the script:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./updateblog.sh
+</span></span></code></pre></div><p>That&rsquo;s it!</p>
+<hr>
+<h3 id="how-it-works">How it works:</h3>
+<h4 id="what-you-need"><strong>What You Need:</strong></h4>
+<ul>
+<li><strong>Hugo</strong>: A static site generator that builds the site from your markdown files.</li>
+<li><strong>GitHub</strong>: For version control and hosting the site&rsquo;s repository.</li>
+<li><strong>Hostinger</strong>: A hosting platform where the site is deployed.</li>
+<li>A couple of simple scripts to automate the whole process.</li>
+</ul>
+<hr>
+<h4 id="behind-the-scenes">Behind the Scenes:</h4>
+<ol>
+<li><strong>Syncing your Obsidian notes</strong>: The script uses <code>rsync</code> to copy all the files from my Obsidian <code>BLOG</code> directory to the <code>content/posts</code> folder in Hugo. This makes sure that my Hugo content is always in sync with the notes that I create:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av --delete <span style="color:#f92672">{</span>SOURCE_PATH<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>DESTINATION_PATH<span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>This command:</p>
+<ul>
+<li><code>-a</code> preserves the file attributes and directory structure</li>
+<li><code>-v</code> provides verbose output</li>
+<li><code>--delete</code> removes any files in the destination that are not is the source. This way it&rsquo;s a perfect mirror.</li>
+</ul>
+<ol start="2">
+<li>
+<p><strong>Handling images</strong>: A Python script (see below) processes any images that are referenced in my markdown files and copies them to where they need to be in the Hugo directory.
+!<img src="/images/Pasted%20image%2020241208085952.png" alt="Image Description"></p>
+</li>
+<li>
+<p><strong>Building the Hugo Site</strong>: Hugo builds the static site by generating HTML files from my markdown files.</p>
+</li>
+<li>
+<p><strong>Deploying to Github</strong>:</p>
+<ol>
+<li>All changes in the Hugo directory are added and pushed to the <code>main</code> branch in my Github repo.</li>
+<li>The <code>git subtree split</code> command creates a lightweight deployment branch (<code>hostiner-deploy</code>) containing only the <code>public/</code> directory. This branch is force pushed to the Hostinger hosting branch
+What is <code>git subtree split</code>? I&rsquo;m pretty new to <code>git</code> and development in general, so I was not familiar with this prior to this project. What this does is extracts a specific folder (in this case <code>public/</code>) into it&rsquo;s own separate branch. This way only the built site is deployed, and this keeps the repo organized.</li>
+</ol>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git subtree split --prefix public -b hostinger-deploy
+</span></span><span style="display:flex;"><span>git push origin hostinger-deploy:hostinger --force
+</span></span></code></pre></div><ol start="5">
+<li><strong>Webhooks for Deployment</strong>: Once the <code>hostinger</code> branch is updated, a webhook configured on Hostinger detects the change and pulls the updated branch from Github. The site it then redeployed automatically.
+What is a webhook? A webhook is a way for one system to send automated messages to another system when something happens. For this case, GitHub sends a signal to Hostinger when new changes are pushed to the <code>hostinger</code> branch, triggering Hostinger to pull the changes and redeploy the site.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>This workflow makes blogging so easy that I actually want to do it. Maintaining a separate website used to feel like too much effort, and there are countless ways to do it. But all of them added just enough friction for me to avoid it entirely.</p>
+<p>Now, I’m excited to share my projects and document my learning process here. I hope you enjoy following along as much as I enjoy creating these projects. 🚀🎸</p>
+]]></content>
+        </item>
+        
+    </channel>
 </rss>
