@@ -35,8 +35,8 @@
 <p>Time is definitely in short supply when you’re working full-time, going to college full-time, driving 45 minutes to work each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.</p>
 <p>By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading <em>Ultralearning</em> by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the<code>./lib</code> section, so stay tuned for that.</p>
 <p>Even though using Anki is great, I found myself burning way too much time on the step where I take my notes and manually turn them into flashcards:</p>
-<pre tabindex="0"><code>Read material -&gt; Take notes -&gt; Create flashcards from notes
-</code></pre><p>For some things (like conceptual understanding) that process is actually helpful. But when you need to brute memorize loads of facts (like random tidbits for certain CompTIA exams), turning each set of notes into flashcards by hand felt tedious. That’s where this Anki-maker script comes in. It was born to solve the “time sink” problem and let me generate flashcards super quickly from my existing notes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Read material -&gt; Take notes -&gt; Create flashcards from notes
+</span></span></code></pre></div><p>For some things (like conceptual understanding) that process is actually helpful. But when you need to brute memorize loads of facts (like random tidbits for certain CompTIA exams), turning each set of notes into flashcards by hand felt tedious. That’s where this Anki-maker script comes in. It was born to solve the “time sink” problem and let me generate flashcards super quickly from my existing notes.</p>
 <hr>
 <h2 id="how-it-works">How it works</h2>
 <p>The key to this project is <a href="https://github.com/danielmiessler/fabric">Daniel Miessler’s Fabric</a>. Fabric basically sets up a “pattern” that instructs an AI model how to transform a chunk of text into something else—like, in our case, a set of Q&amp;A cards.</p>
@@ -50,37 +50,37 @@
 <p><strong>For example</strong>, I have a “Map of Content” (MoC) page for each exam or course, with all submodules and lessons linked. Then each individual note page for Module 1 is prefixed with <code>LM1</code>. That way, when I’m ready to generate flashcards, I just punch in the prefix, and voilà—only those notes get processed.</p>
 <p>Here’s an example of how I handle modules in my Obsidian vault:</p>
 <h4 id="map-of-content-moc">Map of Content (MoC)</h4>
-<pre tabindex="0"><code>---
-Title: CompTIA Linux+
-Tags:
-- MoC
----
-## Overview
-This is my MoC for the Linux certification exam. Additional material and other useful learning material can be found at (additional links and material)
-
-## Modules
-[[Linux+ Module 1 Essential Linux Management]]
-[[Linux+ Module 2 Storage Management]]
-[[Linux+ Module 3 Common Administration Tools]]
-etc...
-</code></pre><p>From here, I would have addition sub-module pages, I&rsquo;ll use Module 1 for example. This would essentially be a master page for all of the lessons that are within this module. This helps greatly with organization and finding my notes.</p>
-<pre tabindex="0"><code>---
-Title: Linux+ Module 1 Essential Linux Management
-Tags:
-- MoC
----
-## Overview
-Module 1 covers topics such as managing user related security, network management, and managing service.
-## Submodules
-### Lesson 1: Managing User Related Security
-[[LM1 - Managing ACLs]]
-[[LM1 - Managing File System Attributes]]
-[[LM1 - Using Policykit and pkexec]]
-### Lesson 2: Network Management
-[[LM1 - Configuring Interfaces]]
-[[LM1 - Analyzing Network Traffic]]
-etc...
-</code></pre><p>!<img src="/images/Pasted%20image%2020250126122544.png" alt="Image Description">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>Title: CompTIA Linux+
+</span></span><span style="display:flex;"><span>Tags:
+</span></span><span style="display:flex;"><span>- MoC
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>## Overview
+</span></span><span style="display:flex;"><span>This is my MoC for the Linux certification exam. Additional material and other useful learning material can be found at (additional links and material)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>## Modules
+</span></span><span style="display:flex;"><span>[[Linux+ Module 1 Essential Linux Management]]
+</span></span><span style="display:flex;"><span>[[Linux+ Module 2 Storage Management]]
+</span></span><span style="display:flex;"><span>[[Linux+ Module 3 Common Administration Tools]]
+</span></span><span style="display:flex;"><span>etc...
+</span></span></code></pre></div><p>From here, I would have addition sub-module pages, I&rsquo;ll use Module 1 for example. This would essentially be a master page for all of the lessons that are within this module. This helps greatly with organization and finding my notes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>Title: Linux+ Module 1 Essential Linux Management
+</span></span><span style="display:flex;"><span>Tags:
+</span></span><span style="display:flex;"><span>- MoC
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>## Overview
+</span></span><span style="display:flex;"><span>Module 1 covers topics such as managing user related security, network management, and managing service.
+</span></span><span style="display:flex;"><span>## Submodules
+</span></span><span style="display:flex;"><span>### Lesson 1: Managing User Related Security
+</span></span><span style="display:flex;"><span>[[LM1 - Managing ACLs]]
+</span></span><span style="display:flex;"><span>[[LM1 - Managing File System Attributes]]
+</span></span><span style="display:flex;"><span>[[LM1 - Using Policykit and pkexec]]
+</span></span><span style="display:flex;"><span>### Lesson 2: Network Management
+</span></span><span style="display:flex;"><span>[[LM1 - Configuring Interfaces]]
+</span></span><span style="display:flex;"><span>[[LM1 - Analyzing Network Traffic]]
+</span></span><span style="display:flex;"><span>etc...
+</span></span></code></pre></div><p>!<img src="/images/Pasted%20image%2020250126122544.png" alt="Image Description">
 !<img src="/images/Pasted%20image%2020250126122801.png" alt="Image Description">
 The key here is as you can see, all the notes that are linked within this page have the prefix of &ldquo;LM1&rdquo;, for Linux+ Module 1. What this does is essentially let&rsquo;s me <code>find</code>or filter this handful of notes very easily throughout my thousands of other notes. This is also essential for this script to find the relevant notes. This method of note taking is very modular and I can&rsquo;t recommend it more.</p>
 <hr>
@@ -680,10 +680,10 @@ $$A(s,a) = Q(s,a) - V(s)$$</li>
 <p>This was pretty simple and straight forward. I used <a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a> <code>Pwnagotchi 2.9.2</code> which was the latest release at the time of writing this. <em>If you are doing this on a Raspberry Pi Zero W, make sure you choose the 32-bit version.</em> This OS is based on RasPiOS. I used the Raspberry Pi Imager to flash the MicroSD card. Make sure if using the RPi Imager, you hit &lsquo;NO, CLEAR SETTINGS&rsquo; when prompted to use your saved config.</p>
 <h3 id="network--and-other-config-setup">Network  and Other Config Setup</h3>
 <p>For the first time connecting to your pwnagotchi on Windows, you&rsquo;ll need to download and install the RNDIS driver found <a href="https://github.com/jayofelony/pwnagotchi/wiki/mod-rndis-driver-windows.zip">here</a>. After this was installed and my pwnagotchi was connected through it&rsquo;s data port (the middle one) to my PC, I had to go to my adapter settings in the Network and Internet Control Panel pane and choose the device named something like <code>USB Ethernet/RNDIS Gadget</code>. From here change the network properties to the following:</p>
-<pre tabindex="0"><code>IP: 10.0.0.1
-Subnet: 255.255.255.0
-#LEAVE EVERYTHING ELSE BLANK
-</code></pre><p>After this is done, you should be able to <code>ssh pi@10.0.0.2</code> and you will get the following setup wizard to continue with the configuration:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>IP: 10.0.0.1
+</span></span><span style="display:flex;"><span>Subnet: 255.255.255.0
+</span></span><span style="display:flex;"><span>#LEAVE EVERYTHING ELSE BLANK
+</span></span></code></pre></div><p>After this is done, you should be able to <code>ssh pi@10.0.0.2</code> and you will get the following setup wizard to continue with the configuration:
 !<img src="/images/Pasted%20image%2020241209195647.png" alt="Image Description">
 After this is done, in theory, you should be good to go to use it as a standalone device to get all the packets and everything that you are collecting, then you can plug it back into your PC, connect to it through SSH, and get all the data and whatnot that you collected with the pwnagotchi. This is where I am currently having trouble.</p>
 <ul>
@@ -807,15 +807,47 @@ FCC. (2015). <em>FCC Enforcement Advisory: Communications Act Prohibition Agains
 <li><code>--delete</code> removes any files in the destination that are not is the source. This way it&rsquo;s a perfect mirror.</li>
 </ul>
 <ol start="2">
-<li>
-<p><strong>Handling images</strong>: A Python script (see below) processes any images that are referenced in my markdown files and copies them to where they need to be in the Hugo directory.
-!<img src="/images/Pasted%20image%2020241208085952.png" alt="Image Description"></p>
-</li>
-<li>
-<p><strong>Building the Hugo Site</strong>: Hugo builds the static site by generating HTML files from my markdown files.</p>
-</li>
-<li>
-<p><strong>Deploying to Github</strong>:</p>
+<li><strong>Handling images</strong>: A Python script (see below) processes any images that are referenced in my markdown files and copies them to where they need to be in the Hugo directory.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> shutil
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Paths</span>
+</span></span><span style="display:flex;"><span>posts_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/logan/Blog/phdbuilds/content/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>attachments_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/logan/Notes/obsidian library/99 - META/Assets/&#34;</span>
+</span></span><span style="display:flex;"><span>static_images_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/logan/Blog/phdbuilds/static/images/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 1: Process each markdown file in the posts directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> filename <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(posts_dir):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> filename<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#34;.md&#34;</span>):
+</span></span><span style="display:flex;"><span>        filepath <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(posts_dir, filename)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(filepath, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>            content <span style="color:#f92672">=</span> file<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)</span>
+</span></span><span style="display:flex;"><span>        images <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>findall(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\!\[([^\]]*)\]\((.*\.png)\)&#39;</span>, content)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 3: Replace image links and ensure URLs are correctly formatted</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> image <span style="color:#f92672">in</span> images:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Prepare the Markdown-compatible link with %20 replacing spaces</span>
+</span></span><span style="display:flex;"><span>            markdown_image <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;![Image Description](/images/</span><span style="color:#e6db74">{</span>image<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39; &#39;</span>, <span style="color:#e6db74">&#39;%20&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">)&#34;</span>
+</span></span><span style="display:flex;"><span>            content <span style="color:#f92672">=</span> content<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;!</span><span style="color:#e6db74">{</span>image<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>, markdown_image)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 4: Copy the image to the Hugo static/images directory if it exists</span>
+</span></span><span style="display:flex;"><span>            image_source <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(attachments_dir, image)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(image_source):
+</span></span><span style="display:flex;"><span>                shutil<span style="color:#f92672">.</span>copy(image_source, static_images_dir)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 5: Write the updated content back to the markdown file</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(filepath, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>            file<span style="color:#f92672">.</span>write(content)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Markdown files processed and images copied successfully.&#34;</span>)
+</span></span></code></pre></div><ol start="3">
+<li><strong>Building the Hugo Site</strong>: Hugo builds the static site by generating HTML files from my markdown files.</li>
+<li><strong>Deploying to Github</strong>:
 <ol>
 <li>All changes in the Hugo directory are added and pushed to the <code>main</code> branch in my Github repo.</li>
 <li>The <code>git subtree split</code> command creates a lightweight deployment branch (<code>hostiner-deploy</code>) containing only the <code>public/</code> directory. This branch is force pushed to the Hostinger hosting branch

@@ -168,9 +168,8 @@ By working Anki into my daily study routine, I’ve noticed a huge boost in how 
 <p>Time is definitely in short supply when you’re working full-time, going to college full-time, driving 45 minutes to work each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.</p>
 <p>By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading <em>Ultralearning</em> by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the<code>./lib</code> section, so stay tuned for that.</p>
 <p>Even though using Anki is great, I found myself burning way too much time on the step where I take my notes and manually turn them into flashcards:</p>
-<pre class="mermaid">Read material -> Take notes -> Create flashcards from notes
-</pre>
-<p>For some things (like conceptual understanding) that process is actually helpful. But when you need to brute memorize loads of facts (like random tidbits for certain CompTIA exams), turning each set of notes into flashcards by hand felt tedious. That’s where this Anki-maker script comes in. It was born to solve the “time sink” problem and let me generate flashcards super quickly from my existing notes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Read material -&gt; Take notes -&gt; Create flashcards from notes
+</span></span></code></pre></div><p>For some things (like conceptual understanding) that process is actually helpful. But when you need to brute memorize loads of facts (like random tidbits for certain CompTIA exams), turning each set of notes into flashcards by hand felt tedious. That’s where this Anki-maker script comes in. It was born to solve the “time sink” problem and let me generate flashcards super quickly from my existing notes.</p>
 <hr>
 <h2 id="how-it-works">How it works</h2>
 <p>The key to this project is <a href="https://github.com/danielmiessler/fabric">Daniel Miessler’s Fabric</a>. Fabric basically sets up a “pattern” that instructs an AI model how to transform a chunk of text into something else—like, in our case, a set of Q&amp;A cards.</p>
@@ -184,39 +183,37 @@ By working Anki into my daily study routine, I’ve noticed a huge boost in how 
 <p><strong>For example</strong>, I have a “Map of Content” (MoC) page for each exam or course, with all submodules and lessons linked. Then each individual note page for Module 1 is prefixed with <code>LM1</code>. That way, when I’m ready to generate flashcards, I just punch in the prefix, and voilà—only those notes get processed.</p>
 <p>Here’s an example of how I handle modules in my Obsidian vault:</p>
 <h4 id="map-of-content-moc">Map of Content (MoC)</h4>
-<pre class="mermaid">---
-Title: CompTIA Linux+
-Tags:
-- MoC
----
-## Overview
-This is my MoC for the Linux certification exam. Additional material and other useful learning material can be found at (additional links and material)
-
-## Modules
-[[Linux+ Module 1 Essential Linux Management]]
-[[Linux+ Module 2 Storage Management]]
-[[Linux+ Module 3 Common Administration Tools]]
-etc...
-</pre>
-<p>From here, I would have addition sub-module pages, I&rsquo;ll use Module 1 for example. This would essentially be a master page for all of the lessons that are within this module. This helps greatly with organization and finding my notes.</p>
-<pre class="mermaid">---
-Title: Linux+ Module 1 Essential Linux Management
-Tags:
-- MoC
----
-## Overview
-Module 1 covers topics such as managing user related security, network management, and managing service.
-## Submodules
-### Lesson 1: Managing User Related Security
-[[LM1 - Managing ACLs]]
-[[LM1 - Managing File System Attributes]]
-[[LM1 - Using Policykit and pkexec]]
-### Lesson 2: Network Management
-[[LM1 - Configuring Interfaces]]
-[[LM1 - Analyzing Network Traffic]]
-etc...
-</pre>
-<p>!<img src="/images/Pasted%20image%2020250126122544.png" alt="Image Description">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>Title: CompTIA Linux+
+</span></span><span style="display:flex;"><span>Tags:
+</span></span><span style="display:flex;"><span>- MoC
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>## Overview
+</span></span><span style="display:flex;"><span>This is my MoC for the Linux certification exam. Additional material and other useful learning material can be found at (additional links and material)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>## Modules
+</span></span><span style="display:flex;"><span>[[Linux+ Module 1 Essential Linux Management]]
+</span></span><span style="display:flex;"><span>[[Linux+ Module 2 Storage Management]]
+</span></span><span style="display:flex;"><span>[[Linux+ Module 3 Common Administration Tools]]
+</span></span><span style="display:flex;"><span>etc...
+</span></span></code></pre></div><p>From here, I would have addition sub-module pages, I&rsquo;ll use Module 1 for example. This would essentially be a master page for all of the lessons that are within this module. This helps greatly with organization and finding my notes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>Title: Linux+ Module 1 Essential Linux Management
+</span></span><span style="display:flex;"><span>Tags:
+</span></span><span style="display:flex;"><span>- MoC
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>## Overview
+</span></span><span style="display:flex;"><span>Module 1 covers topics such as managing user related security, network management, and managing service.
+</span></span><span style="display:flex;"><span>## Submodules
+</span></span><span style="display:flex;"><span>### Lesson 1: Managing User Related Security
+</span></span><span style="display:flex;"><span>[[LM1 - Managing ACLs]]
+</span></span><span style="display:flex;"><span>[[LM1 - Managing File System Attributes]]
+</span></span><span style="display:flex;"><span>[[LM1 - Using Policykit and pkexec]]
+</span></span><span style="display:flex;"><span>### Lesson 2: Network Management
+</span></span><span style="display:flex;"><span>[[LM1 - Configuring Interfaces]]
+</span></span><span style="display:flex;"><span>[[LM1 - Analyzing Network Traffic]]
+</span></span><span style="display:flex;"><span>etc...
+</span></span></code></pre></div><p>!<img src="/images/Pasted%20image%2020250126122544.png" alt="Image Description">
 !<img src="/images/Pasted%20image%2020250126122801.png" alt="Image Description">
 The key here is as you can see, all the notes that are linked within this page have the prefix of &ldquo;LM1&rdquo;, for Linux+ Module 1. What this does is essentially let&rsquo;s me <code>find</code>or filter this handful of notes very easily throughout my thousands of other notes. This is also essential for this script to find the relevant notes. This method of note taking is very modular and I can&rsquo;t recommend it more.</p>
 <hr>
@@ -522,30 +519,6 @@ The key here is as you can see, all the notes that are linked within this page h
 
 
 
-
-<script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
-    const settings = localStorage.getItem("theme") === "dark" ?
-        {
-            startOnLoad: true,
-            theme: "dark",
-            darkMode: true,
-            themeVariables: {
-                tertiaryColor: "#dee3ed"
-            }
-        }
-        :
-        {
-            startOnLoad: true,
-            theme: "base",
-            darkMode: false,
-            themeVariables: {
-                tertiaryColor: "#dee3ed"
-            }
-        }
-    ;
-    mermaid.initialize(settings);
-</script>
 
     </body>
 </html>
