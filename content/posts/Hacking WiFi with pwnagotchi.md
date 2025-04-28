@@ -139,7 +139,7 @@ This was very straightforward so I will not go into a ton of detail here. First,
 This was pretty simple and straight forward. I used https://github.com/jayofelony/pwnagotchi `Pwnagotchi 2.9.2` which was the latest release at the time of writing this. *If you are doing this on a Raspberry Pi Zero W, make sure you choose the 32-bit version.* This OS is based on RasPiOS. I used the Raspberry Pi Imager to flash the MicroSD card. Make sure if using the RPi Imager, you hit 'NO, CLEAR SETTINGS' when prompted to use your saved config. 
 ### Network  and Other Config Setup 
 For the first time connecting to your pwnagotchi on Windows, you'll need to download and install the RNDIS driver found [here](https://github.com/jayofelony/pwnagotchi/wiki/mod-rndis-driver-windows.zip). After this was installed and my pwnagotchi was connected through it's data port (the middle one) to my PC, I had to go to my adapter settings in the Network and Internet Control Panel pane and choose the device named something like `USB Ethernet/RNDIS Gadget`. From here change the network properties to the following:
-```
+```text
 IP: 10.0.0.1
 Subnet: 255.255.255.0
 #LEAVE EVERYTHING ELSE BLANK

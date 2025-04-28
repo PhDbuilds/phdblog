@@ -311,11 +311,10 @@ $$A(s,a) = Q(s,a) - V(s)$$</li>
 <p>This was pretty simple and straight forward. I used <a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a> <code>Pwnagotchi 2.9.2</code> which was the latest release at the time of writing this. <em>If you are doing this on a Raspberry Pi Zero W, make sure you choose the 32-bit version.</em> This OS is based on RasPiOS. I used the Raspberry Pi Imager to flash the MicroSD card. Make sure if using the RPi Imager, you hit &lsquo;NO, CLEAR SETTINGS&rsquo; when prompted to use your saved config.</p>
 <h3 id="network--and-other-config-setup">Network  and Other Config Setup</h3>
 <p>For the first time connecting to your pwnagotchi on Windows, you&rsquo;ll need to download and install the RNDIS driver found <a href="https://github.com/jayofelony/pwnagotchi/wiki/mod-rndis-driver-windows.zip">here</a>. After this was installed and my pwnagotchi was connected through it&rsquo;s data port (the middle one) to my PC, I had to go to my adapter settings in the Network and Internet Control Panel pane and choose the device named something like <code>USB Ethernet/RNDIS Gadget</code>. From here change the network properties to the following:</p>
-<pre class="mermaid">IP: 10.0.0.1
-Subnet: 255.255.255.0
-#LEAVE EVERYTHING ELSE BLANK
-</pre>
-<p>After this is done, you should be able to <code>ssh pi@10.0.0.2</code> and you will get the following setup wizard to continue with the configuration:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>IP: 10.0.0.1
+</span></span><span style="display:flex;"><span>Subnet: 255.255.255.0
+</span></span><span style="display:flex;"><span>#LEAVE EVERYTHING ELSE BLANK
+</span></span></code></pre></div><p>After this is done, you should be able to <code>ssh pi@10.0.0.2</code> and you will get the following setup wizard to continue with the configuration:
 !<img src="/images/Pasted%20image%2020241209195647.png" alt="Image Description">
 After this is done, in theory, you should be good to go to use it as a standalone device to get all the packets and everything that you are collecting, then you can plug it back into your PC, connect to it through SSH, and get all the data and whatnot that you collected with the pwnagotchi. This is where I am currently having trouble.</p>
 <ul>
@@ -575,30 +574,6 @@ FCC. (2015). <em>FCC Enforcement Advisory: Communications Act Prohibition Agains
 
 
 
-
-<script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
-    const settings = localStorage.getItem("theme") === "dark" ?
-        {
-            startOnLoad: true,
-            theme: "dark",
-            darkMode: true,
-            themeVariables: {
-                tertiaryColor: "#dee3ed"
-            }
-        }
-        :
-        {
-            startOnLoad: true,
-            theme: "base",
-            darkMode: false,
-            themeVariables: {
-                tertiaryColor: "#dee3ed"
-            }
-        }
-    ;
-    mermaid.initialize(settings);
-</script>
 
     </body>
 </html>

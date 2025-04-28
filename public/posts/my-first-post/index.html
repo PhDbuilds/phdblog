@@ -44,7 +44,7 @@
   <meta itemprop="description" content="Hello,world 👋🏻🌎 This is going to be the place where I post all my tech projects and the things I learn along the way. When I think about how far I’ve come since November of 2022, it’s surprising to realize just how much has changed. Before then, I knew almost nothing about technology. Coming from a fitness enthusiast (aka gym bro) and undergrad biology student background (premed dropout), the only exposure I had to anything technical was some very basic concepts I learned from my genetics professor, who was a bioinformatics guy. Less than 2 years ago I didn’t know what DNS stood for, I’d never heard of a VLAN or a subnet, and the idea of writing a basic for-loop might as well have been magic to me.">
   <meta itemprop="datePublished" content="2024-12-08T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-12-08T00:00:00+00:00">
-  <meta itemprop="wordCount" content="871">
+  <meta itemprop="wordCount" content="1017">
   <meta itemprop="image" content="https://phdbuilds.tech/">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -197,15 +197,47 @@
 <li><code>--delete</code> removes any files in the destination that are not is the source. This way it&rsquo;s a perfect mirror.</li>
 </ul>
 <ol start="2">
-<li>
-<p><strong>Handling images</strong>: A Python script (see below) processes any images that are referenced in my markdown files and copies them to where they need to be in the Hugo directory.
-!<img src="/images/Pasted%20image%2020241208085952.png" alt="Image Description"></p>
-</li>
-<li>
-<p><strong>Building the Hugo Site</strong>: Hugo builds the static site by generating HTML files from my markdown files.</p>
-</li>
-<li>
-<p><strong>Deploying to Github</strong>:</p>
+<li><strong>Handling images</strong>: A Python script (see below) processes any images that are referenced in my markdown files and copies them to where they need to be in the Hugo directory.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> re
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> shutil
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Paths</span>
+</span></span><span style="display:flex;"><span>posts_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/logan/Blog/phdbuilds/content/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>attachments_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/logan/Notes/obsidian library/99 - META/Assets/&#34;</span>
+</span></span><span style="display:flex;"><span>static_images_dir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/logan/Blog/phdbuilds/static/images/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 1: Process each markdown file in the posts directory</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> filename <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir(posts_dir):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> filename<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#34;.md&#34;</span>):
+</span></span><span style="display:flex;"><span>        filepath <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(posts_dir, filename)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(filepath, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>            content <span style="color:#f92672">=</span> file<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)</span>
+</span></span><span style="display:flex;"><span>        images <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>findall(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\!\[([^\]]*)\]\((.*\.png)\)&#39;</span>, content)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 3: Replace image links and ensure URLs are correctly formatted</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> image <span style="color:#f92672">in</span> images:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Prepare the Markdown-compatible link with %20 replacing spaces</span>
+</span></span><span style="display:flex;"><span>            markdown_image <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;![Image Description](/images/</span><span style="color:#e6db74">{</span>image<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39; &#39;</span>, <span style="color:#e6db74">&#39;%20&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">)&#34;</span>
+</span></span><span style="display:flex;"><span>            content <span style="color:#f92672">=</span> content<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;!</span><span style="color:#e6db74">{</span>image<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>, markdown_image)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># Step 4: Copy the image to the Hugo static/images directory if it exists</span>
+</span></span><span style="display:flex;"><span>            image_source <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(attachments_dir, image)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>exists(image_source):
+</span></span><span style="display:flex;"><span>                shutil<span style="color:#f92672">.</span>copy(image_source, static_images_dir)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 5: Write the updated content back to the markdown file</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(filepath, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>            file<span style="color:#f92672">.</span>write(content)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Markdown files processed and images copied successfully.&#34;</span>)
+</span></span></code></pre></div><ol start="3">
+<li><strong>Building the Hugo Site</strong>: Hugo builds the static site by generating HTML files from my markdown files.</li>
+<li><strong>Deploying to Github</strong>:
 <ol>
 <li>All changes in the Hugo directory are added and pushed to the <code>main</code> branch in my Github repo.</li>
 <li>The <code>git subtree split</code> command creates a lightweight deployment branch (<code>hostiner-deploy</code>) containing only the <code>public/</code> directory. This branch is force pushed to the Hostinger hosting branch
@@ -240,7 +272,7 @@ What is a webhook? A webhook is a way for one system to send automated messages 
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        871 Words
+        1017 Words
       </p>
 
       <p>

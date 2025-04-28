@@ -10,7 +10,7 @@ Time is definitely in short supply when you’re working full-time, going to col
  By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading _Ultralearning_ by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the`./lib` section, so stay tuned for that.
 
 Even though using Anki is great, I found myself burning way too much time on the step where I take my notes and manually turn them into flashcards:
-```
+```text
 Read material -> Take notes -> Create flashcards from notes
 ```
 
@@ -34,7 +34,7 @@ Here’s an example of how I handle modules in my Obsidian vault:
 
 #### Map of Content (MoC)
 
-```
+```text
 ---
 Title: CompTIA Linux+
 Tags:
@@ -52,7 +52,7 @@ etc...
 
 From here, I would have addition sub-module pages, I'll use Module 1 for example. This would essentially be a master page for all of the lessons that are within this module. This helps greatly with organization and finding my notes.
 
-```
+```text
 ---
 Title: Linux+ Module 1 Essential Linux Management
 Tags:
