@@ -110,8 +110,11 @@ This was a simple SQLi vulnerability:
 
 ### Polyjuice Portal
 
-Change the `role` cookie to `admin` in DevTools.
+Change the `role` cookie to `admin` in DevTools:
+
 !![Image Description](/images/Pasted%20image%2020250502213645.png)
+
+
 ---
 
 Thanks to all who participated! 
