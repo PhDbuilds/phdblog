@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
-    <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WGU CTF Scrimmage Spring 2025</title>
+      <link>https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/</link>
+      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The following write‑up covers the WGU CTF scrimmage that wrapped up on &lt;strong&gt;May 2, 2025&lt;/strong&gt;. Some challenges were home‑brewed, others borrowed (e.g., picoCTF). External write‑ups are linked where helpful.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;dfir&#34;&gt;DFIR&lt;/h2&gt;&#xA;&lt;h3 id=&#34;glory-of-the-garden&#34;&gt;Glory of the Garden&lt;/h3&gt;&#xA;&lt;p&gt;Open the image in a hex editor such as &lt;a href=&#34;https://hexed.it/&#34;&gt;https://hexed.it/&lt;/a&gt;.&#xA;You&amp;rsquo;ll find the flag at the bottom:&#xA;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212818.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;unknown&#34;&gt;Unknown&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Upload to &lt;a href=&#34;https://www.aperisolve.com/&#34;&gt;https://www.aperisolve.com/&lt;/a&gt; and wait for analysis.&lt;/li&gt;&#xA;&lt;li&gt;You&amp;rsquo;ll find a base64 message in the Strings section&lt;/li&gt;&#xA;&lt;li&gt;Decode this to find the flag&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212928.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212937.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
       <link>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
