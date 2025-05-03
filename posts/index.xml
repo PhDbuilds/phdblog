@@ -6,8 +6,102 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
-        <lastBuildDate>Tue, 22 Apr 2025 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate>
         <atom:link href="https://phdbuilds.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>WGU CTF Scrimmage Spring 2025</title>
+            <link>https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/</link>
+            <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+            
+            <guid>https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/</guid>
+            <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The following write‑up covers the WGU CTF scrimmage that wrapped up on &lt;strong&gt;May 2, 2025&lt;/strong&gt;. Some challenges were home‑brewed, others borrowed (e.g., picoCTF). External write‑ups are linked where helpful.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;dfir&#34;&gt;DFIR&lt;/h2&gt;
+&lt;h3 id=&#34;glory-of-the-garden&#34;&gt;Glory of the Garden&lt;/h3&gt;
+&lt;p&gt;Open the image in a hex editor such as &lt;a href=&#34;https://hexed.it/&#34;&gt;https://hexed.it/&lt;/a&gt;.
+You&amp;rsquo;ll find the flag at the bottom:
+!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212818.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;unknown&#34;&gt;Unknown&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Upload to &lt;a href=&#34;https://www.aperisolve.com/&#34;&gt;https://www.aperisolve.com/&lt;/a&gt; and wait for analysis.&lt;/li&gt;
+&lt;li&gt;You&amp;rsquo;ll find a base64 message in the Strings section&lt;/li&gt;
+&lt;li&gt;Decode this to find the flag&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212928.png&#34; alt=&#34;Image Description&#34;&gt;
+!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212937.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="overview">Overview</h2>
+<p>The following write‑up covers the WGU CTF scrimmage that wrapped up on <strong>May 2, 2025</strong>. Some challenges were home‑brewed, others borrowed (e.g., picoCTF). External write‑ups are linked where helpful.</p>
+<hr>
+<h2 id="dfir">DFIR</h2>
+<h3 id="glory-of-the-garden">Glory of the Garden</h3>
+<p>Open the image in a hex editor such as <a href="https://hexed.it/">https://hexed.it/</a>.
+You&rsquo;ll find the flag at the bottom:
+!<img src="/images/Pasted%20image%2020250502212818.png" alt="Image Description"></p>
+<hr>
+<h3 id="unknown">Unknown</h3>
+<ol>
+<li>Upload to <a href="https://www.aperisolve.com/">https://www.aperisolve.com/</a> and wait for analysis.</li>
+<li>You&rsquo;ll find a base64 message in the Strings section</li>
+<li>Decode this to find the flag</li>
+</ol>
+<p>!<img src="/images/Pasted%20image%2020250502212928.png" alt="Image Description">
+!<img src="/images/Pasted%20image%2020250502212937.png" alt="Image Description"></p>
+<hr>
+<h3 id="viewing-events">Viewing Events</h3>
+<p>Here&rsquo;s the write-up for this one: <a href="https://medium.com/@jojolucky221/picoctf-2025-forensics-event-viewing-34578235166b">https://medium.com/@jojolucky221/picoctf-2025-forensics-event-viewing-34578235166b</a></p>
+<hr>
+<h2 id="cryptography">Cryptography</h2>
+<h3 id="m4s0n">m4s0n</h3>
+<p>This is a mixture of hex and base64 encodings. See the recipe on  <a href="https://cyberchef.org">https://cyberchef.org</a> below:</p>
+<p>!<img src="/images/Pasted%20image%2020250502213204.png" alt="Image Description"></p>
+<hr>
+<h3 id="2ez-and-2ez-v2">2EZ and 2EZ v2</h3>
+<p>Plain Caesar shifts. Use <a href="https://www.dcode.fr/caesar-cipher">https://www.dcode.fr/caesar-cipher</a>.</p>
+<hr>
+<h3 id="3ncrypted">3ncrypted</h3>
+<p>Full breakdown: <a href="https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Cryptography/Custom_encryption.md">https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/Cryptography/Custom_encryption.md</a></p>
+<hr>
+<h2 id="general-skills">General Skills</h2>
+<h3 id="monty">Monty</h3>
+<p>Change the following in the Python file you are given:
+!<img src="/images/Pasted%20image%2020250502213329.png" alt="Image Description"></p>
+<p>And then hit &lsquo;b&rsquo; when prompted for the flag:
+!<img src="/images/Pasted%20image%2020250502213401.png" alt="Image Description"></p>
+<hr>
+<h3 id="commitment-issues">Commitment Issues</h3>
+<p><a href="https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/General_Skills/Commitment_Issues.md">https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/General_Skills/Commitment_Issues.md</a></p>
+<h3 id="git-good">git good</h3>
+<p><a href="https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/General_Skills/Time_Machine.md">https://github.com/Cajac/picoCTF-Writeups/blob/main/picoCTF_2024/General_Skills/Time_Machine.md</a></p>
+<hr>
+<h2 id="web-exploitation">Web Exploitation</h2>
+<h3 id="the-marauders-map">The Marauder’s Map</h3>
+<p>Directory enumeration challenge. This would require knowledge of Harry Potter or proper OSINT research, as I don&rsquo;t believe this would be in a typical dictionary file.</p>
+<p>!<img src="/images/Pasted%20image%2020250502213420.png" alt="Image Description"></p>
+<hr>
+<h3 id="shell-of-secrets">Shell of Secrets</h3>
+<p>This was a simple command injection vulnerability:
+!<img src="/images/Pasted%20image%2020250502213524.png" alt="Image Description"></p>
+<hr>
+<h3 id="the-forbidden-script">The Forbidden Script</h3>
+<p>This was a simple XSS vulnerability:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;/flag&#39;</span>).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">r</span>=&gt;<span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">text</span>()).<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">alert</span>);
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><hr>
+<h2></h2>
+<h3 id="goblin-bank-heist">Goblin Bank Heist</h3>
+<p>This was a simple SQLi vulnerability:
+!<img src="/images/Pasted%20image%2020250502213613.png" alt="Image Description"></p>
+<hr>
+<h3 id="polyjuice-portal">Polyjuice Portal</h3>
+<h2 id="image-description">Change the <code>role</code> cookie to <code>admin</code> in DevTools.
+!<img src="/images/Pasted%20image%2020250502213645.png" alt="Image Description"></h2>
+<p>Thanks to all who participated!</p>
+]]></content>
+        </item>
         
         <item>
             <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
