@@ -97,8 +97,9 @@ You&rsquo;ll find the flag at the bottom:
 !<img src="/images/Pasted%20image%2020250502213613.png" alt="Image Description"></p>
 <hr>
 <h3 id="polyjuice-portal">Polyjuice Portal</h3>
-<h2 id="image-description">Change the <code>role</code> cookie to <code>admin</code> in DevTools.
-!<img src="/images/Pasted%20image%2020250502213645.png" alt="Image Description"></h2>
+<p>Change the <code>role</code> cookie to <code>admin</code> in DevTools:</p>
+<p>!<img src="/images/Pasted%20image%2020250502213645.png" alt="Image Description"></p>
+<hr>
 <p>Thanks to all who participated!</p>
 ]]></content>
         </item>
