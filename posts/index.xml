@@ -16,9 +16,9 @@
             
             <guid>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
             <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
-&lt;p&gt;For the first week of May I hosted a small CTF scrimmage for my cohort/club at &lt;strong&gt;Western Governors University&lt;/strong&gt;.   Everything ran on my self‑hosted &lt;strong&gt;CTFd&lt;/strong&gt; instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see &lt;a href=&#34;[/posts/wgu-ctf-scrimmage-spring-2025/](https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/)&#34;&gt;my write up here&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;For the first week of May I hosted a small CTF scrimmage for my cohort/club at &lt;strong&gt;Western Governors University&lt;/strong&gt;.   Everything ran on my self‑hosted &lt;strong&gt;CTFd&lt;/strong&gt; instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h1 id="overview">Overview</h1>
-<p>For the first week of May I hosted a small CTF scrimmage for my cohort/club at <strong>Western Governors University</strong>.   Everything ran on my self‑hosted <strong>CTFd</strong> instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see <a href="[/posts/wgu-ctf-scrimmage-spring-2025/](https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/)">my write up here</a></p>
+<p>For the first week of May I hosted a small CTF scrimmage for my cohort/club at <strong>Western Governors University</strong>.   Everything ran on my self‑hosted <strong>CTFd</strong> instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]</p>
 <hr>
 <h2 id="infrastructure">Infrastructure</h2>
 <table>
@@ -143,7 +143,7 @@
 </li>
 </ol>
 <h3 id="general-skills">General Skills</h3>
-<p>The majority of these were grabbed from past PicoCTF tournaments. More can be seen about these on <a href="[/posts/wgu-ctf-scrimmage-spring-2025/](https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/)">my write up here</a></p>
+<p>The majority of these were grabbed from past PicoCTF tournaments. More can be seen about these on [[WGU CTF Scrimmage Spring 2025]]</p>
 <hr>
 <h2 id="things-to-improve-next-time">Things to Improve Next Time</h2>
 <p>One issue I ran into was with two users pwning the same box at the same time. Since I was just running each of these as a single container, people could step on each others toes. Doing this all through Kubernetes would solve this issue and something I am going to learn for next time.</p>
