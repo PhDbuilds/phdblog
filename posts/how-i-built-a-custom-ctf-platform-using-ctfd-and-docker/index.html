@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Intro Coming soon&hellip;
+<meta name="description" content="Overview For the first week of May I hosted a small CTF scrimmage for my cohort/club at Western Governors University. Everything ran on my self‑hosted CTFd instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily. Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]
 " />
-<meta name="keywords" content="cybersecurity, red team, hacking, linux, books, blog" />
+<meta name="keywords" content="cybersecurity, red team, hacking, linux, books, blog, cybersecurity, CTF, Docker" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/" />
@@ -41,28 +41,32 @@
 
 
   <meta itemprop="name" content="How I Built a Custom CTF Platform Using CTFd and Docker">
-  <meta itemprop="description" content="Intro Coming soon…">
-  <meta itemprop="datePublished" content="2025-04-22T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2025-04-22T00:00:00+00:00">
-  <meta itemprop="wordCount" content="3">
+  <meta itemprop="description" content="Overview For the first week of May I hosted a small CTF scrimmage for my cohort/club at Western Governors University. Everything ran on my self‑hosted CTFd instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily. Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]">
+  <meta itemprop="datePublished" content="2025-05-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-05-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="665">
   <meta itemprop="image" content="https://phdbuilds.tech/">
+  <meta itemprop="keywords" content="Cybersecurity,CTF,Docker">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://phdbuilds.tech/">
   <meta name="twitter:title" content="How I Built a Custom CTF Platform Using CTFd and Docker">
-  <meta name="twitter:description" content="Intro Coming soon…">
+  <meta name="twitter:description" content="Overview For the first week of May I hosted a small CTF scrimmage for my cohort/club at Western Governors University. Everything ran on my self‑hosted CTFd instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily. Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]">
 
 
 
     <meta property="og:url" content="https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/">
   <meta property="og:site_name" content="PhDbuilds.tech">
   <meta property="og:title" content="How I Built a Custom CTF Platform Using CTFd and Docker">
-  <meta property="og:description" content="Intro Coming soon…">
+  <meta property="og:description" content="Overview For the first week of May I hosted a small CTF scrimmage for my cohort/club at Western Governors University. Everything ran on my self‑hosted CTFd instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily. Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-04-22T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-04-22T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-05-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-10T00:00:00+00:00">
+    <meta property="article:tag" content="Cybersecurity">
+    <meta property="article:tag" content="CTF">
+    <meta property="article:tag" content="Docker">
     <meta property="og:image" content="https://phdbuilds.tech/">
 
 
@@ -70,7 +74,7 @@
 
 
 
-    <meta property="article:published_time" content="2025-04-22 00:00:00 &#43;0000 UTC" />
+    <meta property="article:published_time" content="2025-05-10 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -142,7 +146,7 @@
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        One minute
+        4 minutes
 
         
       </p>
@@ -160,8 +164,140 @@
       
 
       <div class="post-content">
-        <h2 id="intro">Intro</h2>
-<p>Coming soon&hellip;</p>
+        <h1 id="overview">Overview</h1>
+<p>For the first week of May I hosted a small CTF scrimmage for my cohort/club at <strong>Western Governors University</strong>.   Everything ran on my self‑hosted <strong>CTFd</strong> instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]</p>
+<hr>
+<h2 id="infrastructure">Infrastructure</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Layer</th>
+          <th>What I used</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Front‑end</strong></td>
+          <td>CTFd (Docker image)</td>
+      </tr>
+      <tr>
+          <td><strong>Challenge network</strong></td>
+          <td>Docker Compose</td>
+      </tr>
+  </tbody>
+</table>
+<p>For the front-end of things where users log in and start up the challenges, download any necessary files, and see their scores, I used <a href="https://github.com/CTFd/CTFd">https://github.com/CTFd/CTFd</a>. This was super easy to set up via an Ubuntu machine I spun up on Digital Ocean. Any of the static challenges like DFIR, Cryptology, etc. where uploaded here in the CTFd dashboard. For the live/web challenges, I spun up an additional Digital Ocean droplet and put all my vulnerable Docker containers on their.</p>
+<p>This is was first time really getting into Docker and Docker Compose, and adding this into my workflow made everything extremely easy to implement.</p>
+<p>Here is the docker-compose.yml file I used to start up my custom challenges:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;3.8&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">harrypotter</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">./harrypotter</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">hp1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;5001:5000&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">xsswizard</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">./xsswizard</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">xss1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;5002:5000&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">sqlgoblin</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">./sqlgoblin</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">sqli1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;5003:5000&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">polyjuice</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">./polyjuice</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">poly1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;5004:5000&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">shellofsecrets</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">./shellofsecrets</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">shell1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;5005:5000&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">read_only</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">tmpfs</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/tmp</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mirrorofmisfortune</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>: <span style="color:#ae81ff">./mirrorofmisfortune</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">mirror1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;5006:5000&#34;</span>
+</span></span></code></pre></div><p>To start and stop the challenges I used <code>docker-compose up -d</code> and <code>docker-compose down</code>, and anytime I made changes to the challenges I could run <code>docker-compose up -d build</code> to rebuild the containers.</p>
+<p>I hosted two separate droplets total on Digital Ocean for this project. One for the CTFd front end, and one for the vulnerable machines. This kept things separate and more secure than putting this all together.</p>
+<hr>
+<h2 id="challenge-lineup">Challenge Line‑Up</h2>
+<h3 id="web-exploitation">Web Exploitation</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Challenge Name</th>
+          <th>Category</th>
+          <th>Short Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Mischief Managed</strong></td>
+          <td>Recon</td>
+          <td>Discover the hidden subdomain path that unveils the flag.</td>
+      </tr>
+      <tr>
+          <td><strong>The Forbidden Script</strong></td>
+          <td>Cross-Site Scripting</td>
+          <td>Inject a <code>&lt;script&gt;</code> into the comments board to exfiltrate the secret flag.</td>
+      </tr>
+      <tr>
+          <td><strong>Goblin Bank Heist</strong></td>
+          <td>SQL Injection</td>
+          <td>Bypass the login form via SQLi to break into the vault and grab the flag.</td>
+      </tr>
+      <tr>
+          <td><strong>Polyjuice Portal</strong></td>
+          <td>Authentication Flaw</td>
+          <td>Tweak your <code>role</code> cookie to <code>admin</code> and unlock the hidden message.</td>
+      </tr>
+      <tr>
+          <td><strong>Shell of Secrets</strong></td>
+          <td>Command Injection</td>
+          <td>Inject shell commands into the spell lookup to <code>cat</code> the flag file.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="dfir">DFIR</h3>
+<ol>
+<li>
+<p><strong>Glory of the Garden</strong> - Garden photo with the flag hidden in plain sight; hex‑viewing the PNG footer revealed it.</p>
+</li>
+<li>
+<p><strong>Unknown</strong>  - Another photo with the flag hidden inside of it. This one could be found by uploading to <a href="https://www.aperisolve.com/">https://www.aperisolve.com/</a> or the like.</p>
+</li>
+</ol>
+<h3 id="cryptography">Cryptography</h3>
+<ol>
+<li>
+<p><strong>M4s0n</strong> - This was a mixture of hex and base64 encodings</p>
+</li>
+<li>
+<p><strong>2EZ and 2EZ v2</strong> - A couple Caesar shifted flags</p>
+</li>
+</ol>
+<h3 id="general-skills">General Skills</h3>
+<p>The majority of these were grabbed from past PicoCTF tournaments. More can be seen about these on [[WGU CTF Scrimmage Spring 2025]]</p>
+<hr>
+<h2 id="things-to-improve-next-time">Things to Improve Next Time</h2>
+<p>One issue I ran into was with two users pwning the same box at the same time. Since I was just running each of these as a single container, people could step on each others toes. Doing this all through Kubernetes would solve this issue and something I am going to learn for next time.</p>
+<hr>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>This was a lot of fun and I found myself enjoying setting this sort of stuff up just as much as participating in CTFs myself. It&rsquo;s made me look into more things on the engineering side of security and sparked a new found interest that is carrying over to my home lab, which will be something I will post about soon, so keep an eye out for that!</p>
+<p>If you made it this far, thanks a ton for reading and sticking around, I really appreciate it!</p>
 
       </div>
     </article>
@@ -170,6 +306,15 @@
 
     <div class="post-info">
       
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://phdbuilds.tech/tags/cybersecurity/">cybersecurity</a></span>
+        <span class="tag"><a href="https://phdbuilds.tech/tags/ctf/">CTF</a></span>
+        <span class="tag"><a href="https://phdbuilds.tech/tags/docker/">Docker</a></span>
+        
+    </p>
+
       
 
       <p>
@@ -180,7 +325,7 @@
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        3 Words
+        665 Words
       </p>
 
       <p>
@@ -191,7 +336,7 @@
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
         
-          2025-04-21 20:00
+          2025-05-09 20:00
         
 
          
@@ -299,18 +444,11 @@
 
         <div class="pagination__buttons">
             
-            <span class="button previous">
-                <a href="https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/">
-                    <span class="button__icon">←</span>
-                    <span class="button__text">WGU CTF Scrimmage Spring 2025</span>
-                </a>
-            </span>
-            
 
             
             <span class="button next">
-                <a href="https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/">
-                    <span class="button__text">Optimizing Learning with Anki and Obsidian</span>
+                <a href="https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/">
+                    <span class="button__text">WGU CTF Scrimmage Spring 2025</span>
                     <span class="button__icon">→</span>
                 </a>
             </span>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on PhDbuilds.tech</title>
+    <link>https://phdbuilds.tech/tags/docker/</link>
+    <description>Recent content in Docker on PhDbuilds.tech</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
+    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://phdbuilds.tech/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
+      <link>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;For the first week of May I hosted a small CTF scrimmage for my cohort/club at &lt;strong&gt;Western Governors University&lt;/strong&gt;.   Everything ran on my self‑hosted &lt;strong&gt;CTFd&lt;/strong&gt; instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
