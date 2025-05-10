@@ -7,7 +7,29 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
+    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CTF</title>
+      <link>https://phdbuilds.tech/tags/ctf/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/tags/ctf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cybersecurity</title>
+      <link>https://phdbuilds.tech/tags/cybersecurity/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://phdbuilds.tech/tags/docker/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/tags/docker/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Habits</title>
       <link>https://phdbuilds.tech/tags/habits/</link>
