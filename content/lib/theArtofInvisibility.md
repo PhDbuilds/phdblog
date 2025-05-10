@@ -6,10 +6,6 @@ author: "Kevin Mitnick"
 ## What are the main takeaways of the book?
 In a world of everything being digitized, everything is becoming less and less private. Companies give us the illusion of privacy, but if they have our data, we can almost certainly expect they will either sell it or lose it. Apps like Gmail and other mainstream email/media sell your data and will release it if asked. There are more security-centered solutions out there but they are likely paid services. 
 
-## What is something you didn't agree with?
-There was nothing here that I did not agree with really. Some of the stuff and tools that he mentioned are no longer in use or no longer needed, but that is because this book is a few years old and that kind of stuff changes frequently.
-
-## What, if anything, can I apply to my own life from this book??
 There were quite a few guides on what to do to actually become somewhat digitally invisible. This included stuff like:
 - Use Tor with VPN
 	- Leave Tor up always to leave less of a trace (sounds backwards but it's true)

@@ -14,17 +14,6 @@ So much of the time we are "info hoarders", stockpiling endless amounts of well-
 Whenever your capture your notes in a central place like this (this meaning my Obsidian library where I take all of my notes and even grabed this one from), you will start to see the patterns and connections between them. This is especially true in Obsidian where you can see your page links and everything, and can customize this to show links between tagging and stuff as well.
 
 Overall, I really enjoyed reading this and am actively trying to apply many of the tips and strategies shared in this book in my own workflow.
-
-## What, if anything, can I apply to my own life from this book??
-- Every time you take a note ask myself -- "How can I make this as useful as possible for my future self?"
-- Maintain a list of a dozen or so open questions -- This is one of my favorite things and I have been doing this for a while, even before reading this book. Here is what world famous theoretical pysicist Richard Feynman said about this:
-> “You have to keep a dozen of your favorite problems constantly present in your mind, although by and large they will lay in a dormant state. Every time you hear or read a new trick or a new result, test it against each of your twelve problems to see whether it helps. Every once in a while there will be a hit, and people will say, “How did he do it? He must be a genius!”
-
-Note Capture Criteria:
-1. Does it inspire me? 
-2. Is it useful? 
-3. Is it surprising?
-
 ---
 ## **Main Takeaways**
 
