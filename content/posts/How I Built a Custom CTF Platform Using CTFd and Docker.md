@@ -9,7 +9,7 @@ tags:
 - Docker
 ---
 # Overview
-For the first week of May I hosted a small CTF scrimmage for my cohort/club at **Western Governors University**.   Everything ran on my self‑hosted **CTFd** instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see <a href="[/posts/wgu-ctf-scrimmage-spring-2025/](https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/)">my write up here</a>
+For the first week of May I hosted a small CTF scrimmage for my cohort/club at **Western Governors University**.   Everything ran on my self‑hosted **CTFd** instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]
 
 ---
 ## Infrastructure
@@ -96,7 +96,7 @@ I hosted two separate droplets total on Digital Ocean for this project. One for 
 2. **2EZ and 2EZ v2** - A couple Caesar shifted flags
 
 ### General Skills
-The majority of these were grabbed from past PicoCTF tournaments. More can be seen about these on <a href="[/posts/wgu-ctf-scrimmage-spring-2025/](https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/)">my write up here</a>
+The majority of these were grabbed from past PicoCTF tournaments. More can be seen about these on [[WGU CTF Scrimmage Spring 2025]]
 
 ---
 
