@@ -3,7 +3,6 @@ title: "The Phoenix Project"
 date: "2024-01-08"
 author: "Gene Kim, George Spafford, Kevin Behr"
 ---
-## What are the main takeaways of the book?
 
 The Phoenix Project tells the story of how DevOps was born out of necessity to bridge the gap between development, operations, and the rest of the organization. Before DevOps was a thing, the book mentions how the development team would “throw” their work over a metaphorical wall to operations right before a deadline, leaving ops to wrestle with last-minute issues and production emergencies. This fictional book follows the story of Bill Palmer, the newly voluntold VP of IT Operations, as he navigates the necessity of DevOps within his organization, Parts Unlimited.
 

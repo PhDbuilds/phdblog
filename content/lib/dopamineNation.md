@@ -3,7 +3,7 @@ title: "Dopamine Nation"
 date: "2025-02-01"
 author: "Anna Lembke, MD"
 ---
-## What are the main takeaways of the book?
+## Dopamine Nation
 One of the most striking themes of _Dopamine Nation_ by Anna Lembke, MD is the way it illustrates the rise of opioid addiction and our tendency to overmedicate. It’s terrifying to learn that opioid prescriptions in the United States quadrupled between 1999 and 2012, and by 2012, there were enough pills prescribed for each American adult to have their own bottle. Even more jarring to read, in Arkansas, 116 opioid prescriptions were written for every 100 people in 2009. These kinds of numbers clarify that this isn’t just a rare or isolated problem; it’s woven into the fabric of our healthcare system. The book also explains how heroin was ironically created as a “safer” substitute for morphine, only to become 2–5 times more potent, leading to early 1900s narcomania. Adding to that, we also see how patients on Medicaid die from opioid overdose at three to six times the rate of those not on Medicaid, shedding light on how overprescribing and economic vulnerability collide in tragic ways.
 
 Anna also takes a fascinating look at the Prohibition, which often dismissed as a historical flop, and shows that during that era, alcohol-related illnesses and deaths actually plummeted significantly. These improvements lasted until alcohol became more widely accessible in the 1950s, when health issues started climbing again. This pattern shows how simply having easy access to a substance can dramatically increase its abuse and negative impact on public health. It’s a reminder that availability, whether we’re talking about alcohol, opioids, or stimulants, plays a massive role in shaping human behavior.
