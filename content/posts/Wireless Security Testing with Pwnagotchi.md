@@ -1,5 +1,5 @@
 ---
-title: Hacking WiFi with pwnagotchi
+title: Wireless Security Testing with pwnagotchi
 date: 2024-12-09
 time: 07:26
 draft: false

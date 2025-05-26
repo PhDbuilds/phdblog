@@ -752,11 +752,11 @@ The quick and dirty summary of this tool, as quoted from the  the README.md of t
         </item>
         
         <item>
-            <title>Hacking WiFi with pwnagotchi</title>
-            <link>https://phdbuilds.tech/posts/hacking-wifi-with-pwnagotchi/</link>
+            <title>Wireless Security Testing with pwnagotchi</title>
+            <link>https://phdbuilds.tech/posts/wireless-security-testing-with-pwnagotchi/</link>
             <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://phdbuilds.tech/posts/hacking-wifi-with-pwnagotchi/</guid>
+            <guid>https://phdbuilds.tech/posts/wireless-security-testing-with-pwnagotchi/</guid>
             <description>&lt;h2 id=&#34;what-is-pwnagotchi&#34;&gt;What is pwnagotchi?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Pwnagotchi: The Tamagotchi for WiFi Hackers&lt;/strong&gt;&lt;br&gt;
 &amp;ldquo;&lt;a href=&#34;https://twitter.com/pwnagotchi&#34;&gt;Pwnagotchi&lt;/a&gt; is an &lt;a href=&#34;https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752&#34;&gt;A2C&lt;/a&gt;-based “AI” powered by &lt;a href=&#34;https://www.bettercap.org/&#34;&gt;bettercap&lt;/a&gt; that learns from its surrounding WiFi environment in order to maximize the &lt;a href=&#34;https://pwnagotchi.ai/intro/#wifi-handshakes-101&#34;&gt;crackable WPA key material it captures&lt;/a&gt; (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by &lt;a href=&#34;https://hashcat.net/hashcat/&#34;&gt;hashcat&lt;/a&gt;, including full and half WPA handshakes as well as &lt;a href=&#34;https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/&#34;&gt;PMKIDs&lt;/a&gt;.&amp;rdquo; (&lt;a href=&#34;https://pwnagotchi.ai/intro/&#34;&gt;https://pwnagotchi.ai/intro/&lt;/a&gt;)&lt;/p&gt;</description>
