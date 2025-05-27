@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
-    <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maths</title>
+      <link>https://phdbuilds.tech/tags/maths/</link>
+      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/tags/maths/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CTF</title>
       <link>https://phdbuilds.tech/tags/ctf/</link>
@@ -35,13 +42,6 @@
       <link>https://phdbuilds.tech/tags/habits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://phdbuilds.tech/tags/habits/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Maths</title>
-      <link>https://phdbuilds.tech/tags/maths/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/tags/maths/</guid>
       <description></description>
     </item>
     <item>
