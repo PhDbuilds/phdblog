@@ -1,5 +1,6 @@
 ---
-date_read: 2025-05-25
+title: "The Number Sense"
+date: 2025-05-25
 author: "Stanislas Dehaene"
 rating: ⭐️⭐️⭐️⭐️
 tags:
