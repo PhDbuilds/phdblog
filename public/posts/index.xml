@@ -19,40 +19,6 @@
 &lt;p&gt;coming soon&amp;hellip;&lt;/p&gt;
 &lt;h2 id=&#34;diagram-changes-pending&#34;&gt;Diagram (changes pending..)&lt;/h2&gt;
 &lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250529161435.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-&lt;pre class=&#34;mermaid&#34;&gt;---
-config:
-layout: dagre
----
-flowchart TD
-subgraph subGraph0[&#34;Proxmox Host (bridges)&#34;]
-direction TB
-vmbr0[&#34;vmbr0&lt;br&gt;Prod / Mgmt&lt;br&gt;192.168.1.0/24&#34;]
-vmbr3[&#34;vmbr3&lt;br&gt;Test Net&lt;br&gt;192.168.50.0/24&#34;]
-vmbr2[&#34;vmbr2&lt;br&gt;DMZ&lt;br&gt;10.0.0.0/24&#34;]
-vmbr1[&#34;vmbr1&lt;br&gt;Vuln Lab&lt;br&gt;192.168.255.0/24&#34;]
-so_span[&#34;so-span (mirror port)&#34;]
-pfWAN[&#34;WAN&lt;br&gt;(vmbr0)&#34;]
-pfLAN[&#34;LAN-TEST&lt;br&gt;(vmbr3)&lt;br&gt;192.168.50.1&#34;]
-pfDMZ[&#34;OPT-DMZ&lt;br&gt;(vmbr2)&lt;br&gt;10.0.0.1&#34;]
-vmbr0 --- pfWAN
-vmbr3 --- pfLAN
-vmbr2 --- pfDMZ
-vmbr0 --&gt; SO[&#34;Security Onion mgmt&lt;br&gt;192.168.1.77&#34;] &amp; KaliProd[&#34;Kali prod NIC&lt;br&gt;192.168.1.20&#34;] &amp; RHEL9Prod[&#34;RHEL9 (Nessus)&lt;br&gt;192.168.1.6&#34;] &amp; ParrotProd[&#34;ParrotOS prod NIC&#34;]
-vmbr3 --&gt; control[&#34;control&lt;br&gt;192.168.50.10&#34;] &amp; ans1[&#34;ansible1&lt;br&gt;.50.11&#34;] &amp; ans2[&#34;ansible2&lt;br&gt;.50.12&#34;] &amp; ans3[&#34;ansible3&lt;br&gt;.50.13&#34;]
-vmbr2 --&gt; MetaFixable[&#34;MetaFixable&lt;br&gt;10.0.0.100&#34;]
-vmbr1 --&gt; Metasploitable[&#34;Metasploitable&lt;br&gt;192.168.255.10&#34;] &amp; KaliLab[&#34;Kali lab NIC&lt;br&gt;192.168.255.20&#34;] &amp; RHEL9Lab[&#34;RHEL9 lab NIC&lt;br&gt;192.168.255.40&#34;] &amp; so_span
-so_span --&gt; SOSensor[&#34;SO sensor NIC&lt;br&gt;(no IP)&lt;br&gt;promiscuous&#34;]
-vmbr0:::bridge
-vmbr3:::bridge
-vmbr2:::bridge
-vmbr1:::bridge
-so_span:::bridge
-classDef bridge fill:#f9f9f9,stroke:#999,stroke-width:1px
-end
-
-HomeGW --&gt; vmbr0
-Internet((&#34;🌐 Internet&#34;)) --&gt; HomeGW[&#34;Home Router&lt;br&gt;192.168.1.1&#34;]
-&lt;/pre&gt;
 &lt;h2 id=&#34;why-do-this&#34;&gt;Why do this?&lt;/h2&gt;
 &lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
 &lt;ul&gt;
@@ -62,40 +28,6 @@ Internet((&#34;🌐 Internet&#34;)) --&gt; HomeGW[&#34;Home Router&lt;br&gt;192.
 <p>coming soon&hellip;</p>
 <h2 id="diagram-changes-pending">Diagram (changes pending..)</h2>
 <p>!<img src="/images/Pasted%20image%2020250529161435.png" alt="Image Description"></p>
-<pre class="mermaid">---
-config:
-layout: dagre
----
-flowchart TD
-subgraph subGraph0["Proxmox Host (bridges)"]
-direction TB
-vmbr0["vmbr0<br>Prod / Mgmt<br>192.168.1.0/24"]
-vmbr3["vmbr3<br>Test Net<br>192.168.50.0/24"]
-vmbr2["vmbr2<br>DMZ<br>10.0.0.0/24"]
-vmbr1["vmbr1<br>Vuln Lab<br>192.168.255.0/24"]
-so_span["so-span (mirror port)"]
-pfWAN["WAN<br>(vmbr0)"]
-pfLAN["LAN-TEST<br>(vmbr3)<br>192.168.50.1"]
-pfDMZ["OPT-DMZ<br>(vmbr2)<br>10.0.0.1"]
-vmbr0 --- pfWAN
-vmbr3 --- pfLAN
-vmbr2 --- pfDMZ
-vmbr0 --> SO["Security Onion mgmt<br>192.168.1.77"] & KaliProd["Kali prod NIC<br>192.168.1.20"] & RHEL9Prod["RHEL9 (Nessus)<br>192.168.1.6"] & ParrotProd["ParrotOS prod NIC"]
-vmbr3 --> control["control<br>192.168.50.10"] & ans1["ansible1<br>.50.11"] & ans2["ansible2<br>.50.12"] & ans3["ansible3<br>.50.13"]
-vmbr2 --> MetaFixable["MetaFixable<br>10.0.0.100"]
-vmbr1 --> Metasploitable["Metasploitable<br>192.168.255.10"] & KaliLab["Kali lab NIC<br>192.168.255.20"] & RHEL9Lab["RHEL9 lab NIC<br>192.168.255.40"] & so_span
-so_span --> SOSensor["SO sensor NIC<br>(no IP)<br>promiscuous"]
-vmbr0:::bridge
-vmbr3:::bridge
-vmbr2:::bridge
-vmbr1:::bridge
-so_span:::bridge
-classDef bridge fill:#f9f9f9,stroke:#999,stroke-width:1px
-end
-
-HomeGW --> vmbr0
-Internet(("🌐 Internet")) --> HomeGW["Home Router<br>192.168.1.1"]
-</pre>
 <h2 id="why-do-this">Why do this?</h2>
 <h2 id="future-plans">Future Plans</h2>
 <ul>
