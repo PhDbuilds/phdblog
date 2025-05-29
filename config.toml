@@ -18,14 +18,6 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
   dateformNum = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
   homeSubtitle = '''
-  <p class="home__subtitle">
-  {{ range .Site.Params.social }}
-    <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}">
-      <i class="{{ .icon }} fa-lg"></i>
-    </a>
-  {{ end }}
-</p>
-
   '''
 
   description = "Notes, builds, and hacking thoughts from Logan Norris."
