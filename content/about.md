@@ -1,14 +1,14 @@
 # About Me
 
-I’m Logan, a Tier-2 Tech Support Analyst with a passion for cybersecurity, Linux, and solving problems, whether they’re digital or physical. I’m currently pursuing a degree in cybersecurity at WGU, and I spend most of my free time diving into hands-on projects, learning new skills, and sharpening my technical abilities. My ultimate goal is to break into offensive security and specialize in red team engineering.
+I’m Logan, a Tier-2 Tech Support Analyst with a passion for cybersecurity, Linux, and solving problems, whether they’re digital or physical. I’m currently pursuing a degree in cybersecurity at WGU, and I spend most of my free time diving into hands-on projects, learning new skills, and sharpening my technical abilities. My ultimate goal is to break into offensive security and specialize in red teaming or become a cybersecurity engineer and build and maintain various defense systems.
 
 ## What I’m Into
-I like to stay busy experimenting and building. Whether it’s capturing flags in CTF challenges, scripting with Python, or doing something hands-on like 3D printing and building custom keyboards, I’m always working on something new. Linux is my go-to operating system for both personal and professional projects, and I enjoy exploring how it can be leveraged in different ways and just really feel at home on the command line.
+I like to stay busy experimenting and building. Whether it’s capturing flags in CTF challenges, scripting various tasks with Python, or doing something hands-on like 3D printing, building gadgets, and building custom keyboards, I’m always working on something new. Linux is my go-to operating system for both personal and professional projects, and I enjoy exploring how it can be used in different ways and just really feel at home on the command line.
 
 ## Recent Projects
 Here are a few recent projects I’ve worked on:
-- **Building my own CTF** Built and hosted my own cloud CTF platform using DigitalOcean and CTFd for my college CTF team. I also containerize the challenges with docker-compose for easy enabling/disabling of various challenges I built or used from Vulhub.
-- **Proxmox Lab** Architected a multi-tier Proxmox environment using OVS and pfsense to create Production, Test, Vulnerable, and DMZ networks to replicate enterprise-like setup and experiment around with different things. This includes things like security monitoring and incedent response workflows with Security Onion and testing Ansible playbooks on my test network.
+- **Building my own CTF** Built and hosted my own cloud CTF platform using DigitalOcean and CTFd for my college CTF team. I also used docker-compose for easy enabling/disabling of various challenges I built or used from Vulhub.
+- **Proxmox Lab** Architected a multi-tier Proxmox environment using OVS and pfsense to create Production, Test, Vulnerable, and DMZ networks to replicate enterprise-like setup and experiment around with different things. This includes things like security monitoring and incedent response workflows with Security Onion, securing and STIGing vulnerable machines in my DMZ, and testing Ansible playbooks or practicing skills for the RHCSA on my test network.
 
 ## First Steps
 Here are the first few projects I ever did that really got my feet wet with things:
@@ -18,7 +18,7 @@ Here are the first few projects I ever did that really got my feet wet with thin
 
 
 ## Certifications
-Along the way, I’ve picked up certifications that lay a foundation for my cybersecurity knowledge and demonstrate my commitment to the field. 
+Along the way, I’ve picked up certifications..
 So far, this includes:
 - ITIL 4 Foundations
 - LPI Linux Essentials
