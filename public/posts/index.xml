@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Hello Friend NG</title>
-        <link>https://example.com/posts/</link>
-        <description>Recent content in Posts on Hello Friend NG</description>
+        <title>Posts on PhDbuilds.tech</title>
+        <link>https://phdbuilds.tech/posts/</link>
+        <description>Recent content in Posts on PhDbuilds.tech</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
         <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
-        <atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://phdbuilds.tech/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
             <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
-            <link>https://example.com/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
+            <link>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
             <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
             
-            <guid>https://example.com/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
+            <guid>https://phdbuilds.tech/posts/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
             <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;For the first week of May I hosted a small CTF scrimmage for my cohort/club at &lt;strong&gt;Western Governors University&lt;/strong&gt;.   Everything ran on my self‑hosted &lt;strong&gt;CTFd&lt;/strong&gt; instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h1 id="overview">Overview</h1>
@@ -156,10 +156,10 @@
         
         <item>
             <title>WGU CTF Scrimmage Spring 2025</title>
-            <link>https://example.com/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</link>
+            <link>https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/</link>
             <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
             
-            <guid>https://example.com/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</guid>
+            <guid>https://phdbuilds.tech/posts/wgu-ctf-scrimmage-spring-2025/</guid>
             <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;The following write‑up covers the WGU CTF scrimmage that wrapped up on &lt;strong&gt;May 2, 2025&lt;/strong&gt;. Some challenges were home‑brewed, others borrowed (e.g., picoCTF). External write‑ups are linked where helpful.&lt;/p&gt;
 &lt;hr&gt;
@@ -167,7 +167,7 @@
 &lt;h3 id=&#34;glory-of-the-garden&#34;&gt;Glory of the Garden&lt;/h3&gt;
 &lt;p&gt;Open the image in a hex editor such as &lt;a href=&#34;https://hexed.it/&#34;&gt;https://hexed.it/&lt;/a&gt;.
 You&amp;rsquo;ll find the flag at the bottom:
-!&lt;img src=&#34;https://example.com/images/Pasted%20image%2020250502212818.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212818.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;unknown&#34;&gt;Unknown&lt;/h3&gt;
 &lt;ol&gt;
@@ -175,8 +175,8 @@ You&amp;rsquo;ll find the flag at the bottom:
 &lt;li&gt;You&amp;rsquo;ll find a base64 message in the Strings section&lt;/li&gt;
 &lt;li&gt;Decode this to find the flag&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;!&lt;img src=&#34;https://example.com/images/Pasted%20image%2020250502212928.png&#34; alt=&#34;Image Description&#34;&gt;
-!&lt;img src=&#34;https://example.com/images/Pasted%20image%2020250502212937.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212928.png&#34; alt=&#34;Image Description&#34;&gt;
+!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212937.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h2 id="overview">Overview</h2>
 <p>The following write‑up covers the WGU CTF scrimmage that wrapped up on <strong>May 2, 2025</strong>. Some challenges were home‑brewed, others borrowed (e.g., picoCTF). External write‑ups are linked where helpful.</p>
 <hr>
@@ -251,10 +251,10 @@ You&rsquo;ll find the flag at the bottom:
         
         <item>
             <title>Optimizing Learning with Anki and Obsidian</title>
-            <link>https://example.com/posts/2025/01/optimizing-learning-with-anki-and-obsidian/</link>
+            <link>https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/</link>
             <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
             
-            <guid>https://example.com/posts/2025/01/optimizing-learning-with-anki-and-obsidian/</guid>
+            <guid>https://phdbuilds.tech/posts/optimizing-learning-with-anki-and-obsidian/</guid>
             <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Time is definitely in short supply when you’re working full-time, going to college full-time, driving 45 minutes to work each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.&lt;/p&gt;
 &lt;p&gt;By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading &lt;em&gt;Ultralearning&lt;/em&gt; by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the&lt;code&gt;./lib&lt;/code&gt; section, so stay tuned for that.&lt;/p&gt;</description>
@@ -434,10 +434,10 @@ The key here is as you can see, all the notes that are linked within this page h
         
         <item>
             <title>How I Used AI to Summarize Long-Form Podcasts into Daily Takeaways</title>
-            <link>https://example.com/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</link>
+            <link>https://phdbuilds.tech/posts/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</link>
             <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://example.com/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</guid>
+            <guid>https://phdbuilds.tech/posts/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</guid>
             <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;I love learning from educational podcasts, but there’s a constant struggle: I don’t have enough time to listen to them as often as I’d like. While driving to the mountains one day with my wife, We were listening to an Andrew Huberman episode—my favorite show and the core inspiration behind this project—and I thought, “I’m gaining so many actionable insights here. It would be great if I could consume more of these, more often.” Since I can’t magically create extra hours in my day, the next best thing is to find a way to absorb the most crucial information more efficiently.. While I do believe that long-form consumption is the best way to do most things, there are times where you just really don&amp;rsquo;t have the time to do so. An example of this would be reading the Spark Notes version of a book or watching a Youtube summarization of the core concepts in a book. While this is very beneficial at times and you can still learn from it, I do not think it is a replacement for reading the actual book. I believe there is something that happens in our brain when we have to go through the whole experience of reading the book that does not take place when we just extract the main concepts from it. However, like I said, we do not always have the time to do this, hence the birth of this project.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h2 id="overview">Overview</h2>
@@ -753,10 +753,10 @@ The quick and dirty summary of this tool, as quoted from the  the README.md of t
         
         <item>
             <title>Wireless Security Testing with pwnagotchi</title>
-            <link>https://example.com/posts/2024/12/wireless-security-testing-with-pwnagotchi/</link>
+            <link>https://phdbuilds.tech/posts/wireless-security-testing-with-pwnagotchi/</link>
             <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://example.com/posts/2024/12/wireless-security-testing-with-pwnagotchi/</guid>
+            <guid>https://phdbuilds.tech/posts/wireless-security-testing-with-pwnagotchi/</guid>
             <description>&lt;h2 id=&#34;what-is-pwnagotchi&#34;&gt;What is pwnagotchi?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Pwnagotchi: The Tamagotchi for WiFi Hackers&lt;/strong&gt;&lt;br&gt;
 &amp;ldquo;&lt;a href=&#34;https://twitter.com/pwnagotchi&#34;&gt;Pwnagotchi&lt;/a&gt; is an &lt;a href=&#34;https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752&#34;&gt;A2C&lt;/a&gt;-based “AI” powered by &lt;a href=&#34;https://www.bettercap.org/&#34;&gt;bettercap&lt;/a&gt; that learns from its surrounding WiFi environment in order to maximize the &lt;a href=&#34;https://pwnagotchi.ai/intro/#wifi-handshakes-101&#34;&gt;crackable WPA key material it captures&lt;/a&gt; (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by &lt;a href=&#34;https://hashcat.net/hashcat/&#34;&gt;hashcat&lt;/a&gt;, including full and half WPA handshakes as well as &lt;a href=&#34;https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/&#34;&gt;PMKIDs&lt;/a&gt;.&amp;rdquo; (&lt;a href=&#34;https://pwnagotchi.ai/intro/&#34;&gt;https://pwnagotchi.ai/intro/&lt;/a&gt;)&lt;/p&gt;</description>
@@ -991,10 +991,10 @@ FCC. (2015). <em>FCC Enforcement Advisory: Communications Act Prohibition Agains
         
         <item>
             <title>Hello, World- My first post</title>
-            <link>https://example.com/posts/2024/12/hello-world-my-first-post/</link>
+            <link>https://phdbuilds.tech/posts/my-first-post/</link>
             <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
             
-            <guid>https://example.com/posts/2024/12/hello-world-my-first-post/</guid>
+            <guid>https://phdbuilds.tech/posts/my-first-post/</guid>
             <description>&lt;h2 id=&#34;helloworld-&#34;&gt;Hello,world 👋🏻🌎&lt;/h2&gt;
 &lt;p&gt;This is going to be the place where I post all my tech projects and the things I learn along the way. When I think about how far I’ve come since November of 2022, it’s surprising to realize just how much has changed. Before then, I knew almost nothing about technology. Coming from a fitness enthusiast (aka gym bro) and undergrad biology student background (premed dropout), the only exposure I had to anything technical was some very basic concepts I learned from my genetics professor, who was a bioinformatics guy. Less than 2 years ago I didn’t know what DNS stood for, I&amp;rsquo;d never heard of a VLAN or a subnet, and the idea of writing a basic for-loop might as well have been magic to me.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h2 id="helloworld-">Hello,world 👋🏻🌎</h2>
