@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://phdbuilds.com/fr/categories/</loc>
+    <loc>https://phdbuilds.tech/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://phdbuilds.com/categories/"
+                href="https://phdbuilds.tech/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://phdbuilds.com/fr/categories/"
+                href="https://phdbuilds.tech/fr/categories/"
                 />
   </url><url>
-    <loc>https://phdbuilds.com/fr/</loc>
+    <loc>https://phdbuilds.tech/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://phdbuilds.com/"
+                href="https://phdbuilds.tech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://phdbuilds.com/fr/"
+                href="https://phdbuilds.tech/fr/"
                 />
   </url><url>
-    <loc>https://phdbuilds.com/fr/series/</loc>
+    <loc>https://phdbuilds.tech/fr/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://phdbuilds.com/series/"
+                href="https://phdbuilds.tech/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://phdbuilds.com/fr/series/"
+                href="https://phdbuilds.tech/fr/series/"
                 />
   </url><url>
-    <loc>https://phdbuilds.com/fr/tags/</loc>
+    <loc>https://phdbuilds.tech/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://phdbuilds.com/tags/"
+                href="https://phdbuilds.tech/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://phdbuilds.com/fr/tags/"
+                href="https://phdbuilds.tech/fr/tags/"
                 />
   </url>
 </urlset>
