@@ -8,11 +8,11 @@ PygmentsStyle = "monokai"
 
 copyright = "phdbuilds.tech" # This message is only used by the RSS template.
 
-archetypeDir = "archetypes"
-contentDir   = "content"
-dataDir      = "data"
-layoutDir    = "layouts"
-publishDir   = "public"
+# archetypeDir = "archetypes"
+# contentDir   = "content"
+# dataDir      = "data"
+# layoutDir    = "layouts"
+# publishDir   = "public"
 
 buildDrafts  = false
 buildFuture  = false
