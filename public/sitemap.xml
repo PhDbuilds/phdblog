@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://phdbuilds.tech/posts/2025/05/building-my-home-lab/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://phdbuilds.tech/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://phdbuilds.tech/posts/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://phdbuilds.tech/lib/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://phdbuilds.tech/tags/maths/</loc>
-    <lastmod>2025-05-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://phdbuilds.tech/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://phdbuilds.tech/tags/</loc>
@@ -27,9 +33,6 @@
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://phdbuilds.tech/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</loc>
-    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://phdbuilds.tech/posts/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://phdbuilds.tech/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</loc>

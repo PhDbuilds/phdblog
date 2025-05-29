@@ -6,8 +6,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>phdbuilds.tech</copyright>
-        <lastBuildDate>Sat, 10 May 2025 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
         <atom:link href="https://phdbuilds.tech/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Building my Home Lab</title>
+            <link>https://phdbuilds.tech/posts/2025/05/building-my-home-lab/</link>
+            <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+            
+            <guid>https://phdbuilds.tech/posts/2025/05/building-my-home-lab/</guid>
+            <description>&lt;h2 id=&#34;trial-and-error-and-more-trials-and-more-errors&#34;&gt;Trial and error, and more trials and more errors&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;coming soon&amp;hellip;&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<h2 id="trial-and-error-and-more-trials-and-more-errors">Trial and error, and more trials and more errors&hellip;</h2>
+<p>coming soon&hellip;</p>
+]]></content>
+        </item>
         
         <item>
             <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
