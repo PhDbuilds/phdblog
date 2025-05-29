@@ -58,7 +58,7 @@ publishDir   = "public"
 
   # Home subtitle of the index page.
   #
-  homeSubtitle = "Logan"
+  homeSubtitle = "by Logan Norris"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -227,7 +227,7 @@ publishDir   = "public"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/blnorris777"
+    url  = "https://www.linkedin.com/in/blnorris777"
 
   [[params.social]]
     name = "youtube"
