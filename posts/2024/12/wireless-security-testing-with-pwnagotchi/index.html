@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="What is pwnagotchi? Pwnagotchi: The Tamagotchi for WiFi Hackers
+&ldquo;Pwnagotchi is an A2C-based “AI” powered by bettercap that learns from its surrounding WiFi environment in order to maximize the crackable WPA key material it captures (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by hashcat, including full and half WPA handshakes as well as PMKIDs.&rdquo; (https://pwnagotchi.ai/intro/)
+" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://example.com/posts/2024/12/wireless-security-testing-with-pwnagotchi/" />
+
+
+    <title>
+        
+            Wireless Security Testing with pwnagotchi :: Hello Friend NG  — Hello Friend NG Theme
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="https://example.com/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://example.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://example.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://example.com/favicon-16x16.png">
+    <link rel="manifest" href="https://example.com/site.webmanifest">
+    <link rel="mask-icon" href="https://example.com/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="https://example.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Wireless Security Testing with pwnagotchi">
+  <meta itemprop="description" content="What is pwnagotchi? Pwnagotchi: The Tamagotchi for WiFi Hackers
+“Pwnagotchi is an A2C-based “AI” powered by bettercap that learns from its surrounding WiFi environment in order to maximize the crackable WPA key material it captures (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by hashcat, including full and half WPA handshakes as well as PMKIDs.” (https://pwnagotchi.ai/intro/)">
+  <meta itemprop="datePublished" content="2024-12-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="3107">
+  <meta itemprop="image" content="https://example.com/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://example.com/">
+  <meta name="twitter:title" content="Wireless Security Testing with pwnagotchi">
+  <meta name="twitter:description" content="What is pwnagotchi? Pwnagotchi: The Tamagotchi for WiFi Hackers
+“Pwnagotchi is an A2C-based “AI” powered by bettercap that learns from its surrounding WiFi environment in order to maximize the crackable WPA key material it captures (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by hashcat, including full and half WPA handshakes as well as PMKIDs.” (https://pwnagotchi.ai/intro/)">
+
+
+
+    <meta property="og:url" content="https://example.com/posts/2024/12/wireless-security-testing-with-pwnagotchi/">
+  <meta property="og:site_name" content="Hello Friend NG">
+  <meta property="og:title" content="Wireless Security Testing with pwnagotchi">
+  <meta property="og:description" content="What is pwnagotchi? Pwnagotchi: The Tamagotchi for WiFi Hackers
+“Pwnagotchi is an A2C-based “AI” powered by bettercap that learns from its surrounding WiFi environment in order to maximize the crackable WPA key material it captures (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by hashcat, including full and half WPA handshakes as well as PMKIDs.” (https://pwnagotchi.ai/intro/)">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-09T00:00:00+00:00">
+    <meta property="og:image" content="https://example.com/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-12-09 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://example.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text ">
+                $ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://example.com/about/">About</a></li><li><a href="https://example.com/posts/">Posts</a></li>
+        <ul class="submenu">
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">en</a>
+                <div class="dropdown-content">
+                        
+                </div>
+            </li>
+        </ul>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        15 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://example.com/posts/2024/12/wireless-security-testing-with-pwnagotchi/">Wireless Security Testing with pwnagotchi</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <h2 id="what-is-pwnagotchi">What is pwnagotchi?</h2>
+<p><strong>Pwnagotchi: The Tamagotchi for WiFi Hackers</strong><br>
+&ldquo;<a href="https://twitter.com/pwnagotchi">Pwnagotchi</a> is an <a href="https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752">A2C</a>-based “AI” powered by <a href="https://www.bettercap.org/">bettercap</a> that learns from its surrounding WiFi environment in order to maximize the <a href="https://pwnagotchi.ai/intro/#wifi-handshakes-101">crackable WPA key material it captures</a> (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by <a href="https://hashcat.net/hashcat/">hashcat</a>, including full and half WPA handshakes as well as <a href="https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/">PMKIDs</a>.&rdquo; (<a href="https://pwnagotchi.ai/intro/">https://pwnagotchi.ai/intro/</a>)</p>
+<p>Pwnagotchi is a fun tool for anyone into WiFi hacking. It&rsquo;s like a Tamagotchi, but instead of needing food and attention, it feeds on WiFi handshakes. Running on affordable hardware like a Raspberry Pi Zero W, Pwnagotchi <em>passively</em> (more on this later) captures WPA/WPA2 handshakes, helping you build wordlists for cracking networks. What makes it cool is that it learns and adapts, getting smarter as it goes. Even better, it interacts with other Pwnagotchis if they cross paths, sharing knowledge and growing together.</p>
+<p><strong>I chose this project for a few reasons:</strong></p>
+<ul>
+<li>I like projects that I can build with my hands</li>
+<li>I&rsquo;m interested in Wi-Fi network hacking and have used tools like <code>Aircrack-ng</code> in the past. I thought this would be a good way to build on that knowledge</li>
+<li>I&rsquo;m pretty new to AI and different AI algorithms and such, and thought this would be a good way to go down this rabbit hole a bit. <a href="https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752">Here</a> is a good explanation of the Advantage-Actor-Critic A2C) model that is being used in this project.</li>
+</ul>
+<p>!<img src="https://example.com/images/Screenshot%202024-12-10%20at%207.07.05%20AM.png" alt="Image Description"></p>
+<h2 id="planning-and-prep">Planning and Prep</h2>
+<h3 id="software-and-hardware-requirements">Software and Hardware Requirements</h3>
+<p><strong>Here is the hardware that I used to create this project:</strong></p>
+<ul>
+<li>Waveshare 2.13 in E-ink Display</li>
+<li>Raspberry Pi Zero W</li>
+<li>PiSugar 3 Portable 1200 mAh Battery</li>
+<li>SanDisk 64GB Extreme</li>
+<li>STL found at <a href="https://pwnagotchi.org/3d-printable-cases/index.html">https://pwnagotchi.org/3d-printable-cases/index.html</a></li>
+</ul>
+<p><strong>The software that I used was from the following:</strong></p>
+<ul>
+<li><a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a></li>
+</ul>
+<h3 id="initial-research">Initial Research</h3>
+<p>To be honest, I did not know a whole lot about this device before looking into it. I knew it was a cool little hacking device with a face on it sort of like the Flipper Zero that I have, but I really liked the idea of building something like that for myself. I had a bit of knowledge about WPA/WPA2 protocols from my CompTIA studies and the WiFi Hacking course that I took a while back, but other than that I went into this kind of blind. After digging into the docs and looking into some of the technologies it uses, here are some keys things I learned</p>
+<h4 id="bettercap">Bettercap</h4>
+<p>This is a framework written in Go that is essentially the Swiss-army knife of WiFi, BLE, and other wireless attacks. Key features we are using include - WiFi scanning, deauth, clientless PMKID association attack, and automatic WPA/WPA2 client handshake capture</p>
+<h4 id="a2c-in-the-pwnagotchi">A2C in the pwnagotchi</h4>
+<p>In reinforcement learning, an <em>agent</em> moves through <em>states</em> in an environment by taking <em>actions</em>, all the while trying to maximize <em>rewards</em> throughout the process. The goal is to teach the agent a policy: a strategy to decide the best action in any given situation (state). For the pwnagotchi, these <em>states</em> are things like the signal strength of the AP, the number of visible devices, the frequency channel being monitored, and the WiFi packets. After the <em>agent</em> (pwnagotchi) takes in those states, it will generate <em>2 outputs</em>:</p>
+<ul>
+<li><strong>Critic</strong>: The first output, the <em>state value</em> $V(S)$, is an estimate of how many rewards it can get from that point onwards. This is an estimate of the expected cumulative reward starting from the current state.</li>
+<li><strong>Actor</strong>: The second output, known as <em>the policy</em> is a recommendation of what action it should take. This is the probability distribution over actions. It doesn&rsquo;t directly pick an action but gives a set of probabilities, and the action is sampled based on those probabilities.</li>
+</ul>
+<p><strong>Just remember:</strong></p>
+<ul>
+<li>The actor tries to maximize rewards by improving its policy</li>
+<li>The critic helps guide the actor by telling it how good or bad its actions were</li>
+<li>To train the actor, we need to know how much better or worse an action was compared to what we expected.</li>
+</ul>
+<p>The pwnagotchi interacts with the WiFi environment by scanning for nearby WiFi environments, deciding whether to target a specific network or wait, and trying to capture WPA/WPA2 handshakes by listening to or actively de-authenticating clients from networks. <em>It&rsquo;s main goal is to maximize the number of successful handshakes it collects over time while minimizing wasted energy or detection risk</em></p>
+<ul>
+<li>State ($s$): The current Wi-Fi environment</li>
+<li>Action ($a$): What the pwnagotchi chooses to do (target a network, wait, etc.)</li>
+<li>Reward ($r$): Feedback based on the success of its action
+<ul>
+<li>Postitive - captured a handshake</li>
+<li>Negative - Failed to capture a handshake or wasted time</li>
+</ul>
+</li>
+</ul>
+<p>The main thing to remember here is the environment is <em>very</em> dynamic. WiFi networks come and go, signal strength fluctuates, and human activity affects availability. The pwnagotchi must be able to adapt to this.</p>
+<p>Recap:</p>
+<ul>
+<li>The Actor-Critic Framework in Pwnagotchi:
+<ul>
+<li>Actor (Policy): The pwnagotchi&rsquo;s decision-making strategy. &ldquo;If I see network A with signal strength $x$, target it with action $y$&rdquo;</li>
+<li>The Actor outputs probabilities for different actions given the current state</li>
+<li>Critic (Value Function): This estimates how &ldquo;good&rdquo; the current WiFi environment is.</li>
+<li>The <strong>Advantage Function</strong> helps guide the pwnagotchi by evaluating whether a specific action in the current state led to a <em>better</em> or <em>worse</em> result than expected.</li>
+</ul>
+</li>
+<li>Rewards in pwnagotchi:
+<ul>
+<li>Positive reward: capturing a handshake</li>
+<li>Negative reward: spending energy without success, waiting too long, or targeting low-value networks</li>
+</ul>
+</li>
+<li>Parallelism in pwnagotchi:
+<ul>
+<li>It can operate in different locations or scenarios over time. Each new environment contributes data that helps refine this policy. This is even more so if you are connected to the pwnagotchi community network, where even more data can be shared amongst each other.</li>
+</ul>
+</li>
+<li>Learning over time:
+<ul>
+<li>At first, the pwnagotchi is going to do some random stuff and explore different strategies for targeting networks</li>
+<li>Over time it learns what works and what doesn&rsquo;t, and even more so refines on what really works as a high-reward action</li>
+<li>It adapts its behavior if the environment changes (fewer networks, encryption types, etc.). It adjusts this behavior based on past experiences.</li>
+</ul>
+</li>
+</ul>
+<h4 id="how-does-it-work">How does it work?</h4>
+<p>Pwnagotchi is using an <code>LSTM with MLP feature extractor</code> as its policy network for the <code>A2C agent</code> that it is using. Let&rsquo;s break that down.</p>
+<h5 id="a2c">A2C</h5>
+<ul>
+<li><strong>Policy gradient</strong> - These are a way of teaching an agent to learn directly how to choose actions. They mathematically compute how to adjust the policy based on feedback. The main idea is this &ndash; If an action gives a high reward, make it more likely in the future</li>
+<li><strong>Value Functions</strong> - These help evaluate how good states and actions are, improving decision-making. Here is an analogy that helped me understand this:
+<ul>
+<li>Let&rsquo;s say you are trying to decide whether to attend a party:
+<ul>
+<li>State Value $V(S)$  - Your estimate of how much fun the party will be overall, like &ldquo;I think this party will be a 7/10 overall&rdquo;</li>
+<li>Action Value $Q(s,a)$ - Your estimate of how much fun the party will be depending on specific actions you take. For example, if I talk to new people it will be a 9/10, if I sit in the corner on my phone it will be a 5/10.</li>
+</ul>
+</li>
+<li>The Advantage Function compares the action value to the state value:
+$$A(s,a) = Q(s,a) - V(s)$$</li>
+<li>It answers: &ldquo;How much better or worse is this action compared to just being in this state&rdquo;</li>
+</ul>
+</li>
+<li><strong>Gradient-based Optimization</strong> - This is how we adjust the policy and value estimates using <em>gradients</em>. Here is the analogy that helped me understand this:
+<ul>
+<li>Imagine you are walking around blind on the side of a mountain trying to find the peak:
+<ul>
+<li>You feel around to estimate if the ground is sloping up or down</li>
+<li>If it&rsquo;s up, you walk that way (this is the gradient)</li>
+<li>Repeat until you are at the top</li>
+</ul>
+</li>
+<li>A &ldquo;loss function&rdquo; tells us how far we are from the goal (the peak here)</li>
+<li>Gradients tell us the direction to step to reduce the loss.</li>
+</ul>
+</li>
+</ul>
+<h5 id="lstm-with-mlp-feature-extractor">LSTM with MLP feature extractor</h5>
+<h6 id="lstm">LSTM</h6>
+<p>Regular neural networks process inputs independently, and they are not very good at understanding sequences or context. For the pwnagotchi, WiFi networks appear, disappear, or change over time, and capturing handshakes depend not only on the current environment, but also on previous actions and observations. A standard neural network would not handle this very well. Long Short-Term Memory (LSTM) is a type of Recurrent Neural Network that is made to handle this type of stuff. It keeps track of this type of information over time by maintaining a memory. Imagine you are trying to follow a treasure map. It may depend on previous steps, such as &ldquo;Turn left at the second tree&rdquo;. This type of instruction would only make sense if you remember where the first tree was. This is where LSTMs help out. This relates to the pwnagotchi because it needs to remember patterns like &ldquo;how often is a network active&rdquo; or &ldquo;how does the client activity fluctuate&rdquo; or &ldquo;what were the results of the previous actions&rdquo;</p>
+<h6 id="mlp-feature-extractor">MLP Feature Extractor</h6>
+<p>Multi-Layer Perception can be thought of like a filter that processes messy junk input data into information that is useful. Remember, data and information are not the same thing. The input data may be something like raw Wifi data like signals and encryption types, and the output may be a decision or feature like &ldquo;This network is likely to have an active client&rdquo;</p>
+<h6 id="using-them-together">Using them together</h6>
+<p>The MLP processes the junk data into something meaningful, and then that useful information is used by the LSTM to maintain a memory of past actions, observations, and rewards to make better decisions.</p>
+<p>Example - If a network consistently fails to yield handshakes, the LSTM learns to deprioritize it. If a pattern emerges (11am has more active clients), the LSTM remembers and exploits it.</p>
+<p><strong>Why combine them?</strong></p>
+<ul>
+<li>WiFi networks are <em>sequential</em></li>
+<li>Raw WiFi data is <em>complex</em></li>
+<li>The A2C algorithm explored above needs a clear understanding of the current state and how it evolves over time. The MLP and the LSTM provide this understanding.</li>
+</ul>
+<hr>
+<h4 id="tldr">TL;DR</h4>
+<ol>
+<li>The pwnagotchi scans for WiFi networks and collects raw data</li>
+<li>The raw data is processed by the MLP into a compact representation (features)</li>
+<li>The LSTM takes these features over time, maintains a memory of past observations and actions, and outputs a state representation</li>
+<li>Reinforcement Learning (A2C) uses the processed data to decide which network to target and whether to wait, move, de-auth, etc.</li>
+<li>The rewards from those actions help refine both the LSTM and MLP over time</li>
+</ol>
+<hr>
+<h2 id="setting-up-pwnagotchi">Setting up Pwnagotchi</h2>
+<h3 id="hardware-assembly">Hardware Assembly</h3>
+<p>This was very straightforward so I will not go into a ton of detail here. First, the PiSugar 3 Portable 1200 mAh Battery is fixed to the back of the Raspberry Pi using the pogo connectors. This was super cool and the first time that I&rsquo;ve used these before. Then, the Waveshare 2.13 in E-ink Display was connected through the GPIO pins on the front of the Raspberry Pi. I used a SanDisk 64GB Extreme microSD card, and I printed the case that I used. I have a FlashForge Adventurer Pro 4 3d printer that I used for this.</p>
+<p><strong>IMPORTANT</strong> -&gt; That ribbon cable on the back of the screen is ultra sensitive and fragile. I accidentally barely nicked it when putting it in the case that I 3d printed, which has caused my display to look wonky. I&rsquo;ve ordered a replacement because it&rsquo;s annoying to look at now and a constant reminder that I did not pay enough attention after I literally heard &ldquo;beware of hitting the ribbon cable on the back, it break easily&rdquo; seconds before shoving it into the case&hellip;.</p>
+<p>!<img src="https://example.com/images/Pasted%20image%2020241211144107.png" alt="Image Description"></p>
+<h3 id="installing-the-firmwareos">Installing the Firmware/OS</h3>
+<p>This was pretty simple and straight forward. I used <a href="https://github.com/jayofelony/pwnagotchi">https://github.com/jayofelony/pwnagotchi</a> <code>Pwnagotchi 2.9.2</code> which was the latest release at the time of writing this. <em>If you are doing this on a Raspberry Pi Zero W, make sure you choose the 32-bit version.</em> This OS is based on RasPiOS. I used the Raspberry Pi Imager to flash the MicroSD card. Make sure if using the RPi Imager, you hit &lsquo;NO, CLEAR SETTINGS&rsquo; when prompted to use your saved config.</p>
+<h3 id="network--and-other-config-setup">Network  and Other Config Setup</h3>
+<p>For the first time connecting to your pwnagotchi on Windows, you&rsquo;ll need to download and install the RNDIS driver found <a href="https://github.com/jayofelony/pwnagotchi/wiki/mod-rndis-driver-windows.zip">here</a>. After this was installed and my pwnagotchi was connected through it&rsquo;s data port (the middle one) to my PC, I had to go to my adapter settings in the Network and Internet Control Panel pane and choose the device named something like <code>USB Ethernet/RNDIS Gadget</code>. From here change the network properties to the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>IP: 10.0.0.1
+</span></span><span style="display:flex;"><span>Subnet: 255.255.255.0
+</span></span><span style="display:flex;"><span>#LEAVE EVERYTHING ELSE BLANK
+</span></span></code></pre></div><p>After this is done, you should be able to <code>ssh pi@10.0.0.2</code> and you will get the following setup wizard to continue with the configuration:
+!<img src="https://example.com/images/Pasted%20image%2020241209195647.png" alt="Image Description">
+After this is done, in theory, you should be good to go to use it as a standalone device to get all the packets and everything that you are collecting, then you can plug it back into your PC, connect to it through SSH, and get all the data and whatnot that you collected with the pwnagotchi. This is where I am currently having trouble.</p>
+<ul>
+<li>I have tried downloading the drivers again and finding my device within the Change Adapter Settings pane, but the device never shows up.</li>
+<li>I have tried connecting to my macbook, with no luck. I am able to see it under network devices, however after changing the network settings to what is mentioned earlier, I am unable to SSH to <code>pi@10.0.0.2</code></li>
+<li>I have tried going through this in a Kali VM, using the Linux install script and making sure I have USB device set up properly to work with the VM. I used the <code>linux_connection_share.sh</code> script to set everything up with no luck. I am unable to ping the pwnagotchi or anything.</li>
+</ul>
+<p>Maybe I have the wrong driver or something? That doesn&rsquo;t make sense since it worked before but <a href="https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched">https://archive.org/details/pwnagotchi_1.5.5_WSV3Patched</a> may get this working
+<a href="https://pwnagotchi.org/getting-started/first-run-mac/index.html">Here</a> is the guide that I&rsquo;m following for getting it to work on mac &ndash; will check back in afterwards because I did not set my DNS settings and router settings like this guide describes&hellip;</p>
+<p>UPDATE -&gt; It was the freaking USB cable..</p>
+<p>After using the correct cable.. I was able to pass the USB connection through to my Kali Linux machine. After that, to get Internet on the pwnagotchi, I ran the following:
+!<img src="https://example.com/images/Pasted%20image%2020241214121457.png" alt="Image Description"></p>
+<p>This script just allows the pwnagotchi to share my Kali Linux VM&rsquo;s Internet connection. The script can be found <a href="https://raw.githubusercontent.com/jayofelony/pwnagotchi/master/scripts/linux_connection_share.sh%3E">here</a>.</p>
+<h2 id="pwnagotchi-in-action">Pwnagotchi in Action</h2>
+<p>After many failed attempts and research, we are finally good to go! I&rsquo;ve played around with both the Jayofelony and the Aluminum-ice version. The screenshot below is from the latter.
+!<img src="https://example.com/images/Pasted%20image%2020250110183557.png" alt="Image Description">
+!<img src="https://example.com/images/Pasted%20image%2020250110183949.png" alt="Image Description">
+!<img src="https://example.com/images/Pasted%20image%2020241214092600.png" alt="Image Description"></p>
+<h2 id="challenges-and-lessons-learned">Challenges and Lessons Learned</h2>
+<p>Very many&hellip; My first piece of advise to hopefully save yourself from hours of frustration like I myself encountered is to make sure your data cable is working properly. While I was positive I was using a data cable, it must have been faulty or something which is what caused the majority of my issues. After that was figured out, most other things were solved pretty easily.</p>
+<h2 id="ethical-considerations">Ethical Considerations</h2>
+<p>Insert &lsquo;This is for educational purposes only&rsquo; disclamer here..</p>
+<p>But seriously, deauth attacks are illegal to perform on networks that you do not own/have permission to do this on.</p>
+<p>But as GotMyOrangeCrush put so well on a reddit post in reference to this, &ldquo;Unless you deauth grandma&rsquo;s pacemaker or interfere with the navigation of nearby aircraft, you&rsquo;re unlikely to get a love letter from a three letter agency.</p>
+<p>Since I am currently writing a paper on the legal/ethics in cybersecurity for one of my college courses, I feel like it may actually benefit to go into this a little bit here.</p>
+<p>The FCC states under Section 333 of the Communications Act that sending these deauthentication or disassociation frames intentionally is considered a form of &ldquo;Wi-Fi blocking&rdquo; and therefore illegal. (FCC, 2015)</p>
+<p>What this act essentially states in relation to this is that it is illegal to interfere with or disrupt Wi-Fi by any means, which would include sending deauthentication packets. Sending these deauth packets are considered a form of jamming and are strictly prohibited, because they prevent users from accessing lawful communications services.</p>
+<p>That being said, I believe these deauth packets are sent by default, so if you plan on having the pwnagotchi powered on when you are anywhere in reach of other networks, you should turn this feature off.</p>
+<h2 id="future-enhancements">Future Enhancements</h2>
+<p>Things I would like to add:</p>
+<ul>
+<li>Encryption in case I lose it</li>
+<li>I&rsquo;d like to do some hardware upgrades like adding GPS and a high-gain antenna to this for wardriving
+<ul>
+<li>This would benefit from adding some 3rd party modules like <code>f0xtr0t</code> or <code>Wardriver</code></li>
+</ul>
+</li>
+<li>There are some cool 3rd party UI plug-ins I&rsquo;ve been looking at. Some of interest include:
+<ul>
+<li>memtemp-plus</li>
+<li>Pwnmenu</li>
+<li>Experience and Age Plugins</li>
+<li>Pisugar 3 plug to show battery information in the UI</li>
+</ul>
+</li>
+<li>Other 3rd party plugins I thought were interesting:
+<ul>
+<li>handshakes-dl-hashie</li>
+<li>better_quickdic</li>
+</ul>
+</li>
+</ul>
+<p>I&rsquo;ve also been looking into <code>fancigotchi</code> which looks like it may be a cool rabbit trail to go down.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This was a very fun project that certainly tested my patience at times. During the learning journey, I got to explore AC2 AI models, dive deeper into networking, and sharpen my general Linux troubleshooting skills. I also gained hands-on experience with configuring and optimizing the Raspberry Pi and some of the hardware components used. Along the way, I had to troubleshoot firmware issues, tweak numerous settings and configs, and even dig into some Python scripts to customize my Pwnagotchi’s behavior.</p>
+<p>Beyond the technical skills, this project reinforced an important lesson: ==experimentation, trial and error, and problem-solving are just part of the process==. Sometimes, things won’t work the first (or 50th) time, but persistence pays off. In the end, having a fully operational Pwnagotchi that passively sniffs handshakes while rocking it&rsquo;s little AI-driven personality makes all the effort worth it.</p>
+<p>Would I recommend this project? Absolutely! if you have the patience and curiosity to push through the inevitable hurdles. Now, time to take my Pwnagotchi out for a little field testing.</p>
+<h2 id="supporting-content">Supporting Content</h2>
+<h3 id="photo-gallery">Photo Gallery</h3>
+<p>!<img src="https://example.com/images/Screenshot%202024-12-10%20at%207.23.47%20AM.png" alt="Image Description"></p>
+<p>!<img src="https://example.com/images/Screenshot%202024-12-10%20at%207.07.31%20AM.png" alt="Image Description"></p>
+<p>!<img src="https://example.com/images/Screenshot%202024-12-10%20at%207.24.14%20AM.png" alt="Image Description"></p>
+<p>!<img src="https://example.com/images/Screenshot%202024-12-10%20at%207.24.37%20AM.png" alt="Image Description"></p>
+<h3 id="code-and-config">Code and Config</h3>
+<h3 id="references-and-resources">References and Resources</h3>
+<p>Check out  <a href="https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/">https://www.evilsocket.net/2019/10/19/Weaponizing-and-Gamifying-AI-for-WiFi-Hacking-Presenting-Pwnagotchi-1-0-0/</a> for full details on the project and <a href="https://pwnagotchi.ai/installation/">https://pwnagotchi.ai/installation/</a> for a tutorial on how to build it too.</p>
+<p>Other mentioned:
+<a href="https://github.com/V0r-T3x/Fancygotchi">https://github.com/V0r-T3x/Fancygotchi</a>
+<a href="https://github.com/aluminum-ice/pwnagotchi/releases">https://github.com/aluminum-ice/pwnagotchi/releases</a>
+<a href="https://pwnagotchi.org/index.html">https://pwnagotchi.org/index.html</a>
+<a href="https://github.com/jayofelony/pwnagotchi/wiki">https://github.com/jayofelony/pwnagotchi/wiki</a>
+<a href="https://hackernoon.imgix.net/hn-images/1">https://hackernoon.imgix.net/hn-images/1</a>*JJ3Dx4O3blc_haCUjv5Y5A.jpeg</p>
+<p>Reference for FCC discussion:
+FCC. (2015). <em>FCC Enforcement Advisory: Communications Act Prohibition Against Jamming, Blocking, or Interfering with Wi-Fi and Other Communications Networks.</em> Federal Communications Commission. Retrieved from <a href="https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html">https://transition.fcc.gov/eb/Orders/2015/FCC-15-146A1.html</a></p>
+<hr>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        3107 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-12-08 19:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+      <hr />
+      <div class="sharing-buttons">
+        
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Wireless%20Security%20Testing%20with%20pwnagotchi&amp;caption=Wireless%20Security%20Testing%20with%20pwnagotchi&amp;canonicalUrl=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
+    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="mailto:?subject=Wireless%20Security%20Testing%20with%20pwnagotchi&amp;body=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f&amp;media=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f;description=Wireless%20Security%20Testing%20with%20pwnagotchi" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f&amp;title=Wireless%20Security%20Testing%20with%20pwnagotchi&amp;summary=Wireless%20Security%20Testing%20with%20pwnagotchi&amp;source=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f&amp;resubmit=true&amp;title=Wireless%20Security%20Testing%20with%20pwnagotchi" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f;title=Wireless%20Security%20Testing%20with%20pwnagotchi" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+  <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Wireless%20Security%20Testing%20with%20pwnagotchi%20https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f&amp;t=Wireless%20Security%20Testing%20with%20pwnagotchi" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+  <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Wireless%20Security%20Testing%20with%20pwnagotchi&amp;url=https%3a%2f%2fexample.com%2fposts%2f2024%2f12%2fwireless-security-testing-with-pwnagotchi%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+  <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    </div>
+  </div>
+</a>
+
+      </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+            <span class="button previous">
+                <a href="https://example.com/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/">
+                    <span class="button__icon">←</span>
+                    <span class="button__text">How I Used AI to Summarize Long-Form Podcasts into Daily Takeaways</span>
+                </a>
+            </span>
+            
+
+            
+            <span class="button next">
+                <a href="https://example.com/posts/2024/12/hello-world-my-first-post/">
+                    <span class="button__text">Hello, World- My first post</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2023</span>
+            <span><a href="https://example.com/">Jane Doe</a></span>
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://example.com/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span><span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://example.com/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Maths on PhDbuilds.tech</title>
-    <link>https://phdbuilds.tech/tags/maths/</link>
-    <description>Recent content in Maths on PhDbuilds.tech</description>
+    <title>Maths on Hello Friend NG</title>
+    <link>https://example.com/tags/maths/</link>
+    <description>Recent content in Maths on Hello Friend NG</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://phdbuilds.tech/tags/maths/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/tags/maths/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Number Sense</title>
-      <link>https://phdbuilds.tech/lib/thenumbersense/</link>
+      <link>https://example.com/lib/thenumbersense/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/lib/thenumbersense/</guid>
+      <guid>https://example.com/lib/thenumbersense/</guid>
       <description>&lt;h2 id=&#34;the-number-sense&#34;&gt;The Number Sense&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;The Number Sense&lt;/em&gt; popped up in Charles Fox’s &lt;em&gt;Computer Architecture&lt;/em&gt; syllabus, and because computer architecture has been stretching my brain in every direction, I decided to work through all the recommended side-reads—starting here. Dehaene’s main question is the following:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;How does any mind—human or otherwise—come to understand quantity?&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;His answer leans heavily toward nature before nurture. Apes, rats, even newborn babies can tell “how many” without counting, thanks to an in-built &lt;strong&gt;Approximate Number System&lt;/strong&gt; that lets them (and us) spot the difference between, for example, five and ten dots at a glance.&lt;/p&gt;</description>
     </item>
   </channel>

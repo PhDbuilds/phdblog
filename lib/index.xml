@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lib on PhDbuilds.tech</title>
-    <link>https://phdbuilds.tech/lib/</link>
-    <description>Recent content in lib on PhDbuilds.tech</description>
+    <title>lib on Hello Friend NG</title>
+    <link>https://example.com/lib/</link>
+    <description>Recent content in lib on Hello Friend NG</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://phdbuilds.tech/lib/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.com/lib/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Number Sense</title>
-      <link>https://phdbuilds.tech/lib/thenumbersense/</link>
+      <link>https://example.com/lib/thenumbersense/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/lib/thenumbersense/</guid>
+      <guid>https://example.com/lib/thenumbersense/</guid>
       <description>&lt;h2 id=&#34;the-number-sense&#34;&gt;The Number Sense&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;The Number Sense&lt;/em&gt; popped up in Charles Fox’s &lt;em&gt;Computer Architecture&lt;/em&gt; syllabus, and because computer architecture has been stretching my brain in every direction, I decided to work through all the recommended side-reads—starting here. Dehaene’s main question is the following:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;How does any mind—human or otherwise—come to understand quantity?&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;His answer leans heavily toward nature before nurture. Apes, rats, even newborn babies can tell “how many” without counting, thanks to an in-built &lt;strong&gt;Approximate Number System&lt;/strong&gt; that lets them (and us) spot the difference between, for example, five and ten dots at a glance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Mission of a Lifetime: Lessons from the Men Who Went to the Moon</title>
-      <link>https://phdbuilds.tech/lib/themissionofalifetime/</link>
+      <link>https://example.com/lib/themissionofalifetime/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/lib/themissionofalifetime/</guid>
+      <guid>https://example.com/lib/themissionofalifetime/</guid>
       <description>&lt;h2 id=&#34;what-are-the-main-takeaways-of-the-book&#34;&gt;What are the main takeaways of the book?&lt;/h2&gt;&#xA;&lt;p&gt;This book was very intriguing and turned out to be quite different from what I expected when I picked it up at the library. The author spent time interviewing some of the &amp;ldquo;Eagles&amp;rdquo;, the extraordinary men who journeyed to the moon, and through their eyes, I gained a fresh perspective on what really mattered about the mission, as well as a few other valuable insights that can be applied to our lives.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dopamine Nation</title>
-      <link>https://phdbuilds.tech/lib/dopaminenation/</link>
+      <link>https://example.com/lib/dopaminenation/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/lib/dopaminenation/</guid>
+      <guid>https://example.com/lib/dopaminenation/</guid>
       <description>&lt;h2 id=&#34;dopamine-nation&#34;&gt;Dopamine Nation&lt;/h2&gt;&#xA;&lt;p&gt;One of the most striking themes of &lt;em&gt;Dopamine Nation&lt;/em&gt; by Anna Lembke, MD is the way it illustrates the rise of opioid addiction and our tendency to overmedicate. It’s terrifying to learn that opioid prescriptions in the United States quadrupled between 1999 and 2012, and by 2012, there were enough pills prescribed for each American adult to have their own bottle. Even more jarring to read, in Arkansas, 116 opioid prescriptions were written for every 100 people in 2009. These kinds of numbers clarify that this isn’t just a rare or isolated problem; it’s woven into the fabric of our healthcare system. The book also explains how heroin was ironically created as a “safer” substitute for morphine, only to become 2–5 times more potent, leading to early 1900s narcomania. Adding to that, we also see how patients on Medicaid die from opioid overdose at three to six times the rate of those not on Medicaid, shedding light on how overprescribing and economic vulnerability collide in tragic ways.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Phoenix Project</title>
-      <link>https://phdbuilds.tech/lib/thephoenixproject/</link>
+      <link>https://example.com/lib/thephoenixproject/</link>
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/lib/thephoenixproject/</guid>
+      <guid>https://example.com/lib/thephoenixproject/</guid>
       <description>&lt;p&gt;The Phoenix Project tells the story of how DevOps was born out of necessity to bridge the gap between development, operations, and the rest of the organization. Before DevOps was a thing, the book mentions how the development team would “throw” their work over a metaphorical wall to operations right before a deadline, leaving ops to wrestle with last-minute issues and production emergencies. This fictional book follows the story of Bill Palmer, the newly voluntold VP of IT Operations, as he navigates the necessity of DevOps within his organization, Parts Unlimited.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building a Second Brain</title>
-      <link>https://phdbuilds.tech/lib/secondbrain/</link>
+      <link>https://example.com/lib/secondbrain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/lib/secondbrain/</guid>
+      <guid>https://example.com/lib/secondbrain/</guid>
       <description>&lt;h2 id=&#34;building-a-second-brain&#34;&gt;Building a Second Brain&lt;/h2&gt;&#xA;&lt;p&gt;So much of the time we are &amp;ldquo;info hoarders&amp;rdquo;, stockpiling endless amounts of well-intentioned content that only ends up increasing our own anxiety. I struggle with this a ton, and collect notes almost as if it were a hobby in of itself. I believe this is in part because it&amp;rsquo;s a form of &lt;em&gt;Pseudo-productivity&lt;/em&gt;, where I can kind of mindlessly do something without thinking too hard about it, but feel like I&amp;rsquo;m doing something useful, therefore I don&amp;rsquo;t feel guilty about doing it like I do with gaming or scrolling through Youtube. I have noticed in the past I rarely go back and review those notes or try to make connections with and distill them into something of my own. This book hits a lot on all of that.&lt;/p&gt;</description>
     </item>
   </channel>
