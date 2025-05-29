@@ -8,7 +8,34 @@
 <meta name="author" content="">
 <meta name="description" content="Trial and error, and more trials and more errors&hellip; coming soon&hellip;
 Diagram (changes pending..) !
-Why do this? Future Plans Local DNS " />
+--- config: layout: dagre --- flowchart TD subgraph subGraph0[&#34;Proxmox Host (bridges)&#34;] direction TB vmbr0[&#34;vmbr0
+Prod / Mgmt
+192.168.1.0/24&#34;] vmbr3[&#34;vmbr3
+Test Net
+192.168.50.0/24&#34;] vmbr2[&#34;vmbr2
+DMZ
+10.0.0.0/24&#34;] vmbr1[&#34;vmbr1
+Vuln Lab
+192.168.255.0/24&#34;] so_span[&#34;so-span (mirror port)&#34;] pfWAN[&#34;WAN
+(vmbr0)&#34;] pfLAN[&#34;LAN-TEST
+(vmbr3)
+192.168.50.1&#34;] pfDMZ[&#34;OPT-DMZ
+(vmbr2)
+10.0.0.1&#34;] vmbr0 --- pfWAN vmbr3 --- pfLAN vmbr2 --- pfDMZ vmbr0 --&gt; SO[&#34;Security Onion mgmt
+192.168.1.77&#34;] & KaliProd[&#34;Kali prod NIC
+192.168.1.20&#34;] & RHEL9Prod[&#34;RHEL9 (Nessus)
+192.168.1.6&#34;] & ParrotProd[&#34;ParrotOS prod NIC&#34;] vmbr3 --&gt; control[&#34;control
+192.168.50.10&#34;] & ans1[&#34;ansible1
+.50.11&#34;] & ans2[&#34;ansible2
+.50.12&#34;] & ans3[&#34;ansible3
+.50.13&#34;] vmbr2 --&gt; MetaFixable[&#34;MetaFixable
+10.0.0.100&#34;] vmbr1 --&gt; Metasploitable[&#34;Metasploitable
+192.168.255.10&#34;] & KaliLab[&#34;Kali lab NIC
+192.168.255.20&#34;] & RHEL9Lab[&#34;RHEL9 lab NIC
+192.168.255.40&#34;] & so_span so_span --&gt; SOSensor[&#34;SO sensor NIC
+(no IP)
+promiscuous&#34;] vmbr0:::bridge vmbr3:::bridge vmbr2:::bridge vmbr1:::bridge so_span:::bridge classDef bridge fill:#f9f9f9,stroke:#999,stroke-width:1px end HomeGW --&gt; vmbr0 Internet((&#34;🌐 Internet&#34;)) --&gt; HomeGW[&#34;Home Router
+192.168.1.1&#34;] Why do this? Future Plans Local DNS " />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -44,10 +71,37 @@ Why do this? Future Plans Local DNS " />
   <meta itemprop="name" content="Building my Home Lab">
   <meta itemprop="description" content="Trial and error, and more trials and more errors… coming soon…
 Diagram (changes pending..) !
-Why do this? Future Plans Local DNS">
+--- config: layout: dagre --- flowchart TD subgraph subGraph0[&#34;Proxmox Host (bridges)&#34;] direction TB vmbr0[&#34;vmbr0
+Prod / Mgmt
+192.168.1.0/24&#34;] vmbr3[&#34;vmbr3
+Test Net
+192.168.50.0/24&#34;] vmbr2[&#34;vmbr2
+DMZ
+10.0.0.0/24&#34;] vmbr1[&#34;vmbr1
+Vuln Lab
+192.168.255.0/24&#34;] so_span[&#34;so-span (mirror port)&#34;] pfWAN[&#34;WAN
+(vmbr0)&#34;] pfLAN[&#34;LAN-TEST
+(vmbr3)
+192.168.50.1&#34;] pfDMZ[&#34;OPT-DMZ
+(vmbr2)
+10.0.0.1&#34;] vmbr0 --- pfWAN vmbr3 --- pfLAN vmbr2 --- pfDMZ vmbr0 --&gt; SO[&#34;Security Onion mgmt
+192.168.1.77&#34;] &amp; KaliProd[&#34;Kali prod NIC
+192.168.1.20&#34;] &amp; RHEL9Prod[&#34;RHEL9 (Nessus)
+192.168.1.6&#34;] &amp; ParrotProd[&#34;ParrotOS prod NIC&#34;] vmbr3 --&gt; control[&#34;control
+192.168.50.10&#34;] &amp; ans1[&#34;ansible1
+.50.11&#34;] &amp; ans2[&#34;ansible2
+.50.12&#34;] &amp; ans3[&#34;ansible3
+.50.13&#34;] vmbr2 --&gt; MetaFixable[&#34;MetaFixable
+10.0.0.100&#34;] vmbr1 --&gt; Metasploitable[&#34;Metasploitable
+192.168.255.10&#34;] &amp; KaliLab[&#34;Kali lab NIC
+192.168.255.20&#34;] &amp; RHEL9Lab[&#34;RHEL9 lab NIC
+192.168.255.40&#34;] &amp; so_span so_span --&gt; SOSensor[&#34;SO sensor NIC
+(no IP)
+promiscuous&#34;] vmbr0:::bridge vmbr3:::bridge vmbr2:::bridge vmbr1:::bridge so_span:::bridge classDef bridge fill:#f9f9f9,stroke:#999,stroke-width:1px end HomeGW --&gt; vmbr0 Internet((&#34;🌐 Internet&#34;)) --&gt; HomeGW[&#34;Home Router
+192.168.1.1&#34;] Why do this? Future Plans Local DNS">
   <meta itemprop="datePublished" content="2025-05-29T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-05-29T00:00:00+00:00">
-  <meta itemprop="wordCount" content="22">
+  <meta itemprop="wordCount" content="149">
   <meta itemprop="image" content="https://phdbuilds.tech/">
 
   <meta name="twitter:card" content="summary_large_image">
@@ -55,7 +109,34 @@ Why do this? Future Plans Local DNS">
   <meta name="twitter:title" content="Building my Home Lab">
   <meta name="twitter:description" content="Trial and error, and more trials and more errors… coming soon…
 Diagram (changes pending..) !
-Why do this? Future Plans Local DNS">
+--- config: layout: dagre --- flowchart TD subgraph subGraph0[&#34;Proxmox Host (bridges)&#34;] direction TB vmbr0[&#34;vmbr0
+Prod / Mgmt
+192.168.1.0/24&#34;] vmbr3[&#34;vmbr3
+Test Net
+192.168.50.0/24&#34;] vmbr2[&#34;vmbr2
+DMZ
+10.0.0.0/24&#34;] vmbr1[&#34;vmbr1
+Vuln Lab
+192.168.255.0/24&#34;] so_span[&#34;so-span (mirror port)&#34;] pfWAN[&#34;WAN
+(vmbr0)&#34;] pfLAN[&#34;LAN-TEST
+(vmbr3)
+192.168.50.1&#34;] pfDMZ[&#34;OPT-DMZ
+(vmbr2)
+10.0.0.1&#34;] vmbr0 --- pfWAN vmbr3 --- pfLAN vmbr2 --- pfDMZ vmbr0 --&gt; SO[&#34;Security Onion mgmt
+192.168.1.77&#34;] &amp; KaliProd[&#34;Kali prod NIC
+192.168.1.20&#34;] &amp; RHEL9Prod[&#34;RHEL9 (Nessus)
+192.168.1.6&#34;] &amp; ParrotProd[&#34;ParrotOS prod NIC&#34;] vmbr3 --&gt; control[&#34;control
+192.168.50.10&#34;] &amp; ans1[&#34;ansible1
+.50.11&#34;] &amp; ans2[&#34;ansible2
+.50.12&#34;] &amp; ans3[&#34;ansible3
+.50.13&#34;] vmbr2 --&gt; MetaFixable[&#34;MetaFixable
+10.0.0.100&#34;] vmbr1 --&gt; Metasploitable[&#34;Metasploitable
+192.168.255.10&#34;] &amp; KaliLab[&#34;Kali lab NIC
+192.168.255.20&#34;] &amp; RHEL9Lab[&#34;RHEL9 lab NIC
+192.168.255.40&#34;] &amp; so_span so_span --&gt; SOSensor[&#34;SO sensor NIC
+(no IP)
+promiscuous&#34;] vmbr0:::bridge vmbr3:::bridge vmbr2:::bridge vmbr1:::bridge so_span:::bridge classDef bridge fill:#f9f9f9,stroke:#999,stroke-width:1px end HomeGW --&gt; vmbr0 Internet((&#34;🌐 Internet&#34;)) --&gt; HomeGW[&#34;Home Router
+192.168.1.1&#34;] Why do this? Future Plans Local DNS">
 
 
 
@@ -64,7 +145,34 @@ Why do this? Future Plans Local DNS">
   <meta property="og:title" content="Building my Home Lab">
   <meta property="og:description" content="Trial and error, and more trials and more errors… coming soon…
 Diagram (changes pending..) !
-Why do this? Future Plans Local DNS">
+--- config: layout: dagre --- flowchart TD subgraph subGraph0[&#34;Proxmox Host (bridges)&#34;] direction TB vmbr0[&#34;vmbr0
+Prod / Mgmt
+192.168.1.0/24&#34;] vmbr3[&#34;vmbr3
+Test Net
+192.168.50.0/24&#34;] vmbr2[&#34;vmbr2
+DMZ
+10.0.0.0/24&#34;] vmbr1[&#34;vmbr1
+Vuln Lab
+192.168.255.0/24&#34;] so_span[&#34;so-span (mirror port)&#34;] pfWAN[&#34;WAN
+(vmbr0)&#34;] pfLAN[&#34;LAN-TEST
+(vmbr3)
+192.168.50.1&#34;] pfDMZ[&#34;OPT-DMZ
+(vmbr2)
+10.0.0.1&#34;] vmbr0 --- pfWAN vmbr3 --- pfLAN vmbr2 --- pfDMZ vmbr0 --&gt; SO[&#34;Security Onion mgmt
+192.168.1.77&#34;] &amp; KaliProd[&#34;Kali prod NIC
+192.168.1.20&#34;] &amp; RHEL9Prod[&#34;RHEL9 (Nessus)
+192.168.1.6&#34;] &amp; ParrotProd[&#34;ParrotOS prod NIC&#34;] vmbr3 --&gt; control[&#34;control
+192.168.50.10&#34;] &amp; ans1[&#34;ansible1
+.50.11&#34;] &amp; ans2[&#34;ansible2
+.50.12&#34;] &amp; ans3[&#34;ansible3
+.50.13&#34;] vmbr2 --&gt; MetaFixable[&#34;MetaFixable
+10.0.0.100&#34;] vmbr1 --&gt; Metasploitable[&#34;Metasploitable
+192.168.255.10&#34;] &amp; KaliLab[&#34;Kali lab NIC
+192.168.255.20&#34;] &amp; RHEL9Lab[&#34;RHEL9 lab NIC
+192.168.255.40&#34;] &amp; so_span so_span --&gt; SOSensor[&#34;SO sensor NIC
+(no IP)
+promiscuous&#34;] vmbr0:::bridge vmbr3:::bridge vmbr2:::bridge vmbr1:::bridge so_span:::bridge classDef bridge fill:#f9f9f9,stroke:#999,stroke-width:1px end HomeGW --&gt; vmbr0 Internet((&#34;🌐 Internet&#34;)) --&gt; HomeGW[&#34;Home Router
+192.168.1.1&#34;] Why do this? Future Plans Local DNS">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -176,6 +284,40 @@ Why do this? Future Plans Local DNS">
 <p>coming soon&hellip;</p>
 <h2 id="diagram-changes-pending">Diagram (changes pending..)</h2>
 <p>!<img src="/images/Pasted%20image%2020250529161435.png" alt="Image Description"></p>
+<pre class="mermaid">---
+config:
+layout: dagre
+---
+flowchart TD
+subgraph subGraph0["Proxmox Host (bridges)"]
+direction TB
+vmbr0["vmbr0<br>Prod / Mgmt<br>192.168.1.0/24"]
+vmbr3["vmbr3<br>Test Net<br>192.168.50.0/24"]
+vmbr2["vmbr2<br>DMZ<br>10.0.0.0/24"]
+vmbr1["vmbr1<br>Vuln Lab<br>192.168.255.0/24"]
+so_span["so-span (mirror port)"]
+pfWAN["WAN<br>(vmbr0)"]
+pfLAN["LAN-TEST<br>(vmbr3)<br>192.168.50.1"]
+pfDMZ["OPT-DMZ<br>(vmbr2)<br>10.0.0.1"]
+vmbr0 --- pfWAN
+vmbr3 --- pfLAN
+vmbr2 --- pfDMZ
+vmbr0 --> SO["Security Onion mgmt<br>192.168.1.77"] & KaliProd["Kali prod NIC<br>192.168.1.20"] & RHEL9Prod["RHEL9 (Nessus)<br>192.168.1.6"] & ParrotProd["ParrotOS prod NIC"]
+vmbr3 --> control["control<br>192.168.50.10"] & ans1["ansible1<br>.50.11"] & ans2["ansible2<br>.50.12"] & ans3["ansible3<br>.50.13"]
+vmbr2 --> MetaFixable["MetaFixable<br>10.0.0.100"]
+vmbr1 --> Metasploitable["Metasploitable<br>192.168.255.10"] & KaliLab["Kali lab NIC<br>192.168.255.20"] & RHEL9Lab["RHEL9 lab NIC<br>192.168.255.40"] & so_span
+so_span --> SOSensor["SO sensor NIC<br>(no IP)<br>promiscuous"]
+vmbr0:::bridge
+vmbr3:::bridge
+vmbr2:::bridge
+vmbr1:::bridge
+so_span:::bridge
+classDef bridge fill:#f9f9f9,stroke:#999,stroke-width:1px
+end
+
+HomeGW --> vmbr0
+Internet(("🌐 Internet")) --> HomeGW["Home Router<br>192.168.1.1"]
+</pre>
 <h2 id="why-do-this">Why do this?</h2>
 <h2 id="future-plans">Future Plans</h2>
 <ul>
@@ -199,7 +341,7 @@ Why do this? Future Plans Local DNS">
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        22 Words
+        149 Words
       </p>
 
       <p>
@@ -368,6 +510,30 @@ Why do this? Future Plans Local DNS">
 
 
 
+
+<script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs";
+    const settings = localStorage.getItem("theme") === "dark" ?
+        {
+            startOnLoad: true,
+            theme: "dark",
+            darkMode: true,
+            themeVariables: {
+                tertiaryColor: "#dee3ed"
+            }
+        }
+        :
+        {
+            startOnLoad: true,
+            theme: "base",
+            darkMode: false,
+            themeVariables: {
+                tertiaryColor: "#dee3ed"
+            }
+        }
+    ;
+    mermaid.initialize(settings);
+</script>
 
     </body>
 </html>
