@@ -77,7 +77,7 @@ publishDir   = "public"
   # Per default, this option is off. 
   # The theme is respecting the prefers-color-scheme of the operating system. 
   # With this option on, the page user is able to set the scheme he wants. 
-  enableThemeToggle = false
+  enableThemeToggle = true
 
   # Sharing buttons
   #
