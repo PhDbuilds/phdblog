@@ -231,14 +231,17 @@ publishDir   = "public"
 
   [[params.social]]
     name = "youtube"
-    url  = "https://www.youtube.com/"
+    url  = "https://www.youtube.com/@Logans_adventuring"
 
-[languages]
-  [languages.en]
-    weight    = 1
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  [languages.en.params]
-    subtitle  = "Hello Friend NG Theme"
+  [[params.social]]
+    name = "youtube"
+    url  = "https://www.youtube.com/@phdbuilds"
+# k[languages]
+# k  [languages.en]
+# k    weight    = 1
+# k    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+# k  [languages.en.params]
+# k    subtitle  = "Hello Friend NG Theme"
 
 #   [languages.fr]
 #     weight    = 2
