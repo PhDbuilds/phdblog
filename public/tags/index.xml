@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on PhDbuilds.tech</title>
-    <link>https://phdbuilds.tech/tags/</link>
+    <link>https://phdbuilds.com/tags/</link>
     <description>Recent content in Tags on PhDbuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>© [Logan Norris](https://phdbuilds.tech)</copyright>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://phdbuilds.tech/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://phdbuilds.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Maths</title>
-      <link>https://phdbuilds.tech/tags/maths/</link>
+      <link>https://phdbuilds.com/tags/maths/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/tags/maths/</guid>
+      <guid>https://phdbuilds.com/tags/maths/</guid>
       <description></description>
     </item>
     <item>
       <title>CTF</title>
-      <link>https://phdbuilds.tech/tags/ctf/</link>
+      <link>https://phdbuilds.com/tags/ctf/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/tags/ctf/</guid>
+      <guid>https://phdbuilds.com/tags/ctf/</guid>
       <description></description>
     </item>
     <item>
       <title>Cybersecurity</title>
-      <link>https://phdbuilds.tech/tags/cybersecurity/</link>
+      <link>https://phdbuilds.com/tags/cybersecurity/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/tags/cybersecurity/</guid>
+      <guid>https://phdbuilds.com/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>https://phdbuilds.tech/tags/docker/</link>
+      <link>https://phdbuilds.com/tags/docker/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/tags/docker/</guid>
+      <guid>https://phdbuilds.com/tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Habits</title>
-      <link>https://phdbuilds.tech/tags/habits/</link>
+      <link>https://phdbuilds.com/tags/habits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/tags/habits/</guid>
+      <guid>https://phdbuilds.com/tags/habits/</guid>
       <description></description>
     </item>
     <item>
       <title>NoteTaking</title>
-      <link>https://phdbuilds.tech/tags/notetaking/</link>
+      <link>https://phdbuilds.com/tags/notetaking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.tech/tags/notetaking/</guid>
+      <guid>https://phdbuilds.com/tags/notetaking/</guid>
       <description></description>
     </item>
   </channel>
