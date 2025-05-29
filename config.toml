@@ -8,11 +8,11 @@ theme = "hello-friend-ng"
 
 copyright = "phdbuilds.tech" # This message is only used by the RSS template.
 
-# archetypeDir = "archetypes"
-# contentDir   = "content"
-# dataDir      = "data"
-# layoutDir    = "layouts"
-# publishDir   = "public"
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
 
 # buildDrafts  = false
 # buildFuture  = false
@@ -114,16 +114,16 @@ copyright = "phdbuilds.tech" # This message is only used by the RSS template.
   # If you want, you can easily override the default footer with your own content. 
   #
   [params.footer]
-    trademark = 2025
-    rss = true
-    copyright = true
+    trademark = 2077
+#     rss = true
+#     copyright = true
     author = true
 
-    topText = []
-    bottomText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
-    ]
+    topText = ["Soli Deo Gloria"]
+#     bottomText = [
+#       "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+#       "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+#     ]
 
   # Colors for favicons
   #
@@ -134,7 +134,7 @@ copyright = "phdbuilds.tech" # This message is only used by the RSS template.
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ cd /home/"
+    logoText     = "$ cd /bin/pwn"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
@@ -213,25 +213,25 @@ copyright = "phdbuilds.tech" # This message is only used by the RSS template.
   # Addon: Social icons
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   #
-  [[params.social]]
-    name = "twitter"
-    url  = "https://twitter.com/"
+#   [[params.social]]
+#     name = "twitter"
+#     url  = "https://twitter.com/"
 
   [[params.social]]
     name = "email"
-    url  = "mailto:nobody@example.com"
+    url  = "mailto:blnorris777@gmail.com"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/phdbuilds"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/"
+    url  = "https://www.linkedin.com/blnorris777"
 
   [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+    name = "youtube"
+    url  = "https://www.youtube.com/"
 
 [languages]
   [languages.en]
@@ -240,11 +240,11 @@ copyright = "phdbuilds.tech" # This message is only used by the RSS template.
   [languages.en.params]
     subtitle  = "Hello Friend NG Theme"
 
-  [languages.fr]
-    weight    = 2
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  [languages.fr.params]
-    subtitle  = "Hello Friend NG Theme"
+#   [languages.fr]
+#     weight    = 2
+#     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+#   [languages.fr.params]
+#     subtitle  = "Hello Friend NG Theme"
 
 [menu]
   [[menu.main]]
@@ -255,3 +255,8 @@ copyright = "phdbuilds.tech" # This message is only used by the RSS template.
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
+  [[menu.main]]
+    identifier = "lib"
+    name = "Lib"
+    url = "/lib/"
+
