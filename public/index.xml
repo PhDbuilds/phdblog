@@ -2,95 +2,95 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PhDbuilds.tech</title>
-    <link>https://phdbuilds.com/</link>
+    <link>https://phdbuilds.tech/</link>
     <description>Recent content on PhDbuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://phdbuilds.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://phdbuilds.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Number Sense</title>
-      <link>https://phdbuilds.com/lib/thenumbersense/</link>
+      <link>https://phdbuilds.tech/lib/thenumbersense/</link>
       <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/lib/thenumbersense/</guid>
+      <guid>https://phdbuilds.tech/lib/thenumbersense/</guid>
       <description>&lt;h2 id=&#34;the-number-sense&#34;&gt;The Number Sense&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;The Number Sense&lt;/em&gt; popped up in Charles Fox’s &lt;em&gt;Computer Architecture&lt;/em&gt; syllabus, and because computer architecture has been stretching my brain in every direction, I decided to work through all the recommended side-reads—starting here. Dehaene’s main question is the following:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;How does any mind—human or otherwise—come to understand quantity?&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;His answer leans heavily toward nature before nurture. Apes, rats, even newborn babies can tell “how many” without counting, thanks to an in-built &lt;strong&gt;Approximate Number System&lt;/strong&gt; that lets them (and us) spot the difference between, for example, five and ten dots at a glance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Built a Custom CTF Platform Using CTFd and Docker</title>
-      <link>https://phdbuilds.com/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
+      <link>https://phdbuilds.tech/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
+      <guid>https://phdbuilds.tech/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
       <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;For the first week of May I hosted a small CTF scrimmage for my cohort/club at &lt;strong&gt;Western Governors University&lt;/strong&gt;.   Everything ran on my self‑hosted &lt;strong&gt;CTFd&lt;/strong&gt; instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]&lt;/p&gt;</description>
     </item>
     <item>
       <title>WGU CTF Scrimmage Spring 2025</title>
-      <link>https://phdbuilds.com/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</link>
+      <link>https://phdbuilds.tech/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</link>
       <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The following write‑up covers the WGU CTF scrimmage that wrapped up on &lt;strong&gt;May 2, 2025&lt;/strong&gt;. Some challenges were home‑brewed, others borrowed (e.g., picoCTF). External write‑ups are linked where helpful.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;dfir&#34;&gt;DFIR&lt;/h2&gt;&#xA;&lt;h3 id=&#34;glory-of-the-garden&#34;&gt;Glory of the Garden&lt;/h3&gt;&#xA;&lt;p&gt;Open the image in a hex editor such as &lt;a href=&#34;https://hexed.it/&#34;&gt;https://hexed.it/&lt;/a&gt;.&#xA;You&amp;rsquo;ll find the flag at the bottom:&#xA;!&lt;img src=&#34;https://phdbuilds.com/images/Pasted%20image%2020250502212818.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;unknown&#34;&gt;Unknown&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Upload to &lt;a href=&#34;https://www.aperisolve.com/&#34;&gt;https://www.aperisolve.com/&lt;/a&gt; and wait for analysis.&lt;/li&gt;&#xA;&lt;li&gt;You&amp;rsquo;ll find a base64 message in the Strings section&lt;/li&gt;&#xA;&lt;li&gt;Decode this to find the flag&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.com/images/Pasted%20image%2020250502212928.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;!&lt;img src=&#34;https://phdbuilds.com/images/Pasted%20image%2020250502212937.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://phdbuilds.tech/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The following write‑up covers the WGU CTF scrimmage that wrapped up on &lt;strong&gt;May 2, 2025&lt;/strong&gt;. Some challenges were home‑brewed, others borrowed (e.g., picoCTF). External write‑ups are linked where helpful.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;dfir&#34;&gt;DFIR&lt;/h2&gt;&#xA;&lt;h3 id=&#34;glory-of-the-garden&#34;&gt;Glory of the Garden&lt;/h3&gt;&#xA;&lt;p&gt;Open the image in a hex editor such as &lt;a href=&#34;https://hexed.it/&#34;&gt;https://hexed.it/&lt;/a&gt;.&#xA;You&amp;rsquo;ll find the flag at the bottom:&#xA;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212818.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;unknown&#34;&gt;Unknown&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Upload to &lt;a href=&#34;https://www.aperisolve.com/&#34;&gt;https://www.aperisolve.com/&lt;/a&gt; and wait for analysis.&lt;/li&gt;&#xA;&lt;li&gt;You&amp;rsquo;ll find a base64 message in the Strings section&lt;/li&gt;&#xA;&lt;li&gt;Decode this to find the flag&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212928.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250502212937.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Mission of a Lifetime: Lessons from the Men Who Went to the Moon</title>
-      <link>https://phdbuilds.com/lib/themissionofalifetime/</link>
+      <link>https://phdbuilds.tech/lib/themissionofalifetime/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/lib/themissionofalifetime/</guid>
+      <guid>https://phdbuilds.tech/lib/themissionofalifetime/</guid>
       <description>&lt;h2 id=&#34;what-are-the-main-takeaways-of-the-book&#34;&gt;What are the main takeaways of the book?&lt;/h2&gt;&#xA;&lt;p&gt;This book was very intriguing and turned out to be quite different from what I expected when I picked it up at the library. The author spent time interviewing some of the &amp;ldquo;Eagles&amp;rdquo;, the extraordinary men who journeyed to the moon, and through their eyes, I gained a fresh perspective on what really mattered about the mission, as well as a few other valuable insights that can be applied to our lives.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Dopamine Nation</title>
-      <link>https://phdbuilds.com/lib/dopaminenation/</link>
+      <link>https://phdbuilds.tech/lib/dopaminenation/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/lib/dopaminenation/</guid>
+      <guid>https://phdbuilds.tech/lib/dopaminenation/</guid>
       <description>&lt;h2 id=&#34;dopamine-nation&#34;&gt;Dopamine Nation&lt;/h2&gt;&#xA;&lt;p&gt;One of the most striking themes of &lt;em&gt;Dopamine Nation&lt;/em&gt; by Anna Lembke, MD is the way it illustrates the rise of opioid addiction and our tendency to overmedicate. It’s terrifying to learn that opioid prescriptions in the United States quadrupled between 1999 and 2012, and by 2012, there were enough pills prescribed for each American adult to have their own bottle. Even more jarring to read, in Arkansas, 116 opioid prescriptions were written for every 100 people in 2009. These kinds of numbers clarify that this isn’t just a rare or isolated problem; it’s woven into the fabric of our healthcare system. The book also explains how heroin was ironically created as a “safer” substitute for morphine, only to become 2–5 times more potent, leading to early 1900s narcomania. Adding to that, we also see how patients on Medicaid die from opioid overdose at three to six times the rate of those not on Medicaid, shedding light on how overprescribing and economic vulnerability collide in tragic ways.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Optimizing Learning with Anki and Obsidian</title>
-      <link>https://phdbuilds.com/posts/2025/01/optimizing-learning-with-anki-and-obsidian/</link>
+      <link>https://phdbuilds.tech/posts/2025/01/optimizing-learning-with-anki-and-obsidian/</link>
       <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/posts/2025/01/optimizing-learning-with-anki-and-obsidian/</guid>
+      <guid>https://phdbuilds.tech/posts/2025/01/optimizing-learning-with-anki-and-obsidian/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Time is definitely in short supply when you’re working full-time, going to college full-time, driving 45 minutes to work each way, and trying to keep up with your hobbies on the side. Over the years, I’ve tried a bunch of different learning hacks, but nothing beats spaced-repetition flashcards for locking in knowledge. And for flashcards, Anki is hands down my favorite.&lt;/p&gt;&#xA;&lt;p&gt;By working Anki into my daily study routine, I’ve noticed a huge boost in how fast I pick up new information and how long it actually stays in my brain. The spaced-repetition algorithm it uses is, in my opinion, top-tier. If you’re curious about finding some great learning techniques, I highly recommend reading &lt;em&gt;Ultralearning&lt;/em&gt; by Scott Young. It’s full of insights on how to optimize the way you learn. I will be adding my review soon in the&lt;code&gt;./lib&lt;/code&gt; section, so stay tuned for that.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Used AI to Summarize Long-Form Podcasts into Daily Takeaways</title>
-      <link>https://phdbuilds.com/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</link>
+      <link>https://phdbuilds.tech/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</link>
       <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</guid>
+      <guid>https://phdbuilds.tech/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;I love learning from educational podcasts, but there’s a constant struggle: I don’t have enough time to listen to them as often as I’d like. While driving to the mountains one day with my wife, We were listening to an Andrew Huberman episode—my favorite show and the core inspiration behind this project—and I thought, “I’m gaining so many actionable insights here. It would be great if I could consume more of these, more often.” Since I can’t magically create extra hours in my day, the next best thing is to find a way to absorb the most crucial information more efficiently.. While I do believe that long-form consumption is the best way to do most things, there are times where you just really don&amp;rsquo;t have the time to do so. An example of this would be reading the Spark Notes version of a book or watching a Youtube summarization of the core concepts in a book. While this is very beneficial at times and you can still learn from it, I do not think it is a replacement for reading the actual book. I believe there is something that happens in our brain when we have to go through the whole experience of reading the book that does not take place when we just extract the main concepts from it. However, like I said, we do not always have the time to do this, hence the birth of this project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wireless Security Testing with pwnagotchi</title>
-      <link>https://phdbuilds.com/posts/2024/12/wireless-security-testing-with-pwnagotchi/</link>
+      <link>https://phdbuilds.tech/posts/2024/12/wireless-security-testing-with-pwnagotchi/</link>
       <pubDate>Mon, 09 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/posts/2024/12/wireless-security-testing-with-pwnagotchi/</guid>
+      <guid>https://phdbuilds.tech/posts/2024/12/wireless-security-testing-with-pwnagotchi/</guid>
       <description>&lt;h2 id=&#34;what-is-pwnagotchi&#34;&gt;What is pwnagotchi?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Pwnagotchi: The Tamagotchi for WiFi Hackers&lt;/strong&gt;&lt;br&gt;&#xA;&amp;ldquo;&lt;a href=&#34;https://twitter.com/pwnagotchi&#34;&gt;Pwnagotchi&lt;/a&gt; is an &lt;a href=&#34;https://hackernoon.com/intuitive-rl-intro-to-advantage-actor-critic-a2c-4ff545978752&#34;&gt;A2C&lt;/a&gt;-based “AI” powered by &lt;a href=&#34;https://www.bettercap.org/&#34;&gt;bettercap&lt;/a&gt; that learns from its surrounding WiFi environment in order to maximize the &lt;a href=&#34;https://pwnagotchi.ai/intro/#wifi-handshakes-101&#34;&gt;crackable WPA key material it captures&lt;/a&gt; (either through passive sniffing or by performing deauthentication and association attacks). This material is collected on disk as PCAP files containing any form of crackable handshake supported by &lt;a href=&#34;https://hashcat.net/hashcat/&#34;&gt;hashcat&lt;/a&gt;, including full and half WPA handshakes as well as &lt;a href=&#34;https://www.evilsocket.net/2019/02/13/Pwning-WiFi-networks-with-bettercap-and-the-PMKID-client-less-attack/&#34;&gt;PMKIDs&lt;/a&gt;.&amp;rdquo; (&lt;a href=&#34;https://pwnagotchi.ai/intro/&#34;&gt;https://pwnagotchi.ai/intro/&lt;/a&gt;)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hello, World- My first post</title>
-      <link>https://phdbuilds.com/posts/2024/12/hello-world-my-first-post/</link>
+      <link>https://phdbuilds.tech/posts/2024/12/hello-world-my-first-post/</link>
       <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/posts/2024/12/hello-world-my-first-post/</guid>
+      <guid>https://phdbuilds.tech/posts/2024/12/hello-world-my-first-post/</guid>
       <description>&lt;h2 id=&#34;helloworld-&#34;&gt;Hello,world 👋🏻🌎&lt;/h2&gt;&#xA;&lt;p&gt;This is going to be the place where I post all my tech projects and the things I learn along the way. When I think about how far I’ve come since November of 2022, it’s surprising to realize just how much has changed. Before then, I knew almost nothing about technology. Coming from a fitness enthusiast (aka gym bro) and undergrad biology student background (premed dropout), the only exposure I had to anything technical was some very basic concepts I learned from my genetics professor, who was a bioinformatics guy. Less than 2 years ago I didn’t know what DNS stood for, I&amp;rsquo;d never heard of a VLAN or a subnet, and the idea of writing a basic for-loop might as well have been magic to me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Phoenix Project</title>
-      <link>https://phdbuilds.com/lib/thephoenixproject/</link>
+      <link>https://phdbuilds.tech/lib/thephoenixproject/</link>
       <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/lib/thephoenixproject/</guid>
+      <guid>https://phdbuilds.tech/lib/thephoenixproject/</guid>
       <description>&lt;p&gt;The Phoenix Project tells the story of how DevOps was born out of necessity to bridge the gap between development, operations, and the rest of the organization. Before DevOps was a thing, the book mentions how the development team would “throw” their work over a metaphorical wall to operations right before a deadline, leaving ops to wrestle with last-minute issues and production emergencies. This fictional book follows the story of Bill Palmer, the newly voluntold VP of IT Operations, as he navigates the necessity of DevOps within his organization, Parts Unlimited.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://phdbuilds.com/about/</link>
+      <link>https://phdbuilds.tech/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/about/</guid>
+      <guid>https://phdbuilds.tech/about/</guid>
       <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;I’m Logan, a Tier-2 Tech Support Analyst with a passion for cybersecurity, Linux, and solving problems, whether they’re digital or physical. I’m currently pursuing a degree in cybersecurity at WGU, and I spend most of my free time diving into hands-on projects, learning new skills, and sharpening my technical abilities. My ultimate goal is to break into offensive security and specialize in red engineering.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-im-into&#34;&gt;What I’m Into&lt;/h2&gt;&#xA;&lt;p&gt;I like to stay busy experimenting and building. Whether it’s capturing flags in CTF challenges, scripting with Python, or doing something hands-on like 3D printing and building custom keyboards, I’m always working on something new. Linux is my go-to operating system for both personal and professional projects, and I enjoy exploring how it can be leveraged in different ways and just really feel at home on the command line.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building a Second Brain</title>
-      <link>https://phdbuilds.com/lib/secondbrain/</link>
+      <link>https://phdbuilds.tech/lib/secondbrain/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://phdbuilds.com/lib/secondbrain/</guid>
+      <guid>https://phdbuilds.tech/lib/secondbrain/</guid>
       <description>&lt;h2 id=&#34;building-a-second-brain&#34;&gt;Building a Second Brain&lt;/h2&gt;&#xA;&lt;p&gt;So much of the time we are &amp;ldquo;info hoarders&amp;rdquo;, stockpiling endless amounts of well-intentioned content that only ends up increasing our own anxiety. I struggle with this a ton, and collect notes almost as if it were a hobby in of itself. I believe this is in part because it&amp;rsquo;s a form of &lt;em&gt;Pseudo-productivity&lt;/em&gt;, where I can kind of mindlessly do something without thinking too hard about it, but feel like I&amp;rsquo;m doing something useful, therefore I don&amp;rsquo;t feel guilty about doing it like I do with gaming or scrolling through Youtube. I have noticed in the past I rarely go back and review those notes or try to make connections with and distill them into something of my own. This book hits a lot on all of that.&lt;/p&gt;</description>
     </item>
   </channel>

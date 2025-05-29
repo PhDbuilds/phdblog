@@ -2,110 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://phdbuilds.com/lib/</loc>
+    <loc>https://phdbuilds.tech/lib/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/tags/maths/</loc>
+    <loc>https://phdbuilds.tech/tags/maths/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/</loc>
-    <lastmod>2025-05-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://phdbuilds.com/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://phdbuilds.com/"
-                />
-  </url><url>
-    <loc>https://phdbuilds.com/tags/</loc>
+    <loc>https://phdbuilds.tech/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://phdbuilds.com/fr/tags/"
+                href="https://phdbuilds.tech/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://phdbuilds.com/tags/"
+                href="https://phdbuilds.tech/"
                 />
   </url><url>
-    <loc>https://phdbuilds.com/lib/thenumbersense/</loc>
+    <loc>https://phdbuilds.tech/tags/</loc>
+    <lastmod>2025-05-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://phdbuilds.tech/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://phdbuilds.tech/tags/"
+                />
+  </url><url>
+    <loc>https://phdbuilds.tech/lib/thenumbersense/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/tags/ctf/</loc>
+    <loc>https://phdbuilds.tech/tags/ctf/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/tags/cybersecurity/</loc>
+    <loc>https://phdbuilds.tech/tags/cybersecurity/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/tags/docker/</loc>
+    <loc>https://phdbuilds.tech/tags/docker/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</loc>
+    <loc>https://phdbuilds.tech/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/posts/</loc>
+    <loc>https://phdbuilds.tech/posts/</loc>
     <lastmod>2025-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</loc>
+    <loc>https://phdbuilds.tech/posts/2025/05/wgu-ctf-scrimmage-spring-2025/</loc>
     <lastmod>2025-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/lib/themissionofalifetime/</loc>
+    <loc>https://phdbuilds.tech/lib/themissionofalifetime/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/lib/dopaminenation/</loc>
+    <loc>https://phdbuilds.tech/lib/dopaminenation/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/posts/2025/01/optimizing-learning-with-anki-and-obsidian/</loc>
+    <loc>https://phdbuilds.tech/posts/2025/01/optimizing-learning-with-anki-and-obsidian/</loc>
     <lastmod>2025-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</loc>
+    <loc>https://phdbuilds.tech/posts/2024/12/how-i-used-ai-to-summarize-long-form-podcasts-into-daily-takeaways/</loc>
     <lastmod>2024-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/posts/2024/12/wireless-security-testing-with-pwnagotchi/</loc>
+    <loc>https://phdbuilds.tech/posts/2024/12/wireless-security-testing-with-pwnagotchi/</loc>
     <lastmod>2024-12-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/posts/2024/12/hello-world-my-first-post/</loc>
+    <loc>https://phdbuilds.tech/posts/2024/12/hello-world-my-first-post/</loc>
     <lastmod>2024-12-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/lib/thephoenixproject/</loc>
+    <loc>https://phdbuilds.tech/lib/thephoenixproject/</loc>
     <lastmod>2024-01-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://phdbuilds.com/about/</loc>
+    <loc>https://phdbuilds.tech/about/</loc>
   </url><url>
-    <loc>https://phdbuilds.com/lib/secondbrain/</loc>
+    <loc>https://phdbuilds.tech/lib/secondbrain/</loc>
   </url><url>
-    <loc>https://phdbuilds.com/categories/</loc>
+    <loc>https://phdbuilds.tech/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://phdbuilds.com/fr/categories/"
+                href="https://phdbuilds.tech/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://phdbuilds.com/categories/"
+                href="https://phdbuilds.tech/categories/"
                 />
   </url><url>
-    <loc>https://phdbuilds.com/tags/habits/</loc>
+    <loc>https://phdbuilds.tech/tags/habits/</loc>
   </url><url>
-    <loc>https://phdbuilds.com/tags/notetaking/</loc>
+    <loc>https://phdbuilds.tech/tags/notetaking/</loc>
   </url><url>
-    <loc>https://phdbuilds.com/series/</loc>
+    <loc>https://phdbuilds.tech/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://phdbuilds.com/fr/series/"
+                href="https://phdbuilds.tech/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://phdbuilds.com/series/"
+                href="https://phdbuilds.tech/series/"
                 />
   </url>
 </urlset>

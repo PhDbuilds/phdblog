@@ -1,10 +1,10 @@
-baseURL = "https://phdbuilds.com"
+baseURL = "https://phdbuilds.tech"
 title   = "PhDbuilds.tech"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
+# PygmentsCodeFences = true
+# PygmentsStyle = "monokai"
 
 copyright = "phdbuilds.tech" # This message is only used by the RSS template.
 
@@ -14,34 +14,24 @@ copyright = "phdbuilds.tech" # This message is only used by the RSS template.
 # layoutDir    = "layouts"
 # publishDir   = "public"
 
-buildDrafts  = false
-buildFuture  = false
-buildExpired = false
-canonifyURLs = true
-
-enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
-enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
+# buildDrafts  = false
+# buildFuture  = false
+# buildExpired = false
+# canonifyURLs = true
+# 
+# enableRobotsTXT = true
+# enableGitInfo   = false
+# enableEmoji     = true
+# enableMissingTranslationPlaceholders = false
+# disableRSS     = false
+# disableSitemap = false
+# disable404     = false
+# disableHugoGeneratorInject = false
 
 [pagination]
   disableAliases = false
   pagerSize = 20
   path = 'page'
-
-[services]
-  [services.rss]
-      # Maximum number of items in the RSS feed.
-      limit = 42
-      
-#   [services.disqus]
-#     shortname = 'your-disqus-shortname'
-#   [services.googleAnalytics]
-#     ID = 'G-MEASUREMENT_ID'
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
