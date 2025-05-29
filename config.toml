@@ -42,6 +42,9 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
     url = "https://orcid.org/0000-0001-2345-6789"
     icon = "ai ai-orcid"
 
+  [[params.author]]
+    name = "Logan Norris"
+
 [menu]
 
   [[menu.main]]
