@@ -7,8 +7,8 @@ I like to stay busy experimenting and building. Whether it’s capturing flags i
 
 ## Recent Projects
 Here are a few recent projects I’ve worked on:
-- **Building my own CTF** Built and hosted my own cloud CTF platform using DigitalOcean and CTFd for my college CTF team. I also used docker-compose for easy enabling/disabling of various challenges I built or used from Vulhub.
-- **Proxmox Lab** Architected a multi-tier Proxmox environment using OVS and pfsense to create Production, Test, Vulnerable, and DMZ networks to replicate enterprise-like setup and experiment around with different things. This includes things like security monitoring and incedent response workflows with Security Onion, securing and STIGing vulnerable machines in my DMZ, and testing Ansible playbooks or practicing skills for the RHCSA on my test network.
+- **Building my own CTF:** Built and hosted my own cloud CTF platform using DigitalOcean and CTFd for my college CTF team. I also used docker-compose for easy enabling/disabling of various challenges I built or used from Vulhub.
+- **Proxmox Lab:** Architected a multi-tier Proxmox environment using OVS and pfSense to create Production, Test, Vulnerable, and DMZ networks to replicate enterprise-like setup and experiment around with different things. This includes things like security monitoring and incedent response workflows with Security Onion, simulating attacks with Kali, securing and STIGing vulnerable machines in my DMZ, and testing Ansible playbooks or practicing skills for the RHCSA on my test network.
 
 ## First Steps
 Here are the first few projects I ever did that really got my feet wet with things:
