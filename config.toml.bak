@@ -17,18 +17,7 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
   dateformShort = "Jan 2"
   dateformNum = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
-  homeSubtitle = '''
-    <a href="https://github.com/phdbuilds"        target="_blank" rel="noopener">
-      <i class="fa-brands fa-github fa-lg"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/blnorris777" target="_blank" rel="noopener">
-      <i class="fa-brands fa-linkedin fa-lg"></i>
-    </a>
-    <a href="https://youtube.com/phdbuilds"    target="_blank" rel="noopener">
-      <i class="fa-brands fa-youtube fa-lg"></i>
-    </a>
-  '''
-
+  homeSubtitle = "By Logan Norris"
   description = "Notes, builds, and hacking thoughts from Logan Norris."
   keywords = "cybersecurity, red team, hacking, linux, books, blog"
   images = [""]
