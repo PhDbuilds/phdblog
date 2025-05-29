@@ -134,7 +134,7 @@ publishDir   = "public"
 
   [params.logo]
     logoMark     = ">"
-    logoText     = "$ cd /bin/pwn"
+    logoText     = "$ sudo ./bin/pwn"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
