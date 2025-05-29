@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>phdbuilds.tech</copyright>
-    <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building my Home Lab</title>
+      <link>https://phdbuilds.tech/posts/2025/05/building-my-home-lab/</link>
+      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/posts/2025/05/building-my-home-lab/</guid>
+      <description>&lt;h2 id=&#34;trial-and-error-and-more-trials-and-more-errors&#34;&gt;Trial and error, and more trials and more errors&amp;hellip;&lt;/h2&gt;&#xA;&lt;p&gt;coming soon&amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Number Sense</title>
       <link>https://phdbuilds.tech/lib/thenumbersense/</link>
