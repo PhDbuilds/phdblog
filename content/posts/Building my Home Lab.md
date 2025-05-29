@@ -6,3 +6,9 @@ draft: false
 ---
 ## Trial and error, and more trials and more errors...
 coming soon...
+
+## Diagram (changes pending..)
+!![Image Description](/images/Pasted%20image%2020250529161435.png)
+## Why do this?
+## Future Plans
+- Local DNS
