@@ -18,15 +18,14 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
   dateformNum = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
   homeSubtitle = '''
-    <a href="https://github.com/phdbuilds"        target="_blank" rel="noopener">
-      <i class="fa-brands fa-github fa-lg"></i>
+  <p class="home__subtitle">
+  {{ range .Site.Params.social }}
+    <a href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}">
+      <i class="{{ .icon }} fa-lg"></i>
     </a>
-    <a href="https://www.linkedin.com/in/blnorris777" target="_blank" rel="noopener">
-      <i class="fa-brands fa-linkedin fa-lg"></i>
-    </a>
-    <a href="https://youtube.com/phdbuilds"    target="_blank" rel="noopener">
-      <i class="fa-brands fa-youtube fa-lg"></i>
-    </a>
+  {{ end }}
+</p>
+
   '''
 
   description = "Notes, builds, and hacking thoughts from Logan Norris."
@@ -49,10 +48,14 @@ copyright = "© [Logan Norris](https://phdbuilds.tech)"
   icon = "fa-solid fa-envelope"
 
 [[params.social]]
-  name = "ORCID"
-  url = "https://orcid.org/0000-0001-2345-6789"
-  icon = "ai ai-orcid"
+  name = "LinkedIn"
+  url  = "https://www.linkedin.com/in/blnorris777"
+  icon = "fa-brands fa-linkedin"
 
+[[params.social]]
+  name = "YouTube"
+  url  = "https://youtube.com/phdbuilds"
+  icon = "fa-brands fa-youtube"
 [menu]
 
   [[menu.main]]
