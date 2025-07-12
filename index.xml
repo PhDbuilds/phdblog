@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>phdbuilds.tech</copyright>
-    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://phdbuilds.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wireless Security testing with Wifi Marauder</title>
+      <link>https://phdbuilds.tech/posts/2025/07/wireless-security-testing-with-wifi-marauder/</link>
+      <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://phdbuilds.tech/posts/2025/07/wireless-security-testing-with-wifi-marauder/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Wireless security has always been &lt;em&gt;somewhat&lt;/em&gt; an interest of mine, for the very reason that I like tinkering with handheld gadgets. In a previous post of mine, [[Wireless Security Testing with Pwnagotchi]], I went into detail about building my first one of these devices. Now I&amp;rsquo;ve set up my own test lab to explore a PMKID attack. This is a method to crack WPA2 passwords by capturing a specific value from a router/ap, without even needing the entire 4-way handshake. For this lab, I used Wifi Marauder on a Flipper Zero using an ESP32-S2 Wi-Fi Devboard.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building my Home Lab</title>
       <link>https://phdbuilds.tech/posts/2025/05/building-my-home-lab/</link>
