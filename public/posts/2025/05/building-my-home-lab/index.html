@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Trial and error, and more trials and more errors&hellip; test test coming soon&hellip; (it&rsquo;s been built and functioning, I&rsquo;ve just got to find the time to write something up 😅)
-Diagram (changes pending..) !
-Why do this? Future Plans Local DNS " />
+<meta name="description" content="Trial and error, and more trials and more errors&hellip; I learned a lot setting this lab up. This was not only a technical lesson, but also a lesson on when sometimes stepping away and taking a break can be the best way to find the solution. The toughest hurdle, for sure, was the Security Onion setup. I spent no less than 15-20 hours over a weekend troubleshooting the installation and sensor configuration. It wasn&rsquo;t until I stepped away and rested that I finally got it to work (don&rsquo;t ask me how). But alas, it was a great experience overall and I cannot be happier with it at the moment.
+" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -42,29 +41,23 @@ Why do this? Future Plans Local DNS " />
 
 
   <meta itemprop="name" content="Building my Home Lab">
-  <meta itemprop="description" content="Trial and error, and more trials and more errors… test test coming soon… (it’s been built and functioning, I’ve just got to find the time to write something up 😅)
-Diagram (changes pending..) !
-Why do this? Future Plans Local DNS">
+  <meta itemprop="description" content="Trial and error, and more trials and more errors… I learned a lot setting this lab up. This was not only a technical lesson, but also a lesson on when sometimes stepping away and taking a break can be the best way to find the solution. The toughest hurdle, for sure, was the Security Onion setup. I spent no less than 15-20 hours over a weekend troubleshooting the installation and sensor configuration. It wasn’t until I stepped away and rested that I finally got it to work (don’t ask me how). But alas, it was a great experience overall and I cannot be happier with it at the moment.">
   <meta itemprop="datePublished" content="2025-05-29T00:00:00+00:00">
   <meta itemprop="dateModified" content="2025-05-29T00:00:00+00:00">
-  <meta itemprop="wordCount" content="41">
+  <meta itemprop="wordCount" content="328">
   <meta itemprop="image" content="https://phdbuilds.tech/">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://phdbuilds.tech/">
   <meta name="twitter:title" content="Building my Home Lab">
-  <meta name="twitter:description" content="Trial and error, and more trials and more errors… test test coming soon… (it’s been built and functioning, I’ve just got to find the time to write something up 😅)
-Diagram (changes pending..) !
-Why do this? Future Plans Local DNS">
+  <meta name="twitter:description" content="Trial and error, and more trials and more errors… I learned a lot setting this lab up. This was not only a technical lesson, but also a lesson on when sometimes stepping away and taking a break can be the best way to find the solution. The toughest hurdle, for sure, was the Security Onion setup. I spent no less than 15-20 hours over a weekend troubleshooting the installation and sensor configuration. It wasn’t until I stepped away and rested that I finally got it to work (don’t ask me how). But alas, it was a great experience overall and I cannot be happier with it at the moment.">
 
 
 
     <meta property="og:url" content="https://phdbuilds.tech/posts/2025/05/building-my-home-lab/">
   <meta property="og:site_name" content="PhDbuilds.tech">
   <meta property="og:title" content="Building my Home Lab">
-  <meta property="og:description" content="Trial and error, and more trials and more errors… test test coming soon… (it’s been built and functioning, I’ve just got to find the time to write something up 😅)
-Diagram (changes pending..) !
-Why do this? Future Plans Local DNS">
+  <meta property="og:description" content="Trial and error, and more trials and more errors… I learned a lot setting this lab up. This was not only a technical lesson, but also a lesson on when sometimes stepping away and taking a break can be the best way to find the solution. The toughest hurdle, for sure, was the Security Onion setup. I spent no less than 15-20 hours over a weekend troubleshooting the installation and sensor configuration. It wasn’t until I stepped away and rested that I finally got it to work (don’t ask me how). But alas, it was a great experience overall and I cannot be happier with it at the moment.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -154,7 +147,7 @@ Why do this? Future Plans Local DNS">
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        One minute
+        2 minutes
 
         
       </p>
@@ -173,15 +166,21 @@ Why do this? Future Plans Local DNS">
 
       <div class="post-content">
         <h2 id="trial-and-error-and-more-trials-and-more-errors">Trial and error, and more trials and more errors&hellip;</h2>
-<p>test test
-coming soon&hellip; (it&rsquo;s been built and functioning, I&rsquo;ve just got to find the time to write something up 😅)</p>
+<p>I learned a lot setting this lab up. This was not only a technical lesson, but also a lesson on when sometimes stepping away and taking a break can be the best way to find the solution. The toughest hurdle, for sure, was the Security Onion setup. I spent no less than 15-20 hours over a weekend troubleshooting the installation and sensor configuration. It wasn&rsquo;t until I stepped away and rested that I finally got it to work (don&rsquo;t ask me how). But alas, it was a great experience overall and I cannot be happier with it at the moment.</p>
 <h2 id="diagram-changes-pending">Diagram (changes pending..)</h2>
-<p>!<img src="/images/Pasted%20image%2020250529161435.png" alt="Image Description"></p>
+<p>Currently this is a 4 network architecture. All of the networks are connected via a <code>pfSense</code> firewall, with exception to the isolated vulnerable network. The layout is ever evolving though, so I&rsquo;m sure by the time you are reading this, it&rsquo;s already changed..
+!<img src="/images/Pasted%20image%2020250529161435.png" alt="Image Description"></p>
 <h2 id="why-do-this">Why do this?</h2>
-<h2 id="future-plans">Future Plans</h2>
+<p>I am doing this for numerous reasons. One of the main reasons if just to learn anything I want. It&rsquo;s one thing logging into a HTB or THM room and trying your hand at things, and that is an excellent way to learn. But setting up your own environemtn and doing these things yourself if a whole new kind of learning experience. Here are a few ways I&rsquo;ve leveraged my lab already:</p>
 <ul>
-<li>Local DNS</li>
+<li>Learning Ansible</li>
+<li>Studying for my RHCSA</li>
+<li>Playing around with Kali</li>
+<li>Playing around with SO and configuring it to detect various exploits</li>
 </ul>
+<p>Overall, it&rsquo;s been an amazing experience, and I would recommend to anyone that is interested in tech. An amazing addition to this is having a home VPN set up, so no matter where I am in the world, I always have access to my lab!</p>
+<h2 id="future-plans">Future Plans</h2>
+<p>Looking ahead, I’m excited to add a local DNS server to the mix. This will boost the lab’s functionality and make it feel even more like a real-world network.</p>
 
       </div>
     </article>
@@ -200,7 +199,7 @@ coming soon&hellip; (it&rsquo;s been built and functioning, I&rsquo;ve just got 
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        41 Words
+        328 Words
       </p>
 
       <p>
