@@ -71,25 +71,23 @@ And just in case you were curious about me using my own password file to crack t
             
             <guid>https://phdbuilds.tech/posts/2025/05/building-my-home-lab/</guid>
             <description>&lt;h2 id=&#34;trial-and-error-and-more-trials-and-more-errors&#34;&gt;Trial and error, and more trials and more errors&amp;hellip;&lt;/h2&gt;
-&lt;p&gt;test test
-coming soon&amp;hellip; (it&amp;rsquo;s been built and functioning, I&amp;rsquo;ve just got to find the time to write something up 😅)&lt;/p&gt;
-&lt;h2 id=&#34;diagram-changes-pending&#34;&gt;Diagram (changes pending..)&lt;/h2&gt;
-&lt;p&gt;!&lt;img src=&#34;https://phdbuilds.tech/images/Pasted%20image%2020250529161435.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;why-do-this&#34;&gt;Why do this?&lt;/h2&gt;
-&lt;h2 id=&#34;future-plans&#34;&gt;Future Plans&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Local DNS&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;I learned a lot setting this lab up. This was not only a technical lesson, but also a lesson on when sometimes stepping away and taking a break can be the best way to find the solution. The toughest hurdle, for sure, was the Security Onion setup. I spent no less than 15-20 hours over a weekend troubleshooting the installation and sensor configuration. It wasn&amp;rsquo;t until I stepped away and rested that I finally got it to work (don&amp;rsquo;t ask me how). But alas, it was a great experience overall and I cannot be happier with it at the moment.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<h2 id="trial-and-error-and-more-trials-and-more-errors">Trial and error, and more trials and more errors&hellip;</h2>
-<p>test test
-coming soon&hellip; (it&rsquo;s been built and functioning, I&rsquo;ve just got to find the time to write something up 😅)</p>
+<p>I learned a lot setting this lab up. This was not only a technical lesson, but also a lesson on when sometimes stepping away and taking a break can be the best way to find the solution. The toughest hurdle, for sure, was the Security Onion setup. I spent no less than 15-20 hours over a weekend troubleshooting the installation and sensor configuration. It wasn&rsquo;t until I stepped away and rested that I finally got it to work (don&rsquo;t ask me how). But alas, it was a great experience overall and I cannot be happier with it at the moment.</p>
 <h2 id="diagram-changes-pending">Diagram (changes pending..)</h2>
-<p>!<img src="/images/Pasted%20image%2020250529161435.png" alt="Image Description"></p>
+<p>Currently this is a 4 network architecture. All of the networks are connected via a <code>pfSense</code> firewall, with exception to the isolated vulnerable network. The layout is ever evolving though, so I&rsquo;m sure by the time you are reading this, it&rsquo;s already changed..
+!<img src="/images/Pasted%20image%2020250529161435.png" alt="Image Description"></p>
 <h2 id="why-do-this">Why do this?</h2>
-<h2 id="future-plans">Future Plans</h2>
+<p>I am doing this for numerous reasons. One of the main reasons if just to learn anything I want. It&rsquo;s one thing logging into a HTB or THM room and trying your hand at things, and that is an excellent way to learn. But setting up your own environemtn and doing these things yourself if a whole new kind of learning experience. Here are a few ways I&rsquo;ve leveraged my lab already:</p>
 <ul>
-<li>Local DNS</li>
+<li>Learning Ansible</li>
+<li>Studying for my RHCSA</li>
+<li>Playing around with Kali</li>
+<li>Playing around with SO and configuring it to detect various exploits</li>
 </ul>
+<p>Overall, it&rsquo;s been an amazing experience, and I would recommend to anyone that is interested in tech. An amazing addition to this is having a home VPN set up, so no matter where I am in the world, I always have access to my lab!</p>
+<h2 id="future-plans">Future Plans</h2>
+<p>Looking ahead, I’m excited to add a local DNS server to the mix. This will boost the lab’s functionality and make it feel even more like a real-world network.</p>
 ]]></content>
         </item>
         
