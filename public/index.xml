@@ -14,7 +14,7 @@
       <link>https://phdbuilds.tech/posts/2025/07/wireless-security-testing-with-wifi-marauder/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://phdbuilds.tech/posts/2025/07/wireless-security-testing-with-wifi-marauder/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Wireless security has always been &lt;em&gt;somewhat&lt;/em&gt; an interest of mine, for the very reason that I like tinkering with handheld gadgets. In a previous post of mine, [[Wireless Security Testing with Pwnagotchi]], I went into detail about building my first one of these devices. Now I&amp;rsquo;ve set up my own test lab to explore a PMKID attack. This is a method to crack WPA2 passwords by capturing a specific value from a router/ap, without even needing the entire 4-way handshake. For this lab, I used Wifi Marauder on a Flipper Zero using an ESP32-S2 Wi-Fi Devboard.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Wireless security has always been &lt;em&gt;somewhat&lt;/em&gt; an interest of mine, for the very reason that I like tinkering with handheld gadgets. In a previous post of mine, &lt;a href=&#34;https://phdbuilds.tech/posts/2024/12/wireless-security-testing-with-pwnagotchi/&#34;&gt;Wireless Security Testing with Pwnagotchi&lt;/a&gt;, I went into detail about building my first one of these devices. Now I&amp;rsquo;ve set up my own test lab to explore a PMKID attack. This is a method to crack WPA2 passwords by capturing a specific value from a router/ap, without even needing the entire 4-way handshake. For this lab, I used Wifi Marauder on a Flipper Zero using an ESP32-S2 Wi-Fi Devboard.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Building my Home Lab</title>
@@ -35,7 +35,7 @@
       <link>https://phdbuilds.tech/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <guid>https://phdbuilds.tech/posts/2025/05/how-i-built-a-custom-ctf-platform-using-ctfd-and-docker/</guid>
-      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;For the first week of May I hosted a small CTF scrimmage for my cohort/club at &lt;strong&gt;Western Governors University&lt;/strong&gt;.   Everything ran on my self‑hosted &lt;strong&gt;CTFd&lt;/strong&gt; instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see [[WGU CTF Scrimmage Spring 2025]]&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;&#xA;&lt;p&gt;For the first week of May I hosted a small CTF scrimmage for my cohort/club at &lt;strong&gt;Western Governors University&lt;/strong&gt;.   Everything ran on my self‑hosted &lt;strong&gt;CTFd&lt;/strong&gt; instance, backed by a set of lightweight Docker containers so I could spin challenges up and down easily.   Below is a quick recap of how I built the event and a few lessons I picked up along the way. To see the mini-write up I did for most of the challenges, see &lt;a href=&#34;https://phdbuilds.tech/posts/2025/05/wgu-ctf-scrimmage-spring-2025/&#34;&gt;WGU CTF Scrimmage Spring 2025&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>WGU CTF Scrimmage Spring 2025</title>

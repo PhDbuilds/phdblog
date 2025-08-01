@@ -5,7 +5,7 @@ time: "12:28"
 draft: false
 ---
 ## Overview
-Wireless security has always been *somewhat* an interest of mine, for the very reason that I like tinkering with handheld gadgets. In a previous post of mine, [[Wireless Security Testing with Pwnagotchi]], I went into detail about building my first one of these devices. Now I've set up my own test lab to explore a PMKID attack. This is a method to crack WPA2 passwords by capturing a specific value from a router/ap, without even needing the entire 4-way handshake. For this lab, I used Wifi Marauder on a Flipper Zero using an ESP32-S2 Wi-Fi Devboard.
+Wireless security has always been *somewhat* an interest of mine, for the very reason that I like tinkering with handheld gadgets. In a previous post of mine, [Wireless Security Testing with Pwnagotchi](/posts/2024/12/wireless-security-testing-with-pwnagotchi/), I went into detail about building my first one of these devices. Now I've set up my own test lab to explore a PMKID attack. This is a method to crack WPA2 passwords by capturing a specific value from a router/ap, without even needing the entire 4-way handshake. For this lab, I used Wifi Marauder on a Flipper Zero using an ESP32-S2 Wi-Fi Devboard.
 ## Why do this?
 I'm a hands on learner (there's no other way imo) who enjoys building things. I am currently on my last year of my BS in cybersecurity and am studying for my CySA+ exam and just went over a bit of the wireless security section which got this back on my mind. I ordered a Flipper Zero a long time ago and haven't been able to try it out much, since I did not have a test network to do this on. Now that I do, I decided to give it a shot. 
 ## Lessons Learned
