@@ -1,6 +1,6 @@
 # About Me
 
-I’m Logan, a Tier-2 Tech Support Analyst with a passion for cybersecurity, Linux, and solving problems, whether they’re digital or physical. I’m currently pursuing a degree in cybersecurity at WGU, and I spend most of my free time diving into hands-on projects, learning new skills, and sharpening my technical abilities. My ultimate goal is to break into offensive security and specialize in red teaming or become a cybersecurity engineer and build and maintain various defense systems.
+I’m Logan, a ~Tier-2 Tech Support Analyst~ Linux System Administrator with a passion for cybersecurity, Linux, and solving problems, whether they’re digital or physical. I’m currently pursuing a degree in cybersecurity at WGU, and I spend most of my free time diving into hands-on projects, learning new skills, and sharpening my technical abilities. My ultimate goal is to break into offensive security and specialize in red teaming or become a cybersecurity engineer and build and maintain various defense systems.
 
 ## What I’m Into
 I like to stay busy experimenting and building. Whether it’s capturing flags in CTF challenges, scripting various tasks with Python, or doing something hands-on like 3D printing, building gadgets, and building custom keyboards, I’m always working on something new. Linux is my go-to operating system for both personal and professional projects, and I enjoy exploring how it can be used in different ways and just really feel at home on the command line.
@@ -27,6 +27,9 @@ So far, this includes:
 - CompTIA Security+
 - CompTIA IT Operations Specialist
 - CompTIA Secure Infrastructure Specialist
+- CompTIA Linux+
+- CompTIA Systems Support Specialist
+- CompTIA Linux Network Professional
 
 In the next year I will also be getting my Project+, CySA+, PenTest+, CCSP, and SSCP as a part of my degree plan at WGU, and based on my graduation date of June 2026 which is 1.5 years ahead of my original degree plan. Another certification that interests me is the RHCSA which I study for in my spare time.
 
