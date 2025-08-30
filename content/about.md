@@ -35,7 +35,7 @@ So far, this includes:
 - CompTIA CySA+
 - CompTIA Security Analytics Professional
 
-In the next year I will also be getting my Project+, CySA+, PenTest+, CCSP, and SSCP as a part of my degree plan at WGU, and based on my graduation date of June 2026 which is 1.5 years ahead of my original degree plan. Another certification that interests me is the RHCSA which I study for in my spare time.
+In the next year I will also be getting my Project+, ~CySA+~, PenTest+, CCSP, and SSCP as a part of my degree plan at WGU, and based on my graduation date of June 2026 which is 1.5 years ahead of my original degree plan. Another certification that interests me is the RHCSA which I study for in my spare time.
 
 
 ## Goals and Aspirations
